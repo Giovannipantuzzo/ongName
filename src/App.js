@@ -2,9 +2,10 @@ import React from "react";
 
 
 function App() {
+  const title="cachorro123";
   return (
     <div >
-      <h1>Tesdasdaste</h1>
+      <h1>{title}</h1>
     </div>
   );
 }
