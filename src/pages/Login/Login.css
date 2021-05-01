@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 424px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.base {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.titleConfig {
+    font-family: "Unica One", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.linkConfig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.loginConfig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
