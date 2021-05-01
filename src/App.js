@@ -1,12 +1,10 @@
 import React from "react";
-
+import Routes from "./routes";
 
 function App() {
-  const title="cachorro123";
+  
   return (
-    <div >
-      <h1>{title}</h1>
-    </div>
+      <Routes />
   );
 }
 
