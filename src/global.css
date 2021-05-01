@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html,
+body,
+div#root {
+    height: 100%;
+}
+
