@@ -17,17 +17,18 @@ function Login() {
     return(
         
     <div className="base">
+        <img src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
          <div className="container">
              <form className="inputs">
-                <div className="titleConfig"><h1>LOGIN</h1></div>
-                <Form.Group controlId="email">
+                <div className="titleConfig"><h1>Login</h1></div>
+                <Form.Group className="emailConfig" controlId="email">
                      <Form.Control 
                         type="email" 
                         placeholder="email" 
                         onChange={(e) => setEmail(e.target.value)}
                      />
                 </Form.Group>
-                <Form.Group controlId="password">
+                <Form.Group className="passwordConfig" controlId="password">
                     <Form.Control 
                         type="password" 
                         placeholder="Password"
