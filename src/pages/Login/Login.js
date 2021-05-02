@@ -16,30 +16,30 @@ function Login() {
     
     return(
         
-    <div className="base">
-        <img src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
-         <div className="container">
-             <form className="inputs">
-                <div className="titleConfig"><h1>Login</h1></div>
-                <Form.Group className="emailConfig" controlId="email">
-                     <Form.Control 
-                        type="email" 
-                        placeholder="email" 
-                        onChange={(e) => setEmail(e.target.value)}
-                     />
-                </Form.Group>
-                <Form.Group className="passwordConfig" controlId="password">
-                    <Form.Control 
-                        type="password" 
-                        placeholder="Password"
-                        onChange={(e) => setPassword(e.target.value)} 
-                    />
-                </Form.Group>
-                <Button className="loginConfig" variant="dark" onClick={login}>Login</Button>{' '}
-                <Link className="linkConfig" to="cadastro">Cadastre-se já</Link>
-             </form>
-         </div>
-    </div>
+        <div className="base">
+            <img className="image" src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
+            <div className="container">
+                <form className="inputs">
+                    <div className="titleConfig"><h1>Login</h1></div>
+                    <Form.Group controlId="email">
+                        <Form.Control 
+                            type="email" 
+                            placeholder="email" 
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </Form.Group>
+                    <Form.Group controlId="password">
+                        <Form.Control 
+                            type="password" 
+                            placeholder="Password"
+                            onChange={(e) => setPassword(e.target.value)} 
+                        />
+                    </Form.Group>
+                    <Button className="loginConfig" variant="dark" onClick={login}>Entrar</Button>{' '}
+                    <Link className="linkConfig" to="cadastro">Cadastre-se já</Link>
+                </form>
+            </div>
+        </div>
     )
 }
 
