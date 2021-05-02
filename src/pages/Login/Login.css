@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 1px;
+    width: 50px;
     height: 23rem;
     align-items: center;
     border-style: groove;
@@ -48,6 +48,21 @@
     padding-top: 1.5rem;
 }
 
-.emailConfig{
-    border-radius: 30rem;
+.image{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+input[type=email]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+}
+input[type=password]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     padding-left: 10px;    
 }
