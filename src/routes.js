@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Animal from "./pages/Animal";
 import Perfil from "./pages/Perfil";
+import Menu from "./pages/Menu";
 
 function Routes() {
   return (
@@ -19,6 +20,8 @@ function Routes() {
         <Route path="/adote_ja" component={Adote_ja} />
         <Route path="/animal" component={Animal} />
         <Route path="/perfil" component={Perfil} />
+        <Route path="/temp" component={Menu} />
+
       </Switch>
     </BrowserRouter>
   );
