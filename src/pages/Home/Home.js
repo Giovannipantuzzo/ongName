@@ -10,8 +10,8 @@ function Home() {
 
     return(
         <div>
-            <AppBar position="static">
-                <Toolbar className="toolBarConfig">
+            <AppBar color="red" position="static">
+                <Toolbar >
                         <img className="logo" src="/images/Logo.png" alt="Logo"></img>
                         <button className="adocao" onClick={() => {
                             history.push("adocao_animal");

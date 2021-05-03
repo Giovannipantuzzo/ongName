@@ -35,7 +35,9 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)} 
                         />
                     </Form.Group>
-                    <Button className="loginConfig" variant="dark" onClick={login}>Entrar</Button>{' '}
+                    <div className="entrarConfig">
+                        <Button variant="dark" onClick={login}>Entrar</Button>{' '}
+                    </div>
                     <Link className="linkConfig" to="cadastro">Cadastre-se já</Link>
                 </form>
             </div>
