@@ -9,9 +9,7 @@ function Menu() {
     const history = useHistory();
 
     return(
-        <div>
-            <Navbar bg="light" expand="lg">
-                
+        <div>               
                 <img className="logo" src="/images/Logo.png" alt="Logo"></img>
                         <button className="adocao" onClick={() => {
                             history.push("adocao_animal");
@@ -33,7 +31,6 @@ function Menu() {
                         }}>
                             Cadastre-se
                         </button>
-            </Navbar>
         </div>
     );
     
