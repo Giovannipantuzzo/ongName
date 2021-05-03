@@ -1,29 +1,56 @@
 import React from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import "./Adote.css";
+import Produto from "../../Componentes/Card_Adote_ja";
+import { Card, ListGroup } from "react-bootstrap";
 
+const animais = [
+    {
+        id: 1,
+        imagem: "/images/dog1.png",
+        nome: "Billy",
+        tempo: "2 anos",
+    },
+    {
+        id: 2,
+        imagem: "/images/dog2.jpg",
+        nome: "Pluto",
+        tempo: "2 anos",
+    },
+    {
+        id: 3,
+        imagem: "/images/dog1.png",
+        nome: "Billy",
+        tempo: "2 anos",
+    },
+    {
+        id: 4,
+        imagem: "/images/dog2.jpg",
+        nome: "Pluto",
+        tempo: "2 anos",
+    },
+    {
+        id: 5,
+        imagem: "/images/dog1.png",
+        nome: "Billy",
+        tempo: "3 anos",
+    },
+    {
+        id: 6,
+        imagem: "/images/dog2.jpg",
+        nome: "Pluto",
+        tempo: "0,5 anos",
+    },
+];
 
 function Adote_ja() {
     return (
-
-        <div className="base">
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="dog1.png" alt="Exemplo" />
-                <Card.Body align = "center">
-                    <Card.Title>Adote o Billy</Card.Title>
-                    <Card.Text>Tempo de abrigo: 2 anos</Card.Text>
-                </Card.Body>
-                <ListGroup variant="flush">
-                <ListGroup.Item >
-                    <img src="gps.png" className="image" alt="icone"/>  
-                </ListGroup.Item>
-                
-  </ListGroup>
-
-                
-            </Card>
+        <div className="noteContainer">
+            {animais.map((animal) => (
+                <Produto key={animal.id} animal={animal} />
+            ))}
         </div>
-    )
+
+    );
 }
 
 export default Adote_ja;
