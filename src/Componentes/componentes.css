@@ -1,0 +1,14 @@
+.Cidade{
+    justify-content: flex-start;
+    width: 100%;
+}
+.Sexo{
+	display: flex;
+}
+.infoRow{
+
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+}
