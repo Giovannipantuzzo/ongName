@@ -1,27 +1,59 @@
 import React, { useState } from "react";
 import "./Adocao_animais.css";
-import { Form, Button, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import ComponenteAdocao from "../../Componentes/ComponenteAdocao";
 
-function Adocao_animais() {
-  const history = useHistory();
 
-  function adotar() {
-    history.push("animal");
+
+const animais = [
+  {
+    id: 1,
+    imagem: "/images/dog11.jpeg",
+    nome: "Billy",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Male",
+  },
+
+  {
+    id: 2,
+    imagem: "/images/dog10.jpg",
+    nome: "Pink",
+    local: "Itabira/MG",
+    tamanho: "M",
+    sexo: "Female",
+  },
+
+  {
+    id: 3,
+    imagem: "/images/dog11.jpeg",
+    nome: "Toby",
+    local: "Ponte Nova/MG",
+    tamanho: "P",
+    sexo: "Male",
+  },
+
+  {
+    id: 4,
+    imagem: "/images/dog10.jpg",
+    nome: "Pretinha",
+    local: "Ponte Nova/MG",
+    tamanho: "P",
+    sexo: "Female",
   }
 
+
+];
+
+function Adocao_animais() {
+  
+
   return (
-    <div className="base1">
-      <Card style={{ width: "18rem",cursor:"pointer"}} onClick={()=>adotar()}>
-        <Card.Img variant="top" src="/images/CachorroRosa.jpg" />
-        <Card.Body>
-          <Card.Title>Adote Pink</Card.Title>
-          <Card.Text>
-            Belo Horizonte - MG
-          </Card.Text>
-        </Card.Body>
-      </Card>
+    <div className="base_AdocaoAnimais">
+      {
+        animais.map((animal)=>(
+          <ComponenteAdocao key={animal.id} animal = {animal}/>
+        ))
+      }
     </div>
   );
 }

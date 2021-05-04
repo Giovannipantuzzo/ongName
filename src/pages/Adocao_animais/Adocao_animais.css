@@ -1,6 +1,38 @@
-.base1{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.base_AdocaoAnimais {
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.sombra_AdocaoAnimais {
+  box-shadow: 0 0 0.3em black;
+  background-color: #eceff3 !important;
+}
+
+.organizacao_AdocaoAnimais {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome_AdocaoAnimais {
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.tamanhoSexo_AdocaoAnimais {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  /* font-size: 2.5rem; */
+}
+
+.tamanho_AdocaoAnimais {
+  font-size: 1.5rem;
 }
