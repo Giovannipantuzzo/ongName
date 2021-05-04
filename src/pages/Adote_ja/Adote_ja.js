@@ -1,7 +1,6 @@
 import React from "react";
 import "./Adote.css";
 import Produto from "../../Componentes/Card_Adote_ja";
-import { Card, ListGroup } from "react-bootstrap";
 
 const animais = [
     {
@@ -12,6 +11,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Male",
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Female",
-
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Male",
-
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Female",
-
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Male",
-
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
     {
         id: 6,
@@ -61,7 +61,7 @@ const animais = [
         local: "Belo Horizonte/MG",
         tamanho: "P",
         sexo: "Female",
-
+        descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
 ];
 
@@ -72,7 +72,6 @@ function Adote_ja() {
                 <Produto key={animal.id} animal={animal} />
             ))}
         </div>
-
     );
 }
 

@@ -17,22 +17,24 @@ function Produto({ animal }) {
     }
 
     return (
-        <Card style={{ width: '18rem', cursor: "pointer" }} onClick={() => telaAnimal()}>
-            <Card.Body>
+        <Card bg={'light'} style={{ width: '18rem', cursor: "pointer" }} onClick={() => telaAnimal()}>
+            <Card.Body style={{ padding: 0 }}>
                 <Card.Img variant="top" src={animal.imagem} alt="Exemplo" />
-                <Card.Title align="center"> Adote {animal.nome}</Card.Title>
-                <Card.Text align="center">Tempo de abrigo: {animal.tempo}</Card.Text>
-                <div className="infoRow">
-                <p className="Cidade">
-                    <BiCurrentLocation />
-                    {animal.local}
-                </p>
-                <div className="Sexo">
-                    <p>{animal.tamanho} |</p>
-                    {Sexo()}
+                <div className="Border">
+                    <Card.Title align="center"> Adote {animal.nome}</Card.Title>
+                    <Card.Text align="center">Tempo de abrigo: {animal.tempo}</Card.Text>
+                    <div className="infoRow">
+                        <p className="Cidade">
+                            <BiCurrentLocation />
+                            {animal.local}
+                        </p>
+                        <div className="Sexo" >
+                            <p>{animal.tamanho} |</p>
+                            {Sexo()}
+                        </div>
+                    </div>
+                    <Card.Text align="center">{animal.descricao}</Card.Text>
                 </div>
-                </div>
-
             </Card.Body>
         </Card >
     );
