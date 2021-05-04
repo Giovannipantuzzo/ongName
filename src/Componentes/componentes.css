@@ -2,7 +2,7 @@
     justify-content: flex-start;
     width: 100%;
 }
-.Sexo{
+.SexoAdote_Ja{
 	display: flex;
     width: 20%;
     align-items: center;
@@ -17,4 +17,10 @@
 .border {
     padding:20px;
     
+}
+.Shadow{
+    box-shadow: 0 0 1em black;
+    /* background-color: #e5e9b3 !important; */
+    background-image: linear-gradient(rgb(230, 230, 230), rgb(230,240,30));
+
 }

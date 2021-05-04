@@ -9,7 +9,7 @@ const animais = [
         nome: "Billy",
         tempo: "2 anos",
         local: "Belo Horizonte/MG",
-        tamanho: "P",
+        tamanho: "M",
         sexo: "Male",
         descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
@@ -29,7 +29,7 @@ const animais = [
         nome: "Billy",
         tempo: "2 anos",
         local: "Belo Horizonte/MG",
-        tamanho: "P",
+        tamanho: "G",
         sexo: "Male",
         descricao: "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
     },
@@ -67,11 +67,11 @@ const animais = [
 
 function Adote_ja() {
     return (
-        <div className="marketplace">
-            {animais.map((animal) => (
-                <Produto key={animal.id} animal={animal} />
-            ))}
-        </div>
+            < div className="marketplace" >
+                {animais.map((animal) => (
+                    <Produto key={animal.id} animal={animal} />
+                ))}
+            </div>
     );
 }
 
