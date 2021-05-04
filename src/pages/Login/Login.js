@@ -17,7 +17,6 @@ function Login() {
     return(
         
         <div className="base">
-            <img className="image" src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
             <div className="container">
                 <form className="inputs">
                     <div className="titleConfig"><h1>Login</h1></div>

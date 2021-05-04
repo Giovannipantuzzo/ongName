@@ -17,13 +17,11 @@ function Cadastro() {
     }
 
     return(
-        <div>
-             <div className="base">
-                <img className="image" src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
-                    <div className="container">
-                        <form style={{ borderRadius: "1rem"}} className="inputs">
-                            <div className="titleConfig"><h1>Crie sua conta</h1></div>
-                            <div className="buttons">
+        <>
+             <div className="base2">
+                    <div className="container2">
+                        <form style={{ borderRadius: "1rem"}} className="inputs2">
+                            <div className="titleConfig2"><h1>Crie sua conta</h1></div>
                                 <Form.Group controlId="name">
                                     <Form.Control 
                                         type="name" 
@@ -31,17 +29,17 @@ function Cadastro() {
                                         onChange={(e) => setName(e.target.value)}
                                     />
                                 </Form.Group>
-                                <Form.Group controlId="email">
+                                <Form.Group controlId="email2">
                                     <Form.Control 
-                                        type="email" 
+                                        type="email2" 
                                         placeholder="email" 
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </Form.Group>
-                                <Form.Group controlId="password">
+                                <Form.Group controlId="password2">
                                     <Form.Control 
-                                        type="password" 
-                                        placeholder="Password"
+                                        type="password2" 
+                                        placeholder="password"
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="confirmPassword">
@@ -58,14 +56,15 @@ function Cadastro() {
                                         onChange={(e) => setNumber(e.target.value)} 
                                     />
                                 </Form.Group>
-                            </div>
+                            <div className="desce">
                                 <Button className="cadastrarConfig" variant="dark" onClick={cadastrar}>
                                     Cadastrar
                                     </Button>{' '}
+                            </div>
                         </form>
                     </div>
             </div>
-        </div>
+        </>
     )
 }
 

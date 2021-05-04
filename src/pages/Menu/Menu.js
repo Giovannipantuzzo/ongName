@@ -10,10 +10,10 @@ function Menu() {
     const history = useHistory();
 
     return(
-        <div>               
+        <div className="tudo">               
                <AppBar position="static">
-                <Toolbar style={{ backgroundColor: "#EDFE26", height: "6rem"}}>
-                        <img className="logo" src="/images/Logo.png" alt="Logo" onClick={() => {
+                <Toolbar className="mae" style={{ backgroundColor: "#EDFE26", height: "6rem"}}>
+                        <img style={{ cursor: "pointer" }} className="logo" src="/images/Logo.png" alt="Logo" onClick={() => {
                                 history.push("home");
                             }}></img>
                         <div className="buttonsSpace1">

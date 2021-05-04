@@ -1,3 +1,10 @@
+.tudo {
+    width: 100%;
+}
+
+.mae {
+    justify-content: space-between;
+}
 .logo {
     height: 6rem;
     width: 5rem;
@@ -9,6 +16,7 @@
     border-style: solid;
     border-color: black;
     border-width: 0.14rem;
+    font-weight: bold;
 }
 
 .adote {
@@ -17,10 +25,11 @@
     border-style: solid;
     border-color: black;
     border-width: 0.14rem;
-    margin-left: 1rem;
+    font-weight: bold;
 }
 
 .Login {
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 2rem;
@@ -29,7 +38,7 @@
     background-color: black!important;
     border-style: solid;
     border-color: black;
-    margin-right: 0.8rem;
+    font-weight: bold;
 }
 
 .cadastre {
@@ -41,19 +50,21 @@
     background-color: black!important;
     border-style: solid;
     border-color: black;
+    font-weight: bold;
 }
 
 .buttonsSpace1 {
+    width: 40%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 2rem;
-    margin-left: 4rem;
 }
 
 .buttonsSpace2 {
+    width: 27%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 2rem;
-    margin-right: 1rem;
-    margin-left: 24rem;
 }
