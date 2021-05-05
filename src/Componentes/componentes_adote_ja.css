@@ -1,0 +1,40 @@
+.CidadeAdoteJa {
+  justify-content: flex-start;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.SexoAdote_Ja {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.infoRow {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.Card_adoteJa {
+  box-shadow: 0 0 1em black;
+  background-image: linear-gradient(rgb(230, 230, 230), rgb(240, 240, 122));
+  border-radius: 30px !important;
+  max-height: auto !important;
+}
+.tituloAdote_ja {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.tempoAbrigo {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+.descriptionAdoteJa {
+  padding: 5px;
+  family: "Roboto", sans-serif;
+  font-size: 17px;
+}

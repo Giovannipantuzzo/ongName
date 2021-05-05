@@ -1,16 +1,16 @@
-.base{
-
-    display: flex;
-    flex-direction: column;
-    max-width: 423px;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
+.background_Image_Adote_ja {
+  min-height: 100vh;
+  background-image: url(./animals.png);
+  background-size: 100% auto;
 }
 
-.image{
-
-    width: 1rem;
-    height: 1rem;
-    padding-left: 1rem;]
+.marketplace {
+  min-height: 10vh;
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1.3fr));
+  justify-items: center;
 }

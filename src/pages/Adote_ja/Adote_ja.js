@@ -1,29 +1,118 @@
 import React from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import "./Adote.css";
+import Produto from "../../Componentes/Card_Adote_ja";
 
+const animais = [
+  {
+    id: 1,
+    imagem: "/images/animal1-sarabi.jpg",
+    nome: "Sarabi",
+    tempo: "1 ano",
+    local: "Curitiba/PR",
+    tamanho: "M",
+    sexo: "Female",
+    descricao: " anos, de porte médio.",
+  },
+  {
+    id: 2,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "2 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 3,
+    imagem: "/images/dog1.png",
+    nome: "Billy",
+    tempo: "2 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "G",
+    sexo: "Male",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 4,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "2 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 5,
+    imagem: "/images/dog1.png",
+    nome: "Billy",
+    tempo: "3 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Male",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 6,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "0,5 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 7,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "0,5 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 8,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "0,5 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+  {
+    id: 9,
+    imagem: "/images/dog2.jpg",
+    nome: "Pluto",
+    tempo: "0,5 anos",
+    local: "Belo Horizonte/MG",
+    tamanho: "P",
+    sexo: "Female",
+    descricao:
+      "Olá! Meu nome é Billy e estou aqui há 2 anos esperando uma família adotiva. Sou dócil, mas infelizmente nasci sem uma das minhas pernas, por isso preciso de ajuda especial",
+  },
+];
 
 function Adote_ja() {
-    return (
-
-        <div className="base">
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="dog1.png" alt="Exemplo" />
-                <Card.Body align = "center">
-                    <Card.Title>Adote o Billy</Card.Title>
-                    <Card.Text>Tempo de abrigo: 2 anos</Card.Text>
-                </Card.Body>
-                <ListGroup variant="flush">
-                <ListGroup.Item >
-                    <img src="gps.png" className="image" alt="icone"/>  
-                </ListGroup.Item>
-                
-  </ListGroup>
-
-                
-            </Card>
-        </div>
-    )
+  return (
+    <div className="background_Image_Adote_ja">
+      <div className="marketplace">
+        {animais.map((animal) => (
+          <Produto key={animal.id} animal={animal} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Adote_ja;
