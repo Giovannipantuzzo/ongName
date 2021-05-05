@@ -18,8 +18,8 @@ function Cadastro() {
 
     return(
         <>
-             <div className="base2">
-                    <div className="container2">
+             <div className="baseCadastro">
+                    <div className="containerCadastro">
                         <form style={{ borderRadius: "1rem"}} className="inputs2">
                             <div className="titleConfig2"><h1>Crie sua conta</h1></div>
                                 <Form.Group controlId="name">

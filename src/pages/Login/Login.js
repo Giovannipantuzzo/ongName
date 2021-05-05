@@ -16,8 +16,8 @@ function Login() {
     
     return(
         
-        <div className="base">
-            <div className="container">
+        <div className="baseLogin">
+            <div className="containerLogin">
                 <form className="inputs">
                     <div className="titleConfig"><h1>Login</h1></div>
                     <Form.Group controlId="email">

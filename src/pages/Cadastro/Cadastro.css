@@ -1,4 +1,4 @@
-.container2 {
+.containerCadastro {
     display: flex;
     flex-direction: column;
     width: 20rem;
@@ -10,7 +10,7 @@
     border-radius: 1.9rem;
 }
 
-.base2 {
+.baseCadastro {
     width: 100%;
     height: 100%;
     display: flex;
