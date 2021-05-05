@@ -23,7 +23,7 @@ function Menu({ children }) {
 
   const listButtons = [
     {
-      pathName: "/adocao_animal",
+      pathName: "/adocao_animais",
       icon: <FaBookOpen />,
       text: "Adoção de animais",
     },
