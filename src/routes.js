@@ -21,6 +21,7 @@ function Routes() {
           <Route exact path="/animal" component={Animal} />
           <Route exact path="/perfil" component={Perfil} />
           <Route exact path="/temp" component={Menu} />
+          <Route exact path="/home" component={Home} />
           <Route
             path="*"
             exact={true}
