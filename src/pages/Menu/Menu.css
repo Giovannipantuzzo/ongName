@@ -1,59 +1,136 @@
+.tudo {
+  width: 100%;
+}
+
+.mae {
+  justify-content: space-between;
+}
+
 .logo {
-    height: 6rem;
-    width: 5rem;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 0.5rem;
 }
 
 .adocao {
-    background-color: #EDFE26;
-    border-radius: 5rem;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.14rem;
+  display: flex;
+  align-items: center;
+  background-color: #edfe26;
+  border-radius: 5rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.14rem;
+  font-weight: bold;
 }
 
 .adote {
-    background-color: #EDFE26;
-    border-radius: 5rem;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.14rem;
-    margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #edfe26;
+  border-radius: 5rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.14rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 .Login {
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    border-radius: 0.7rem;
-    color: white;
-    background-color: black!important;
-    border-style: solid;
-    border-color: black;
-    margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: black !important;
+  border-style: solid;
+  border-color: black;
+  font-weight: bold;
 }
 
 .cadastre {
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    border-radius: 0.7rem;
-    color: white;
-    background-color: black!important;
-    border-style: solid;
-    border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: black !important;
+  border-style: solid;
+  border-color: black;
+  font-weight: bold;
 }
 
 .buttonsSpace1 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-    margin-left: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .buttonsSpace2 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    margin-left: 24rem;
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.menuButton {
+  display: none;
+}
+
+.allButtons {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1.7rem;
+}
+
+.listItemText {
+  font-weight: bold !important;
+}
+
+.listMenu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecfe26c9;
+}
+
+.buttonsDrawerConfig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.iconConfig {
+  margin-right: 0.9rem;
+}
+
+@media screen and (max-width: 690px) {
+  .allButtons {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: black;
+    border-radius: 10%;
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+    position: abosolute;
+    top: 0;
+    right: 0;
+  }
 }

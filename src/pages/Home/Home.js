@@ -14,32 +14,6 @@ function Home() {
 
     return(
         <div>
-            <AppBar position="static">
-                <Toolbar style={{ backgroundColor: "yellow" }}>
-                        <img className="logo" src="/images/Logo.png" alt="Logo"></img>
-                        <button className="adocao" onClick={() => {
-                            history.push("adocao_animal");
-                        }}>
-                            Adoção de animais
-                        </button>
-                        <button onClick={() => {
-                            history.push("adote-ja");
-                        }}>
-                            Adote já
-                        </button>
-                        <button onClick={() => {
-                            history.push("login");
-                        }}>
-                            Login
-                        </button>
-                        <button onClick={() => {
-                            history.push("cadastro");
-                        }}>
-                            Cadastre-se
-                        </button>
-                </Toolbar>
-            </AppBar>
-            
             <Carousel fade >
                 <Carousel.Item style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
                     <img
