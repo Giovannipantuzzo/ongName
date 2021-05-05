@@ -75,7 +75,7 @@ function Menu({ children }) {
                 <button
                   className="adocao"
                   onClick={() => {
-                    history.push("adocao_animal");
+                    history.push("adocao_animais");
                   }}
                 >
                   Adoção de animais
