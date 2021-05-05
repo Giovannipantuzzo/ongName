@@ -16,7 +16,7 @@ function Produto({ animal }) {
 
   return (
     <Card
-      style={{ width: "18rem", cursor: "pointer" }}
+      style={{ weight: "300px", cursor: "pointer" }}
       onClick={() => telaAnimal()}
       className="Shadow"
     >
@@ -24,6 +24,7 @@ function Produto({ animal }) {
         variant="top"
         src={animal.imagem}
         alt="Exemplo"
+        height="200px"
         style={{ borderRadius: "30px" }}
       />
       <Card.Body style={{ padding: "5px" }}>

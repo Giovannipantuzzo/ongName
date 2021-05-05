@@ -22,6 +22,7 @@
   box-shadow: 0 0 1em black;
   background-image: linear-gradient(rgb(230, 230, 230), rgb(240, 240, 122));
   border-radius: 30px !important;
+  max-height: auto !important;
 }
 .tituloAdote_ja {
   font-family: "Roboto", sans-serif;
