@@ -18,7 +18,7 @@ function Produto({ animal }) {
     <Card
       style={{ weight: "300px", cursor: "pointer" }}
       onClick={() => telaAnimal()}
-      className="Shadow"
+      className="Card_adoteJa"
     >
       <Card.Img
         variant="top"
@@ -36,7 +36,7 @@ function Produto({ animal }) {
             Tempo de abrigo: {animal.tempo}
           </p>
           <div className="infoRow">
-            <p className="Cidade">
+            <p className="CidadeAdoteJa">
               <BiCurrentLocation />
               {animal.local}
             </p>
@@ -45,7 +45,7 @@ function Produto({ animal }) {
               {Sexo()}
             </div>
           </div>
-          <p className="description" align="center">
+          <p className="descriptionAdoteJa" align="center">
             {animal.descricao}
           </p>
         </div>
