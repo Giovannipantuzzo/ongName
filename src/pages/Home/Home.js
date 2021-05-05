@@ -13,10 +13,9 @@ function Home() {
     const history = useHistory();
 
     return(
-        
-        <>
-            <AppBar color="red" position="static">
-                <Toolbar >
+        <div>
+            <AppBar position="static">
+                <Toolbar style={{ backgroundColor: "yellow" }}>
                         <img className="logo" src="/images/Logo.png" alt="Logo"></img>
                         <button className="adocao" onClick={() => {
                             history.push("adocao_animal");
@@ -75,7 +74,7 @@ function Home() {
                 </Carousel.Item>
             </Carousel>
             
-        </>
+        </div>
         
     );
 }

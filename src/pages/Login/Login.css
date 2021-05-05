@@ -1,13 +1,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 1rem;
+    width: 20rem!important;
     height: 23rem;
     align-items: center;
     border-style: solid;
     border-width: 0.1rem;
     background-color: #DAD9D7;
-    color: black;
     border-radius: 1.9rem;
 }
 
@@ -28,7 +27,7 @@
 
 .titleConfig {
     font-family: "Unica One", cursive;
-    font-size: 35rem;
+    font-size: 5rem!important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,8 +40,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1.9rem;
+    margin-left: 1.15rem;
     padding-top: 0.6rem;
+    width: 10rem; 
+    border-radius: 1rem!important;
 }
 
 .linkConfig {
@@ -55,6 +56,8 @@
 }
 
 .image{
+    height: 100%;
+    width: 100%;
     position: absolute;
     left: 0px;
     top: 0px;

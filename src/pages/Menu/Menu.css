@@ -1,0 +1,59 @@
+.logo {
+    height: 6rem;
+    width: 5rem;
+}
+
+.adocao {
+    background-color: #EDFE26;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.14rem;
+}
+
+.adote {
+    background-color: #EDFE26;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.14rem;
+    margin-left: 1rem;
+}
+
+.Login {
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: black!important;
+    border-style: solid;
+    border-color: black;
+    margin-right: 0.8rem;
+}
+
+.cadastre {
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: black!important;
+    border-style: solid;
+    border-color: black;
+}
+
+.buttonsSpace1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.buttonsSpace2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 24rem;
+}
