@@ -89,9 +89,33 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 1.7rem;
 }
 
-@media screen and (max-width: 670px) {
+.listItemText {
+  font-weight: bold !important;
+}
+
+.listMenu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecfe26c9;
+}
+
+.buttonsDrawerConfig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.iconConfig {
+  margin-right: 0.9rem;
+}
+
+@media screen and (max-width: 690px) {
   .allButtons {
     display: none;
   }

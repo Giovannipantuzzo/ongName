@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Adocao_animais from "./pages/Adocao_animais";
 import Adote_ja from "./pages/Adote_ja";
 import Cadastro from "./pages/Cadastro";
@@ -12,17 +12,22 @@ import Menu from "./pages/Menu";
 function Routes() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/cadastro" component={Cadastro} />
-        <Route path="/home" component={Home} />
-        <Route path="/adocao_animais" component={Adocao_animais} />
-        <Route path="/adote_ja" component={Adote_ja} />
-        <Route path="/animal" component={Animal} />
-        <Route path="/perfil" component={Perfil} />
-        <Route path="/temp" component={Menu} />
-
-      </Switch>
+      <Menu>
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/cadastro" component={Cadastro} />
+          <Route exact path="/adocao_animais" component={Adocao_animais} />
+          <Route exact path="/adote_ja" component={Adote_ja} />
+          <Route exact path="/animal" component={Animal} />
+          <Route exact path="/perfil" component={Perfil} />
+          <Route exact path="/temp" component={Menu} />
+          <Route
+            path="*"
+            exact={true}
+            component={() => <Redirect to="/home" />}
+          />
+        </Switch>
+      </Menu>
     </BrowserRouter>
   );
 }
