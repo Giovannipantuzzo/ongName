@@ -20,9 +20,14 @@ function ComponenteAdocao({ animal }) {
   return (
     <Card
       style={{ width: "18rem", cursor: "pointer" }}
-      onClick={() => adotar()} className="sombra_AdocaoAnimais"
+      onClick={() => adotar()}
+      className="sombra_AdocaoAnimais"
     >
-      <Card.Img variant="top" src={animal.imagem} />
+      <Card.Img
+        variant="top"
+        src={animal.imagem}
+        style={{ borderRadius: "30px", height: "175px" }}
+      />
       <Card.Body>
         <Card.Text>
           <div className="organizacao_AdocaoAnimais">
@@ -36,8 +41,10 @@ function ComponenteAdocao({ animal }) {
           </div>
         </Card.Text>
         <Card.Text>
-          <BiCurrentLocation />
-          {animal.local}
+          <div className="local_AdocaoAnimais">
+            <BiCurrentLocation />
+            {animal.local}
+          </div>
         </Card.Text>
       </Card.Body>
     </Card>
