@@ -16,9 +16,8 @@ function Login() {
     
     return(
         
-        <div className="base">
-            <img className="image" src="/images/Cachorros.png" alt="Cachorros de fundo"></img>
-            <div className="container">
+        <div className="baseLogin">
+            <div className="containerLogin">
                 <form className="inputs">
                     <div className="titleConfig"><h1>Login</h1></div>
                     <Form.Group controlId="email">
