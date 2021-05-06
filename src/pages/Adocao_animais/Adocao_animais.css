@@ -1,9 +1,9 @@
-.pai_AdocaoAnimais{
+.pai_AdocaoAnimais {
   background-image: url(./Background_AdocaoAnimais.png);
   background-position: center center;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
-  background-size: 100%;  
+  background-size: 100%;
 }
 
 .base_AdocaoAnimais {
@@ -19,7 +19,7 @@
   box-shadow: 0 0 0.3em black;
   background-color: #eceff3 !important;
   background-image: linear-gradient(rgb(230, 230, 230), rgb(240, 240, 122));
-  border-radius: 30px!important;
+  border-radius: 30px !important;
 }
 
 .organizacao_AdocaoAnimais {
@@ -47,9 +47,7 @@
   font-size: 1.5rem;
 }
 
-.local_AdocaoAnimais{
+.local_AdocaoAnimais {
   font-family: "Roboto", sans-serif;
   font-size: 20.25px;
-
-
 }

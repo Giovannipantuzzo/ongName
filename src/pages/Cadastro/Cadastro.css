@@ -1,68 +1,68 @@
 .containerCadastro {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 30rem;
-    align-items: center;
-    border-style: solid;
-    border-width: 0.1rem;
-    background-color: #DAD9D7;
-    border-radius: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 30rem;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.1rem;
+  background-color: #dad9d7;
+  border-radius: 1.9rem;
 }
 
 .baseCadastro {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./Cachorros.png);
-    background-size: cover;
-    background-position: center center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Cachorros.png);
+  background-size: cover;
+  background-position: center center;
 }
 
 .cadastrarConfig {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem; 
-    border-radius: 1rem!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  border-radius: 1rem !important;
 }
 
 .titleConfig2 {
-    font-family: "Unica One", cursive;
-    font-size: 5rem!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.2rem;
-    flex-grow: 1;
+  font-family: "Unica One", cursive;
+  font-size: 5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.2rem;
+  flex-grow: 1;
 }
 
 .desce {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.2rem;
 }
 
 #name {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 #email2 {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 #password2 {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 #confirmPassword {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 #number {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
