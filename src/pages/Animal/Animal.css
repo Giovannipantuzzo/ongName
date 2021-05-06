@@ -1,0 +1,44 @@
+.divPai{
+    display: flex;
+    width: 100%;
+}
+.containerAnimal {
+    display: flex;
+    width: 60%;
+	margin-left: 0.5rem;
+	border: 1px solid #ccc;
+}
+
+
+
+.flexAnimal {
+	display: flex;
+}
+
+.itemAnimal {
+    display: flex;
+    width: 20%;
+	margin: 1rem;
+	text-align: center;
+	font-size: 1.5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flexItemAnimal {
+	flex: 1;
+}
+
+.columnAnimal {
+	flex-direction: column;
+}
+
+.containerLateral{
+    width: 40%;
+    border: 1px solid #ccc;
+
+}
+.imagemCentral{
+    display: flex;
+    align-items: center;
+}
