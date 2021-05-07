@@ -26,7 +26,7 @@ function ComponenteAdocao({ animal }) {
       <Card.Img
         variant="top"
         src={animal.imagem}
-        style={{ borderRadius: "30px", height: "175px" }}
+        style={{ borderRadius: "30px", height: "175px", objectFit: "cover" }}
       />
       <Card.Body>
         <Card.Text>

@@ -25,7 +25,9 @@ function Produto({ animal }) {
         src={animal.imagem}
         alt="Exemplo"
         height="200px"
-        style={{ borderRadius: "30px" }}
+        width="100%"
+        style={{ borderRadius: "30px", objectFit: "cover" }}
+        className="imgAdoteJa"
       />
       <Card.Body style={{ padding: "5px" }}>
         <div className="Border">
