@@ -16,11 +16,6 @@ function Home() {
             src="./images/dogHome1.png"
             alt="First slide"
           />
-          <img
-            className="d-block w-50"
-            src="./images/dogHome1.png"
-            alt="First slide"
-          />
           <Carousel.Caption>
             <Card.Text></Card.Text>
           </Carousel.Caption>
