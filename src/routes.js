@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Animal from "./pages/Animal";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
+import Footer from "./Componentes/Footer";
 
 function Routes() {
   return (
@@ -21,6 +22,7 @@ function Routes() {
           <Route exact path="/animal" component={Animal} />
           <Route exact path="/perfil" component={Perfil} />
           <Route exact path="/temp" component={Menu} />
+          <Route exact path="/footer" component={Footer} />
           <Route exact path="/home" component={Home} />
           <Route
             path="*"
@@ -29,6 +31,7 @@ function Routes() {
           />
         </Switch>
       </Menu>
+      <Footer />
     </BrowserRouter>
   );
 }
