@@ -23,24 +23,40 @@ function Footer() {
               ></img>
               <div className="iconsFooter">
                 <div className="iconsFooter1">
-                  <div className="insta">
+                  <a
+                    className="insta"
+                    href="https://www.instagram.com/giovannipantuzzo/"
+                    target="_blank"
+                  >
                     <AiFillInstagram className="footersIcons" />
                     <h1 className="footerLetters">@Petfamily</h1>
-                  </div>
-                  <div className="face">
+                  </a>
+                  <a
+                    className="face"
+                    href="https://www.facebook.com/cpejr"
+                    target="_blank"
+                  >
                     <FaFacebookSquare className="footersIcons2" />
                     <h1 className="footerLetters">Pet Family</h1>
-                  </div>
+                  </a>
                 </div>
                 <div className="iconsFooter2">
-                  <div className="wpp">
+                  <a
+                    className="wpp"
+                    href="https://api.whatsapp.com/send?phone=5531988265561&text=Olá,%20meu%20amigo!"
+                    target="_blank"
+                  >
                     <IoLogoWhatsapp className="footersIcons" />
                     <h1 className="footerLetters">+55 (31) 988265561</h1>
-                  </div>
-                  <div className="emailFooter">
+                  </a>
+                  <a
+                    className="emailFooter"
+                    href="mailto:tainanalbuquerque@cpejr.com.br?subject=Contato&body=Olá"
+                    target="_blank"
+                  >
                     <MdEmail className="footersIcons" />
                     <h1 className="footerLetters">petfamily@gmail.com</h1>
-                  </div>
+                  </a>
                 </div>
               </div>
             </Toolbar>
