@@ -5,7 +5,7 @@ import ComponenteAdocao from "../../Componentes/ComponenteAdocao";
 const animais = [
   {
     id: 1,
-    imagem: "/images/dog11.jpeg",
+    imagem: "/images/Animais/dog11.jpeg",
     nome: "Billy",
     local: "Belo Horizonte/MG",
     tamanho: "P",
@@ -14,7 +14,7 @@ const animais = [
 
   {
     id: 2,
-    imagem: "/images/dog10.jpg",
+    imagem: "/images/Animais/dog10.jpg",
     nome: "Pink",
     local: "Itabira/MG",
     tamanho: "M",
@@ -23,7 +23,7 @@ const animais = [
 
   {
     id: 3,
-    imagem: "/images/dog11.jpeg",
+    imagem: "/images/Animais/dog11.jpeg",
     nome: "Toby",
     local: "Ponte Nova/MG",
     tamanho: "P",
@@ -32,7 +32,7 @@ const animais = [
 
   {
     id: 4,
-    imagem: "/images/dog12.jpg",
+    imagem: "/images/Animais/dog12.jpg",
     nome: "Pretinha",
     local: "Ponte Nova/MG",
     tamanho: "P",
@@ -41,7 +41,7 @@ const animais = [
 
   {
     id: 4,
-    imagem: "/images/dog10.jpg",
+    imagem: "/images/Animais/dog10.jpg",
     nome: "Pretinha",
     local: "Ponte Nova/MG",
     tamanho: "P",
@@ -50,7 +50,7 @@ const animais = [
 
   {
     id: 5,
-    imagem: "/images/dog12.jpg",
+    imagem: "/images/Animais/dog12.jpg",
     nome: "Pretinha",
     local: "Ponte Nova/MG",
     tamanho: "P",
@@ -59,7 +59,7 @@ const animais = [
 
   {
     id: 6,
-    imagem: "/images/dog10.jpg",
+    imagem: "/images/Animais/dog10.jpg",
     nome: "Pretinha",
     local: "Ponte Nova/MG",
     tamanho: "P",
@@ -68,7 +68,7 @@ const animais = [
 
   {
     id: 7,
-    imagem: "/images/dog11.jpeg",
+    imagem: "/images/Animais/dog11.jpeg",
     nome: "Pretinha",
     local: "Ponte Nova/MG",
     tamanho: "P",

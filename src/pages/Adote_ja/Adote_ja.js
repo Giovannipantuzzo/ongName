@@ -5,7 +5,7 @@ import Produto from "../../Componentes/Card_Adote_ja";
 const animais = [
   {
     id: 1,
-    imagem: "/images/animal1-sarabi.jpg",
+    imagem: "/images/Animais/dog12.jpg",
     nome: "Sarabi",
     tempo: "1 ano",
     local: "Curitiba/PR",
@@ -15,7 +15,7 @@ const animais = [
   },
   {
     id: 2,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "2 anos",
     local: "Belo Horizonte/MG",
@@ -26,7 +26,7 @@ const animais = [
   },
   {
     id: 3,
-    imagem: "/images/dog1.png",
+    imagem: "/images/Animais/dog1.png",
     nome: "Billy",
     tempo: "2 anos",
     local: "Belo Horizonte/MG",
@@ -37,7 +37,7 @@ const animais = [
   },
   {
     id: 4,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "2 anos",
     local: "Belo Horizonte/MG",
@@ -48,7 +48,7 @@ const animais = [
   },
   {
     id: 5,
-    imagem: "/images/dog1.png",
+    imagem: "/images/Animais/dog1.png",
     nome: "Billy",
     tempo: "3 anos",
     local: "Belo Horizonte/MG",
@@ -59,7 +59,7 @@ const animais = [
   },
   {
     id: 6,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "0,5 anos",
     local: "Belo Horizonte/MG",
@@ -70,7 +70,7 @@ const animais = [
   },
   {
     id: 7,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "0,5 anos",
     local: "Belo Horizonte/MG",
@@ -81,7 +81,7 @@ const animais = [
   },
   {
     id: 8,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "0,5 anos",
     local: "Belo Horizonte/MG",
@@ -92,7 +92,7 @@ const animais = [
   },
   {
     id: 9,
-    imagem: "/images/dog2.jpg",
+    imagem: "/images/Animais/dog2.jpg",
     nome: "Pluto",
     tempo: "0,5 anos",
     local: "Belo Horizonte/MG",

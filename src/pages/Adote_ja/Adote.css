@@ -1,7 +1,7 @@
 .background_Image_Adote_ja {
   min-height: 100vh;
   background-image: url(./animals.png);
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 .marketplace {
