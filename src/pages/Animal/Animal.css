@@ -1,44 +1,123 @@
-.divPai{
-    display: flex;
-    width: 100%;
+.divPai {
+  display: flex;
+  width: 100%;
 }
 .containerAnimal {
-    display: flex;
-    width: 60%;
-	margin-left: 0.5rem;
-	border: 1px solid #ccc;
+  display: flex;
+  width: 60%;
+  border: 1px solid #ccc;
 }
 
-
-
 .flexAnimal {
-	display: flex;
+  display: flex;
 }
 
 .itemAnimal {
-    display: flex;
-    width: 20%;
-	margin: 1rem;
-	text-align: center;
-	font-size: 1.5em;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  width: 30%;
+  justify-items: center;
+  /* grid-row-gap: 0.3rem;  */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1.1rem;
+}
+.base_AdocaoAnimais {
+  padding: 40px;
+  display: grid;
+  justify-items: center;
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .flexItemAnimal {
-	flex: 1;
+  flex: 1;
 }
 
 .columnAnimal {
-	flex-direction: column;
+  flex-direction: column;
 }
 
-.containerLateral{
-    width: 40%;
-    border: 1px solid #ccc;
-
+.containerLateral {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
 }
-.imagemCentral{
-    display: flex;
-    align-items: center;
+.imagemCentral {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonAdote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divImageAnimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragrafoAnimal {
+  font-size: 1.1rem;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+}
+
+.paiCarrosselComentario {
+  display: flex;
+  width: 100%;
+}
+
+.carrosselAnimal {
+  display: flex;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+.comentariosAnimal {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+
+.tituloComentario {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.9rem;
+}
+
+.comentarioFuncionario {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.perfilComentario {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePerfil {
+  width: 3rem;
+  height: 3rem;
+}
+
+.textoComentario {
+  display: flex;
+  width: 75%;
+  text-align: justify;
 }
