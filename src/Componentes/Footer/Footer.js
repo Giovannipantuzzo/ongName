@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { IconContext } from "react-icons/lib";
 import "./Footer.css";
 
 function Footer() {
@@ -28,7 +29,8 @@ function Footer() {
                     href="https://www.instagram.com/giovannipantuzzo/"
                     target="_blank"
                   >
-                    <AiFillInstagram className="footersIcons" />
+                    <AiFillInstagram className="footersIcons2" />
+
                     <h1 className="footerLetters">@Petfamily</h1>
                   </a>
                   <a
@@ -36,7 +38,7 @@ function Footer() {
                     href="https://www.facebook.com/cpejr"
                     target="_blank"
                   >
-                    <FaFacebookSquare className="footersIcons2" />
+                    <FaFacebookSquare className="footersIcons" />
                     <h1 className="footerLetters">Pet Family</h1>
                   </a>
                 </div>
