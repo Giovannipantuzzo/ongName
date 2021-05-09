@@ -115,7 +115,7 @@
   margin-right: 0.9rem;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 693px) {
   .allButtons {
     display: none;
   }

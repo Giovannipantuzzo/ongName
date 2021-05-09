@@ -19,9 +19,10 @@
 .iconsFooter {
   display: flex;
   color: black;
-  width: 35%;
+  width: 32%;
   justify-content: space-around;
   font-size: 1em;
+  margin-right: 1.2em !important;
 }
 
 .iconsFooter1 {
@@ -35,21 +36,30 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-right: -10px;
 }
 
 .insta {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 105%;
+  color: black;
+  width: 103%;
+}
+
+.insta:hover {
+  color: black;
 }
 
 .face {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 102%;
+  color: black;
+}
+
+.face:hover {
+  color: black;
 }
 
 .wpp {
@@ -57,14 +67,23 @@
   align-items: center;
   justify-content: space-around;
   width: 103%;
-  margin-right: 0.3em;
+  margin-right: 0.5em;
+  color: black;
+}
+
+.wpp:hover {
+  color: black;
 }
 
 .emailFooter {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 102%;
+  color: black;
+}
+
+.emailFooter:hover {
+  color: black;
 }
 
 .footerLetters {
@@ -76,42 +95,78 @@
 }
 
 .footersIcons2 {
-  margin-top: 0.1em;
+  margin-top: 0.3em;
+  font-size: 1.1rem;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 730px) {
   .maeFooter {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    display: grid;
+    min-width: 100%;
   }
 
   .logoFooter {
     width: 4.5em;
     height: 4.5em;
-    margin-left: -0.5em;
+    margin-left: 0.4rem;
   }
 
   .iconsFooter {
-    display: flex;
+    display: inline-grid;
+    align-items: center;
+    width: 20%;
     color: black;
-    width: 100%;
-    justify-content: flex-end;
+    font-size: 1.7em;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    margin-right: 1em;
   }
 
   .iconsFooter1 {
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 0.5em;
+    font-size: 1.1em;
+    flex-direction: row;
+    margin-right: 3px;
+    justify-items: flex-end;
+  }
+
+  .iconsFooter2 {
+    align-items: center;
+    flex-direction: row;
+    justify-items: flex-start;
+    margin-right: 0px;
   }
 
   .footerLetters {
-    font-size: 0.7em;
+    display: none;
+  }
+
+  .insta {
+    color: black;
+    margin-right: 3px;
+  }
+
+  .face {
+    display: flex;
+    align-items: center;
+    width: 102%;
+    color: black;
+    font-size: 0.8em;
+  }
+
+  .emailFooter {
+    font-size: 1.1em;
+    margin-left: -2px;
+  }
+
+  .wpp {
+    font-size: 0.95em;
+    margin-right: 8px;
   }
 
   .footersIcons2 {
-    margin-right: 0.45em;
+    margin-top: 0.3em;
+    font-size: 0.88em;
+    margin-right: 3px;
   }
 }
