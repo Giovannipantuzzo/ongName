@@ -3,15 +3,28 @@ import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import api from "../../services/api";
 
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const history = useHistory();
 
-  function login() {
+  async function login(e) {
+    e.prevent.default();
     alert("Bem vindo!\n" + email);
-    history.push("home");
+    try {
+      const response = await api.post("/login", { email, password });
+      alert("Bem vindo", response.data.user.name);
+      history.push("home");
+    } catch (error) {
+      if (error.response.status === 403) {
+        alert("Credenciais Invalidas!");
+      } else {
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+    }
   }
 
   return (
