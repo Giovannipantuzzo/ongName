@@ -4,18 +4,20 @@ import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import api from "../../services/api";
+import { login } from "../../services/auth";
 
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const history = useHistory();
 
-  async function login(e) {
+  async function handleLogin(e) {
     e.prevent.default();
     alert("Bem vindo!\n" + email);
     try {
       const response = await api.post("/login", { email, password });
       alert("Bem vindo", response.data.user.name);
+      login(response.data.accesstoken);
       history.push("home");
     } catch (error) {
       if (error.response.status === 403) {
@@ -49,7 +51,11 @@ function Login() {
             />
           </Form.Group>
           <div className="entrarConfig2">
-            <Button className="entrarConfig" variant="dark" onClick={login}>
+            <Button
+              className="entrarConfig"
+              variant="dark"
+              onClick={handleLogin}
+            >
               Entrar
             </Button>{" "}
           </div>
