@@ -9,6 +9,22 @@ import Animal from "./pages/Animal";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
 import Footer from "./Componentes/Footer";
+import { isAuthenticated } from "./Services/auth";
+
+const PrivateRoute = ({ component: component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect
+          to={{ pathname: "/login", state: { from: props.location } }}
+        />
+      )
+    }
+  />
+);
 
 function Routes() {
   return (
