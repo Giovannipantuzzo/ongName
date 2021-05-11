@@ -7,7 +7,7 @@
 }
 
 .marketplace {
-  padding: 40px;
+  padding: 2.5rem;
   display: grid;
   justify-items: center;
   grid-column-gap: 70px;
@@ -32,6 +32,7 @@
   text-align: center;
   background-color: rgb(237, 254, 38);
   border-bottom: 1px solid;
+  margin-bottom: ;
 }
 
 @media (max-width: 400px) {
@@ -41,5 +42,8 @@
 
   .AdoteJaDescription {
     font-size: 18px;
+  }
+  .marketplace {
+    padding: 0.8rem;
   }
 }
