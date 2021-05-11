@@ -1,16 +1,45 @@
 .background_Image_Adote_ja {
-  min-height: 100vh;
   background-image: url(./animals.png);
-  background-size: 100% 100%;
+  background-position: center center;
+  min-height: 100vh;
+  min-width: 100%;
+  background-size: 100%;
 }
 
 .marketplace {
-  min-height: 10vh;
-  width: 100%;
   padding: 40px;
   display: grid;
-  grid-column-gap: 40px;
-  grid-row-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1.3fr));
   justify-items: center;
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.TítuloAdoteJa {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  background-color: rgb(237, 254, 38);
+  border-top: 1px solid;
+  font-weight: bold;
+}
+
+.AdoteJaDescription {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background-color: rgb(237, 254, 38);
+  border-bottom: 1px solid;
+}
+
+@media (max-width: 400px) {
+  .TítuloAdoteJa {
+    font-size: 30px;
+  }
+
+  .AdoteJaDescription {
+    font-size: 18px;
+  }
 }
