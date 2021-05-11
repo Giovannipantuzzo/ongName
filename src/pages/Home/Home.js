@@ -10,9 +10,8 @@ function Home() {
         <Carousel.Item
           style={{ display: "flex", flexDirection: "row", width: "100%" }}
         >
-          <div></div>
           <img
-            className="d-block w-50"
+            className="d-block w-100"
             src="./images/dogHome1.png"
             alt="First slide"
           />
@@ -21,7 +20,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item
-          style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          style={{ display: "flex", flexDirection: "row", width: "100%" }}
         >
           <img
             className="d-block w-100"
@@ -30,7 +29,7 @@ function Home() {
           />
         </Carousel.Item>
         <Carousel.Item
-          style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          style={{ display: "flex", flexDirection: "row", width: "100%" }}
         >
           <img
             className="d-block w-100"
