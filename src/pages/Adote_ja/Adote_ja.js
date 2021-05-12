@@ -117,12 +117,14 @@ const animais = [
 function Adote_ja() {
   return (
     <>
-      <p className="TítuloAdoteJa">Adote Já</p>
-      <p className="AdoteJaDescription">
-        Nessa página, você terá acesso aos nossos animais mais velhos, ou seja,
-        aqueles que estão há mais tempo esperando uma nova família. Se quer
-        escolher um novo amiguinho, comece por aqui!!
-      </p>
+      <div className="HeaderAdoteJa">
+        <p className="TítuloAdoteJa">Adote Já</p>
+        <p className="AdoteJaDescription">
+          Nessa página, você terá acesso aos nossos animais mais velhos, ou
+          seja, aqueles que estão há mais tempo esperando uma nova família. Se
+          quer escolher um novo amiguinho, comece por aqui ! ! !
+        </p>
+      </div>
       <div className="background_Image_Adote_ja">
         <div className="marketplace">
           {animais.map((animal) => (
