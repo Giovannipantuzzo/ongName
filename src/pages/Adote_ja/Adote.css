@@ -19,7 +19,9 @@
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-size: 40px;
-  background-color: rgb(237, 254, 38);
+  background-color: rgb(12 52 124);
+  color: white;
+  text-decoration: underline;
   border-top: 1px solid;
   font-weight: bold;
 }
@@ -30,11 +32,12 @@
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
   text-align: center;
-  background-color: rgb(237, 254, 38);
+  background-color: rgb(12 52 124);
+  color: white;
   border-bottom: 1px solid;
-  margin-bottom: ;
+  text-align: justify;
+  padding: 10px;
 }
-
 @media (max-width: 400px) {
   .TítuloAdoteJa {
     font-size: 30px;
