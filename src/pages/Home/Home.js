@@ -12,7 +12,7 @@ function Home() {
         >
           <div></div>
           <img
-            className="d-block w-50"
+            className="d-block w-100"
             src="./images/dogHome1.png"
             alt="First slide"
           />
