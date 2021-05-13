@@ -1,1 +1,76 @@
+.SobreNosTitulo_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  /* color: white; */
+  text-decoration: underline;
+  border-top: 1px solid;
+  font-weight: bold;
+  /* width: 50%; */
+}
 
+.SobreNosDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid;
+  /* text-align: center; */
+  text-align: justify;
+  padding: 10px;
+  /* width: 50%; */
+}
+
+.ComoDoarTitulo_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  /* color: white; */
+  text-decoration: underline;
+  border-top: 1px solid;
+  font-weight: bold;
+  /* width: 50%; */
+}
+
+.ComoDoarDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid;
+  text-align: center;
+  padding: 10px;
+  /* width: 50%; */
+}
+
+.ColaboradoresTitulo_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  /* color: white; */
+  text-decoration: underline;
+  border-top: 1px solid;
+  font-weight: bold;
+  /* width: 50%; */
+}
+
+.ColaboradoresDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid;
+  text-align: center;
+  padding: 10px;
+  /* width: 50%; */
+}
+
+.Descricao_Home {
+  color: #212529;
+}
