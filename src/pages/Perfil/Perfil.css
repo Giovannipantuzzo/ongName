@@ -1,0 +1,93 @@
+.containerPerfil {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  height: auto;
+  flex-grow: 1;
+  border-style: solid;
+  border-width: 0.1rem;
+  background-color: #dad9d7;
+  border-radius: 1.9rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.basePerfil {
+  width: 100%;
+  min-height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(./Cachorros.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.titlePerfil {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.inputsPerfil {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#usernamePerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cpfPerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#emailPerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cepPerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#passwordPerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#complementPerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cellphonePerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#birthdatePerfil {
+  width: 14rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
