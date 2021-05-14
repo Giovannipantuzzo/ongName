@@ -18,6 +18,7 @@ function Perfil() {
         <div className="titlePerfil">
           <u>Dados Cadastrados</u>
         </div>
+
         <Form className="inputsPerfil">
           <Form.Row>
             <Form.Group as={Col} controlId="usernamePerfil">
