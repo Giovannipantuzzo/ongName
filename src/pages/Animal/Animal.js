@@ -3,90 +3,84 @@ import "./Animal.css";
 import Figure from "react-bootstrap/Figure";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Image from "react-bootstrap/Image";
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 7.5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3.2,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 750 },
+    items: 2.7,
+  },
+  tablet: {
+    breakpoint: { max: 750, min: 464 },
+    items: 2.4,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1.8,
+  },
+};
 
 function Animal() {
   return (
-    <>
-      <div className="divPai">
+    <div>
+      <div className="divAnimalDescricao">
         <div className="containerAnimal">
-          <div className="itemAnimal">
+          <div className="itemAnimalImage">
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="animalItem"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="animalItem"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="animalItem"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="animalItem"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
           </div>
-          <div className="imagemCentral">
-            <Figure>
-              <Figure.Image
-                style={{
-                  position: "top",
-                  width: "30rem",
-                  borderRadius: "0.5rem",
-                }}
-                alt="171x180"
-                src="./images/dogHome1.png"
-              />
-            </Figure>
+          <div className="divImageCentral">
+            <Image
+              className="imageCentral"
+              src="./images/dogHome1.png"
+              rounded
+            />
           </div>
         </div>
         <div className="containerLateral">
           <Card>
             <Card.Body>
-              <Card.Title style={{ fontSize: "4rem", fontFamily: "Roboto" }}>
-                Bile, 2 anos
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Title className="nomePet">Bile, 2 anos</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
                 Belo Horizonte
               </Card.Subtitle>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
                 Vira lata
               </Card.Subtitle>
               <p className="paragrafoAnimal">
@@ -98,7 +92,7 @@ function Animal() {
               </p>
             </Card.Body>
           </Card>
-          <div className="buttonAdote">
+          <div className="divButtonAdote">
             <Button
               style={{
                 background: "#EDFE26",
@@ -108,6 +102,7 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
+                paddingTop: "1rem",
               }}
             >
               Adote agora
@@ -116,7 +111,37 @@ function Animal() {
         </div>
       </div>
       <div className="paiCarrosselComentario">
-        <div className="carrosselAnimal"></div>
+        <div className="carrosselAnimal">
+          <Carousel responsive={responsive}>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">
+                  Pluto <br />
+                  Bicas/MG
+                </div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+          </Carousel>
+        </div>
         <div className="comentariosAnimal">
           <div className="tituloComentario">
             <p>
@@ -165,7 +190,7 @@ function Animal() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

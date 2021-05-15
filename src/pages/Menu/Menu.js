@@ -54,7 +54,7 @@ function Menu({ children }) {
   }
 
   return (
-    <>
+    <div>
       <div className="tudo">
         <AppBar position="static">
           <Toolbar
@@ -148,7 +148,7 @@ function Menu({ children }) {
         </Drawer>
       </div>
       {children}
-    </>
+    </div>
   );
 }
 
