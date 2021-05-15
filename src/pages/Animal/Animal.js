@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from "react-bootstrap/Image";
 
 const responsive = {
   superLargeDesktop: {
@@ -28,82 +29,50 @@ const responsive = {
 function Animal() {
   return (
     <div>
-      <div className="divPai">
+      <div className="divAnimalDescricao">
         <div className="containerAnimal">
-          <div className="itemAnimal">
+          <div className="itemAnimalImage">
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="imageAnimal"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="imageAnimal"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="imageAnimal"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
             <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
+              <Image
+                className="imageAnimal"
+                src="./images/dogHome1.png"
+                rounded
+              />
             </div>
           </div>
-          <div className="imagemCentral">
-            <Figure>
-              <Figure.Image
-                style={{
-                  position: "top",
-                  width: "30rem",
-                  borderRadius: "0.5rem",
-                }}
-                alt="171x180"
-                src="./images/dogHome1.png"
-              />
-            </Figure>
+          <div className="divImageCentral">
+            <Image
+              className="imageCentral"
+              src="./images/dogHome1.png"
+              rounded
+            />
           </div>
         </div>
         <div className="containerLateral">
           <Card>
             <Card.Body>
-              <Card.Title style={{ fontSize: "4rem", fontFamily: "Roboto" }}>
-                Bile, 2 anos
-              </Card.Title>
+              <Card.Title className="nomePet">Bile, 2 anos</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
                 Belo Horizonte
               </Card.Subtitle>
@@ -143,8 +112,8 @@ function Animal() {
               <img src="./images/dogHome1.png" className="imageAnimal" />
               <div class="middleAnimal">
                 <div class="textAnimal">
-                  PLUTO <br />
-                  Bicas / MG
+                  Pluto <br />
+                  Bicas/MG
                 </div>
               </div>
             </div>

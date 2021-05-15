@@ -1,4 +1,4 @@
-.divPai {
+.divAnimalDescricao {
   display: flex;
   width: 100%;
 }
@@ -8,34 +8,15 @@
   border: 1px solid #ccc;
 }
 
-.flexAnimal {
-  display: flex;
-}
-
-.itemAnimal {
+.itemAnimalImage {
   display: flex;
   width: 30%;
   justify-items: center;
-  /* grid-row-gap: 0.3rem;  */
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   padding-top: 1.1rem;
-}
-.base_AdocaoAnimais {
-  padding: 40px;
-  display: grid;
-  justify-items: center;
-  grid-column-gap: 70px;
-  grid-row-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.flexItemAnimal {
   flex: 1;
-}
-
-.columnAnimal {
-  flex-direction: column;
 }
 
 .containerLateral {
@@ -46,11 +27,34 @@
   justify-content: space-around;
   border: 1px solid #ccc;
 }
-.imagemCentral {
+.divImageCentral {
   display: flex;
   width: 70%;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+
+.imageCentral {
+  display: flex;
+  height: 25rem;
+  width: 25rem;
+  object-fit: cover;
+}
+
+.divImageAnimal {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+}
+
+.imageAnimal {
+  display: flex;
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
 }
 
 .buttonAdote {
@@ -59,10 +63,9 @@
   align-items: center;
 }
 
-.divImageAnimal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nomePet {
+  font-size: 4rem;
+  font-family: Roboto, sans-serif;
 }
 
 .paragrafoAnimal {
@@ -77,9 +80,9 @@
 }
 
 .carrosselAnimal {
-  display: flex;
+  padding: 2.5rem;
   width: 60%;
-  height: 150px;
+  height: auto;
   border: 1px solid #ccc;
 }
 
@@ -88,6 +91,7 @@
   width: 50%;
   padding: 0.7rem;
 }
+
 .imageAnimal {
   opacity: 1;
   display: block;
@@ -122,9 +126,11 @@
 }
 
 .textAnimal {
+  display: flex;
+  flex-wrap: wrap;
   color: black;
-  font-size: 1.5em;
-  padding: 16px 32px;
+  font-size: 1em;
+  text-align: center;
 }
 
 .comentariosAnimal {
@@ -157,12 +163,43 @@
 }
 
 .imagePerfil {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .textoComentario {
   display: flex;
   width: 75%;
+  font-size: 0.9rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  .divAnimalDescricao {
+    flex-direction: column;
+  }
+  .containerAnimal {
+    width: 100%;
+  }
+  .containerLateral {
+    width: 100%;
+  }
+  .paiCarrosselComentario {
+    flex-direction: column;
+  }
+  .carrosselAnimal {
+    width: 100%;
+    align-items: center;
+  }
+  .comentariosAnimal {
+    width: 100%;
+    align-items: center;
+  }
+  .nomePet {
+    font-size: 2rem;
+  }
+
+  .paragrafoAnimal {
+    font-size: 0.7rem;
+  }
 }
