@@ -116,7 +116,7 @@ const animais = [
 
 function Adote_ja() {
   return (
-    <>
+    <div>
       <div className="HeaderAdoteJa">
         <p className="TítuloAdoteJa">Adote Já</p>
         <p className="AdoteJaDescription">
@@ -132,7 +132,7 @@ function Adote_ja() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
