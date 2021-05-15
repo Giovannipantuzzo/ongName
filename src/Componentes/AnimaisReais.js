@@ -52,12 +52,7 @@ const animaisReais = [
   },
   {
     id: 4,
-    imagem: [
-      "/images/1.jpg",
-      "/images/2.jpg",
-      "/images/3.jpg",
-      "/images/4.jpg",
-    ],
+    imagem: ["/imaes/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
     nome: "Paçoca",
     tempo: "5 anos",
     local: "Ouro Preto/MG",

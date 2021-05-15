@@ -10,19 +10,23 @@ import Image from "react-bootstrap/Image";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 7.5,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 3.2,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    breakpoint: { max: 1024, min: 750 },
+    items: 2.7,
+  },
+  tablet: {
+    breakpoint: { max: 750, min: 464 },
+    items: 2.4,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 1.8,
   },
 };
 
@@ -34,28 +38,28 @@ function Animal() {
           <div className="itemAnimalImage">
             <div className="divImageAnimal">
               <Image
-                className="imageAnimal"
+                className="animalItem"
                 src="./images/dogHome1.png"
                 rounded
               />
             </div>
             <div className="divImageAnimal">
               <Image
-                className="imageAnimal"
+                className="animalItem"
                 src="./images/dogHome1.png"
                 rounded
               />
             </div>
             <div className="divImageAnimal">
               <Image
-                className="imageAnimal"
+                className="animalItem"
                 src="./images/dogHome1.png"
                 rounded
               />
             </div>
             <div className="divImageAnimal">
               <Image
-                className="imageAnimal"
+                className="animalItem"
                 src="./images/dogHome1.png"
                 rounded
               />
@@ -73,10 +77,10 @@ function Animal() {
           <Card>
             <Card.Body>
               <Card.Title className="nomePet">Bile, 2 anos</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
                 Belo Horizonte
               </Card.Subtitle>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
                 Vira lata
               </Card.Subtitle>
               <p className="paragrafoAnimal">
@@ -88,7 +92,7 @@ function Animal() {
               </p>
             </Card.Body>
           </Card>
-          <div className="buttonAdote">
+          <div className="divButtonAdote">
             <Button
               style={{
                 background: "#EDFE26",
@@ -98,6 +102,7 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
+                paddingTop: "1rem",
               }}
             >
               Adote agora
