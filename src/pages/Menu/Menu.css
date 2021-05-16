@@ -63,6 +63,7 @@
 
 .buttonsSpace1 {
   width: 50%;
+  max-height: 37px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -99,6 +100,7 @@
 .listMenu {
   height: 100%;
   display: flex;
+  max-width: 15rem;
   flex-direction: column;
   background-color: #ecfe26c9;
 }
@@ -115,20 +117,43 @@
   margin-right: 0.9rem;
 }
 
+.menuDrawer {
+  display: flex;
+  max-width: 50vh !important;
+}
+
+.allButtonMenu {
+}
+
 .buttonsSpace3 {
-  width: 13em;
+  width: 100%;
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin-top: 5px;
+}
+
+.userOverMenu {
+  display: flex;
+  align-items: center;
+}
+
+.usernameConfig {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 0.2rem;
 }
 
 .perfilButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48%;
+  width: 46%;
   height: 2rem;
+  max-height: 30px;
   border-radius: 0.7rem;
   color: white;
   background-color: black !important;
@@ -141,14 +166,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48%;
+  width: 46%;
   height: 2rem;
+  max-height: 30px;
   border-radius: 0.7rem;
   color: white;
   background-color: black !important;
   border-style: solid;
   border-color: black;
   font-weight: bold;
+}
+
+.loginDrawer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 18rem;
+  font-weight: bold;
+  text-decoration: underline;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.usernameDrawer {
+  margin-left: 0.3rem;
 }
 
 @media screen and (max-width: 693px) {

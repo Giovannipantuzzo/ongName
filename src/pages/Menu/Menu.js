@@ -13,6 +13,7 @@ import {
 import { BiMenuAltRight, BiLogOut } from "react-icons/bi";
 import { MdPets, MdFingerprint } from "react-icons/md";
 import { FaPencilAlt, FaBookOpen, FaAddressCard } from "react-icons/fa";
+import { BsFillPersonFill } from "react-icons/bs";
 import "./Menu.css";
 import { IconContext } from "react-icons/lib";
 
@@ -214,23 +215,33 @@ function Menu({ children }) {
                     Adote já
                   </button>
                 </div>
-                <div className="buttonsSpace3">
-                  <button
-                    className="perfilButton"
-                    onClick={() => {
-                      history.push("perfil");
-                    }}
-                  >
-                    Perfil
-                  </button>{" "}
-                  <button
-                    className="sairButton"
-                    onClick={() => {
-                      history.push("home");
-                    }}
-                  >
-                    Sair
-                  </button>{" "}
+                <div className="allButtonMenu">
+                  <div className="userOverMenu">
+                    <IconContext.Provider
+                      value={{ size: "2.3rem", color: "black" }}
+                    >
+                      <BsFillPersonFill />
+                    </IconContext.Provider>
+                    <p className="usernameConfig">Giovanni Silva Pantuzzo</p>
+                  </div>
+                  <div className="buttonsSpace3">
+                    <button
+                      className="perfilButton"
+                      onClick={() => {
+                        history.push("perfil");
+                      }}
+                    >
+                      Perfil
+                    </button>{" "}
+                    <button
+                      className="sairButton"
+                      onClick={() => {
+                        history.push("home");
+                      }}
+                    >
+                      Sair
+                    </button>{" "}
+                  </div>
                 </div>
               </div>
               <IconButton onClick={() => handleDrawer(!open)}>
@@ -245,6 +256,12 @@ function Menu({ children }) {
             onClose={() => handleDrawer(false)}
           >
             <List className="listMenu">
+              <div className="loginDrawer">
+                <IconContext.Provider value={{ size: "2.3rem" }}>
+                  <BsFillPersonFill />
+                </IconContext.Provider>
+                <p className="usernameDrawer"> Giovanni Silva Pantuzzo</p>
+              </div>
               {listButtons2.map((listItem) => {
                 return (
                   <ListItem
