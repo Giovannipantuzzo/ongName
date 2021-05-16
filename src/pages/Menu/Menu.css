@@ -115,6 +115,42 @@
   margin-right: 0.9rem;
 }
 
+.buttonsSpace3 {
+  width: 13em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.perfilButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  height: 2rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: black !important;
+  border-style: solid;
+  border-color: black;
+  font-weight: bold;
+}
+
+.sairButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  height: 2rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: black !important;
+  border-style: solid;
+  border-color: black;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 693px) {
   .allButtons {
     display: none;

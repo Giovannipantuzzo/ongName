@@ -4,7 +4,6 @@ import { MdEmail } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { IconContext } from "react-icons/lib";
 import "./Footer.css";
 
 function Footer() {
@@ -27,6 +26,7 @@ function Footer() {
                   className="insta"
                   href="https://www.instagram.com/giovannipantuzzo/"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <AiFillInstagram className="footersIcons2" />
 
@@ -36,6 +36,7 @@ function Footer() {
                   className="face"
                   href="https://www.facebook.com/cpejr"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <FaFacebookSquare className="footersIcons" />
                   <h1 className="footerLetters">Pet Family</h1>
@@ -46,6 +47,7 @@ function Footer() {
                   className="wpp"
                   href="https://api.whatsapp.com/send?phone=5531988265561&text=Olá,%20meu%20amigo!"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <IoLogoWhatsapp className="footersIcons" />
                   <h1 className="footerLetters">+55 (31) 988265561</h1>
@@ -54,6 +56,7 @@ function Footer() {
                   className="emailFooter"
                   href="mailto:tainanalbuquerque@cpejr.com.br?subject=Contato&body=Olá"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <MdEmail className="footersIcons" />
                   <h1 className="footerLetters">petfamily@gmail.com</h1>
