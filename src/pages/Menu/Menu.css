@@ -191,13 +191,11 @@
 }
 
 .adocao:hover {
-  border-color: #ecfe26c9;
-  font-size: 1.01rem;
+  background-color: rgba(114, 124, 22, 0.05);
 }
 
 .adote:hover {
-  border-color: #ecfe26c9;
-  font-size: 1.02rem;
+  background-color: rgba(114, 124, 22, 0.05);
 }
 
 .Login:hover {
