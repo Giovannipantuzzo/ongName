@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 function Animal() {
   return (
-    <>
+    <div>
       <div className="divPai">
         <div className="containerAnimal">
           <div className="itemAnimal">
@@ -165,7 +165,7 @@ function Animal() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

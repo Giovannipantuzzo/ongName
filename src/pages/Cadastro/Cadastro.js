@@ -17,7 +17,7 @@ function Cadastro() {
   }
 
   return (
-    <>
+    <div>
       <div className="baseCadastro">
         <div className="containerCadastro">
           <form style={{ borderRadius: "1rem" }} className="inputs2">
@@ -67,7 +67,7 @@ function Cadastro() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

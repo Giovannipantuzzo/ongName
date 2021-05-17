@@ -11,7 +11,7 @@ import Menu from "./pages/Menu";
 import Footer from "./Componentes/Footer";
 import { isAuthenticated } from "./Services/auth";
 
-const PrivateRoute = ({ component: component, ...rest }) => (
+const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={(props) =>

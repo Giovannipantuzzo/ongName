@@ -9,7 +9,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <>
+    <div>
       <div className="tudoFooter">
         <div>
           <AppBar position="static">
@@ -65,7 +65,7 @@ function Footer() {
           </AppBar>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
