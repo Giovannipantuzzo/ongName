@@ -3,15 +3,30 @@ import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import api from "../../Services/api";
+import { login } from "../../Services/auth";
 
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const history = useHistory();
 
-  function login() {
+  async function handleLogin(e) {
+    e.prevent.default();
     alert("Bem vindo!\n" + email);
-    history.push("home");
+    try {
+      const response = await api.post("/login", { email, password });
+      alert("Bem vindo", response.data.user.name);
+      login(response.data.accesstoken);
+      history.push("home");
+    } catch (error) {
+      if (error.response.status === 403) {
+        alert("Credenciais Invalidas!");
+      } else {
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+    }
   }
 
   return (
@@ -36,7 +51,11 @@ function Login() {
             />
           </Form.Group>
           <div className="entrarConfig2">
-            <Button className="entrarConfig" variant="dark" onClick={login}>
+            <Button
+              className="entrarConfig"
+              variant="dark"
+              onClick={handleLogin}
+            >
               Entrar
             </Button>{" "}
           </div>
