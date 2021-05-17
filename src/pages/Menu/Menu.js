@@ -153,7 +153,7 @@ function Menu({ children }) {
                     button
                     selected={currentPage === listItem.pathName}
                     onClick={() => {
-                      handleClick(listItem.pathName);
+                      handleClick(listItem.pathName), handleDrawer(false);
                     }}
                   >
                     <div className="buttonsDrawerConfig">
@@ -220,9 +220,22 @@ function Menu({ children }) {
                     <IconContext.Provider
                       value={{ size: "2.3rem", color: "black" }}
                     >
-                      <BsFillPersonFill />
+                      <BsFillPersonFill
+                        onClick={() => {
+                          history.push("perfil");
+                        }}
+                        style={{ cursor: "pointer" }}
+                      />
                     </IconContext.Provider>
-                    <p className="usernameConfig">Giovanni Silva Pantuzzo</p>
+                    <p
+                      className="usernameConfig"
+                      onClick={() => {
+                        history.push("perfil");
+                      }}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Giovanni Silva Pantuzzo
+                    </p>
                   </div>
                   <div className="buttonsSpace3">
                     <button
@@ -268,7 +281,7 @@ function Menu({ children }) {
                     button
                     selected={currentPage === listItem.pathName}
                     onClick={() => {
-                      handleClick(listItem.pathName);
+                      handleClick(listItem.pathName), handleDrawer(false);
                     }}
                   >
                     <div className="buttonsDrawerConfig">

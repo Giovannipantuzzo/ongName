@@ -190,11 +190,41 @@
   padding: 1rem;
 }
 
+.adocao:hover {
+  border-color: #ecfe26c9;
+  font-size: 1.01rem;
+}
+
+.adote:hover {
+  border-color: #ecfe26c9;
+  font-size: 1.02rem;
+}
+
+.Login:hover {
+  border-color: #ecfe26c9;
+  border-width: 0.09rem;
+}
+
+.cadastre:hover {
+  border-color: #ecfe26c9;
+  border-width: 0.09rem;
+}
+
+.perfilButton:hover {
+  border-color: #ecfe26c9;
+  border-width: 0.09rem;
+}
+
+.sairButton:hover {
+  border-color: #ecfe26c9;
+  border-width: 0.09rem;
+}
+
 .usernameDrawer {
   margin-left: 0.3rem;
 }
 
-@media screen and (max-width: 693px) {
+@media screen and (max-width: 725px) {
   .allButtons {
     display: none;
   }
