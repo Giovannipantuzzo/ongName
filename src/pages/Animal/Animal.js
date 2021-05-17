@@ -102,10 +102,9 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
-                paddingTop: "1rem",
               }}
             >
-              Adote agora
+              <p className="adoteAnimal50"> Adote agora </p>
             </Button>
           </div>
         </div>
