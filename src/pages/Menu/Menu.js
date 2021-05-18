@@ -16,13 +16,26 @@ import { FaPencilAlt, FaBookOpen, FaAddressCard } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 import "./Menu.css";
 import { IconContext } from "react-icons/lib";
+import { getToken, logout } from "../../Services/auth";
 
 function Menu({ children }) {
   const history = useHistory();
   const [open, setOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("/home");
+  const token = getToken();
 
-  const signIn = false;
+  async function handleLogout(e) {
+    e.preventDefault();
+    try {
+      logout();
+      window.location.href = "/home";
+    } catch (error) {
+      if (error.response.status === 403) {
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+    }
+  }
 
   const listButtons = [
     {
@@ -78,8 +91,9 @@ function Menu({ children }) {
   function handleDrawer(isOpen) {
     setOpen(isOpen);
   }
+  console.warn(token);
 
-  if (signIn === false) {
+  if (token == null) {
     return (
       <div>
         <div className="tudo">
@@ -178,7 +192,7 @@ function Menu({ children }) {
       </div>
     );
   }
-  if (signIn === true) {
+  if (token != null) {
     return (
       <div>
         <div className="tudo">
@@ -246,12 +260,7 @@ function Menu({ children }) {
                     >
                       Perfil
                     </button>{" "}
-                    <button
-                      className="sairButton"
-                      onClick={() => {
-                        history.push("home");
-                      }}
-                    >
+                    <button className="sairButton" onClick={handleLogout}>
                       Sair
                     </button>{" "}
                   </div>
@@ -280,8 +289,12 @@ function Menu({ children }) {
                   <ListItem
                     button
                     selected={currentPage === listItem.pathName}
-                    onClick={() => {
-                      handleClick(listItem.pathName), handleDrawer(false);
+                    onClick={(e) => {
+                      if (listItem.text === "Sair") handleLogout(e);
+                      else {
+                        handleClick(listItem.pathName);
+                      }
+                      handleDrawer(false);
                     }}
                   >
                     <div className="buttonsDrawerConfig">

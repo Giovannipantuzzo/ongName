@@ -40,11 +40,11 @@ function Routes() {
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/home" component={Home} />
           <PrivateRoute path="/perfil" component={Perfil} />
-          {/* <Route
+          <Route
             path="*"
             exact={true}
             component={() => <Redirect to="/home" />}
-          /> */}
+          />
         </Switch>
       </Menu>
       <Footer />

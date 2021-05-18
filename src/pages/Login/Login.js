@@ -17,7 +17,7 @@ function Login() {
       const response = await api.post("/login", { email, password });
       alert("Bem vindo", response.data.user.username);
       login(response.data.accessToken);
-      history.push("/home");
+      window.location.href = "/home";
     } catch (error) {
       if (error.response.status === 403) {
         alert("Credenciais Invalidas!");
@@ -58,9 +58,11 @@ function Login() {
               Entrar
             </Button>{" "}
           </div>
-          <Link className="linkConfig" to="cadastro">
-            Cadastre-se já
-          </Link>
+          <div className="linkConfig2">
+            <Link className="linkConfig" to="cadastro">
+              Cadastre-se já
+            </Link>
+          </div>
         </form>
       </div>
     </div>
