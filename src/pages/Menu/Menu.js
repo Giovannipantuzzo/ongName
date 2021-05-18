@@ -167,7 +167,9 @@ function Menu({ children }) {
                     button
                     selected={currentPage === listItem.pathName}
                     onClick={() => {
-                      return handleClick(listItem.pathName), handleDrawer(false);
+                      return (
+                        handleClick(listItem.pathName), handleDrawer(false)
+                      );
                     }}
                   >
                     <div className="buttonsDrawerConfig">

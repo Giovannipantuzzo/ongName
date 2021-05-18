@@ -19,12 +19,11 @@ function Login() {
       login(response.data.accessToken);
       window.location.href = "/home";
     } catch (error) {
-      if (error.response.status === 403) {
+      if (error?.response?.status === 403) {
         alert("Credenciais Invalidas!");
-      } else {
+      } else if (error?.response?.data) {
         alert(error.response.data.notification);
-      }
-      console.warn(error);
+      } else console.warn(error);
     }
   }
 
