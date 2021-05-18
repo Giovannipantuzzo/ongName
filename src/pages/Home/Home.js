@@ -42,7 +42,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 360, min: 0 },
-    items: 1.7,
+    items: 1.52,
   },
 };
 
