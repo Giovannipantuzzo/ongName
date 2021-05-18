@@ -9,7 +9,7 @@ function ComponenteAdocao({ animal }) {
   const history = useHistory();
 
   function adotar() {
-    history.push("animal");
+    history.push({ pathname: "/animal", state: { animal } });
   }
 
   function Sexo() {
