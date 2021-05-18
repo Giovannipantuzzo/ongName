@@ -28,7 +28,7 @@ function ComponenteAdocao({ animal }) {
         src={animal.imagem}
         style={{ borderRadius: "30px", height: "175px", objectFit: "cover" }}
       />
-      <Card.Body>
+      <Card.Body className="AdoteJaCardBody">
         <Card.Text>
           <div className="organizacao_AdocaoAnimais">
             <div className="nome_AdocaoAnimais">{animal.nome}</div>
