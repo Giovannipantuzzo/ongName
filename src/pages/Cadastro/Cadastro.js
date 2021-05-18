@@ -13,7 +13,7 @@ function Cadastro() {
 
   function cadastrar() {
     alert("Conta criada com sucesso!\n" + email);
-    history.push("home");
+    history.push("login");
   }
 
   return (
