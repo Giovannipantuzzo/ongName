@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Animal.css";
 import Figure from "react-bootstrap/Figure";
 import Card from "react-bootstrap/Card";
@@ -32,13 +32,18 @@ const responsive = {
   },
 };
 
-function Animal() {
+function Animal({ location, ...props }) {
   const history = useHistory();
+  const { animal } = location.state;
+  const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
   function adotado() {
     alert(
       "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
     );
     history.push("home");
+  }
+  function mudaImagem(endereco) {
+    setimagemEndereco(endereco);
   }
 
   return (
@@ -46,34 +51,37 @@ function Animal() {
       <div className="divAnimalDescricao">
         <div className="containerAnimal">
           <div className="itemAnimalImage">
-            {Animal.imagem.map((Imagem) => (
+            {animal.imagem.map((Imagem) => (
               <div className="divImageAnimal">
                 <Image
                   className="animalItem"
                   key={Imagem}
                   src={Imagem}
+                  onClick={() => {
+                    mudaImagem(Imagem);
+                  }}
                   rounded
                 />
               </div>
             ))}
           </div>
           <div className="divImageCentral">
-            <Image className="imageCentral" src={Animal.imagem[0]} rounded />
+            <Image className="imageCentral" src={imagemEndereco} rounded />
           </div>
         </div>
         <div className="containerLateral">
           <Card>
             <Card.Body>
               <Card.Title className="nomePet">
-                {Animal.nome}, {Animal.tempo}
+                {animal.nome}, {animal.tempo}
               </Card.Title>
               <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                {Animal.local}, tamanho {Animal.tamanho}
+                {animal.local}, tamanho {animal.tamanho}
               </Card.Subtitle>
               <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                {Animal.Raca}
+                {animal.Raca}
               </Card.Subtitle>
-              <p className="paragrafoAnimal">{Animal.descricao}</p>
+              <p className="paragrafoAnimal">{animal.descricao}</p>
             </Card.Body>
           </Card>
           <div className="divButtonAdote">
