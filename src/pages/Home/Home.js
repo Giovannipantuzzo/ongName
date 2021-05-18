@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "react-bootstrap/Card";
 import { useHistory } from "react-router-dom";
+import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
 import "./Home.css";
 
 const responsive = {
@@ -100,6 +101,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 Pluto <br />
                 Bicas/MG
+                <BiMaleSign />
               </div>
             </div>
           </div>
@@ -116,6 +118,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiFemaleSign />
               </div>
             </div>
           </div>
@@ -132,6 +135,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiMaleSign />
               </div>
             </div>
           </div>
@@ -148,6 +152,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiFemaleSign />
               </div>
             </div>
           </div>
@@ -161,6 +166,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiMaleSign />
               </div>
             </div>
           </div>
@@ -174,6 +180,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiMaleSign />
               </div>
             </div>
           </div>
@@ -187,6 +194,7 @@ function Home() {
               <div class="textAnimalCarrossel2">
                 John Doe <br />
                 Bicas/MG
+                <BiFemaleSign />
               </div>
             </div>
           </div>
