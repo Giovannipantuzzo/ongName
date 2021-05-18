@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
+import { useHistory } from "react-router-dom";
 
 const responsive = {
   superLargeDesktop: {
@@ -30,7 +31,13 @@ const responsive = {
   },
 };
 
+
 function Animal() {
+  const history = useHistory();
+  function adotado() {
+      alert("Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.");
+      history.push("home");
+    }
   return (
     <div>
       <div className="divAnimalDescricao">
@@ -102,7 +109,7 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
-              }}
+              }} onClick={adotado}
             >
               <p className="adoteAnimal50"> Adote agora </p>
             </Button>
@@ -144,7 +151,7 @@ function Animal() {
         <div className="comentariosAnimal">
           <div className="tituloComentario">
             <p>
-              <b>Comentários</b>
+              <b>Comentários </b>
             </p>
           </div>
           <div className="comentarioFuncionario">
@@ -156,8 +163,8 @@ function Animal() {
                 <u>
                   <b>Tony Stark:</b>
                 </u>{" "}
-                Lindo cachorro dócil e brincalhão, necessita de cuidadose
-                especiais pela dificultade de andar.
+                Pet lindo dócil e brincalhão, necessita de cuidadose
+                especiais.
               </p>
             </div>
           </div>
@@ -170,7 +177,7 @@ function Animal() {
                 <u>
                   <b>Juliette:</b>
                 </u>{" "}
-                Billie é maravilhoso, porém meio arrisco, sempre desconfiado.
+                Esse pet é maravilhoso, porém meio arrisco, sempre desconfiado.
               </p>
             </div>
           </div>
@@ -183,7 +190,7 @@ function Animal() {
                 <u>
                   <b>Gilberto:</b>
                 </u>{" "}
-                Billie é um cãozinho especial, com muito amor para dar.
+                Esse pet é especial, com muito amor para dar.
               </p>
             </div>
           </div>
