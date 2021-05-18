@@ -7,6 +7,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
+import AnimaisReais from "../../Componentes/AnimaisReais"
 
 const responsive = {
   superLargeDesktop: {
@@ -38,15 +39,28 @@ function Animal() {
       alert("Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.");
       history.push("home");
     }
+
   return (
     <div>
       <div className="divAnimalDescricao">
         <div className="containerAnimal">
           <div className="itemAnimalImage">
-            <div className="divImageAnimal">
+            {AnimaisReais[0].imagem.map((Imagem)=>
+              <div className="divImageAnimal">
+                <Image
+                  className="animalItem"
+                  // src="./images/dogHome1.png"
+                  src={Imagem}
+                  rounded
+                />
+              </div>
+            )}
+            {/* <div className="divImageAnimal">
+
               <Image
                 className="animalItem"
-                src="./images/dogHome1.png"
+                // src="./images/dogHome1.png"
+                src={AnimaisReais[0].imagem[0]}
                 rounded
               />
             </div>
@@ -70,8 +84,8 @@ function Animal() {
                 src="./images/dogHome1.png"
                 rounded
               />
-            </div>
-          </div>
+            </div>*/}
+          </div> 
           <div className="divImageCentral">
             <Image
               className="imageCentral"
@@ -151,7 +165,7 @@ function Animal() {
         <div className="comentariosAnimal">
           <div className="tituloComentario">
             <p>
-              <b>Comentários </b>
+              <b>Comentários</b>
             </p>
           </div>
           <div className="comentarioFuncionario">

@@ -9,11 +9,12 @@ function ComponenteAdocao({ animal }) {
   const history = useHistory();
 
   function adotar() {
-    history.push("animal");
+    // history.push("animal");
+    console.log(animal)
   }
 
   function Sexo() {
-    if (animal.sexo === "Male") return <BiMaleSign />;
+    if (animal.sexo === "Macho") return <BiMaleSign />;
     else return <BiFemaleSign />;
   }
 
@@ -25,7 +26,7 @@ function ComponenteAdocao({ animal }) {
     >
       <Card.Img
         variant="top"
-        src={animal.imagem}
+        src={animal.imagem[0]}
         style={{ borderRadius: "30px", height: "175px", objectFit: "cover" }}
       />
       <Card.Body>
