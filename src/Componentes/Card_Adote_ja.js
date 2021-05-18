@@ -11,7 +11,7 @@ function Produto({ animal }) {
     else return <BiFemaleSign />;
   }
   function telaAnimal() {
-    history.push("animal");
+    history.push({ pathname: "/animal", state: { animal } });
   }
 
   return (
