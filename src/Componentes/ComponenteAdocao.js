@@ -9,8 +9,7 @@ function ComponenteAdocao({ animal }) {
   const history = useHistory();
 
   function adotar() {
-    // history.push("animal");
-    console.log(animal)
+    history.push("animal");
   }
 
   function Sexo() {
