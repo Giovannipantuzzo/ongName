@@ -36,15 +36,15 @@ function Routes() {
           <Route exact path="/adocao_animais" component={Adocao_animais} />
           <Route exact path="/adote_ja" component={Adote_ja} />
           <Route exact path="/animal" component={Animal} />
-          <Route exact path="/perfil" component={Perfil} />
           <Route exact path="/temp" component={Menu} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/home" component={Home} />
-          <Route
+          <PrivateRoute path="/perfil" component={Perfil} />
+          {/* <Route
             path="*"
             exact={true}
             component={() => <Redirect to="/home" />}
-          />
+          /> */}
         </Switch>
       </Menu>
       <Footer />

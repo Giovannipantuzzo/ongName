@@ -12,13 +12,12 @@ function Login() {
   const history = useHistory();
 
   async function handleLogin(e) {
-    e.prevent.default();
-    alert("Bem vindo!\n" + email);
+    e.preventDefault();
     try {
       const response = await api.post("/login", { email, password });
-      alert("Bem vindo", response.data.user.name);
-      login(response.data.accesstoken);
-      history.push("home");
+      alert("Bem vindo", response.data.user.username);
+      login(response.data.accessToken);
+      history.push("/home");
     } catch (error) {
       if (error.response.status === 403) {
         alert("Credenciais Invalidas!");
