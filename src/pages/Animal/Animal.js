@@ -7,7 +7,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
-import AnimaisReais from "../../Componentes/AnimaisReais"
+import AnimaisReais from "../../Componentes/AnimaisReais";
 
 const responsive = {
   superLargeDesktop: {
@@ -32,85 +32,48 @@ const responsive = {
   },
 };
 
-
 function Animal() {
   const history = useHistory();
   function adotado() {
-      alert("Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.");
-      history.push("home");
-    }
+    alert(
+      "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+    );
+    history.push("home");
+  }
 
   return (
     <div>
       <div className="divAnimalDescricao">
         <div className="containerAnimal">
           <div className="itemAnimalImage">
-            {AnimaisReais[0].imagem.map((Imagem)=>
+            {Animal.imagem.map((Imagem) => (
               <div className="divImageAnimal">
                 <Image
                   className="animalItem"
-                  // src="./images/dogHome1.png"
+                  key={Imagem}
                   src={Imagem}
                   rounded
                 />
               </div>
-            )}
-            {/* <div className="divImageAnimal">
-
-              <Image
-                className="animalItem"
-                // src="./images/dogHome1.png"
-                src={AnimaisReais[0].imagem[0]}
-                rounded
-              />
-            </div>
-            <div className="divImageAnimal">
-              <Image
-                className="animalItem"
-                src="./images/dogHome1.png"
-                rounded
-              />
-            </div>
-            <div className="divImageAnimal">
-              <Image
-                className="animalItem"
-                src="./images/dogHome1.png"
-                rounded
-              />
-            </div>
-            <div className="divImageAnimal">
-              <Image
-                className="animalItem"
-                src="./images/dogHome1.png"
-                rounded
-              />
-            </div>*/}
-          </div> 
+            ))}
+          </div>
           <div className="divImageCentral">
-            <Image
-              className="imageCentral"
-              src="./images/dogHome1.png"
-              rounded
-            />
+            <Image className="imageCentral" src={Animal.imagem[0]} rounded />
           </div>
         </div>
         <div className="containerLateral">
           <Card>
             <Card.Body>
-              <Card.Title className="nomePet">Bile, 2 anos</Card.Title>
+              <Card.Title className="nomePet">
+                {Animal.nome}, {Animal.tempo}
+              </Card.Title>
               <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                Belo Horizonte
+                {Animal.local}, tamanho {Animal.tamanho}
               </Card.Subtitle>
               <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                Vira lata
+                {Animal.Raca}
               </Card.Subtitle>
-              <p className="paragrafoAnimal">
-                Olá! Meu nome é Billie, tenho 2 anos e estou a procura de um
-                novo lar. Sou muito dócil, brincalhão, e adoro passear. Perdi
-                uma perna quando era bebê, mas isso não me impede de brincar
-                bastante. A ONG me encontrou ainda novinho, tinha apenas 4
-                meses, estava bem magrinho e desnutrido.
-              </p>
+              <p className="paragrafoAnimal">{Animal.descricao}</p>
             </Card.Body>
           </Card>
           <div className="divButtonAdote">
@@ -123,7 +86,8 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
-              }} onClick={adotado}
+              }}
+              onClick={adotado}
             >
               <p className="adoteAnimal50"> Adote agora </p>
             </Button>
@@ -177,8 +141,7 @@ function Animal() {
                 <u>
                   <b>Tony Stark:</b>
                 </u>{" "}
-                Pet lindo dócil e brincalhão, necessita de cuidadose
-                especiais.
+                Pet lindo dócil e brincalhão, necessita de cuidadose especiais.
               </p>
             </div>
           </div>
