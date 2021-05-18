@@ -153,7 +153,7 @@ function Menu({ children }) {
                     button
                     selected={currentPage === listItem.pathName}
                     onClick={() => {
-                      handleClick(listItem.pathName), handleDrawer(false);
+                      return handleClick(listItem.pathName), handleDrawer(false);
                     }}
                   >
                     <div className="buttonsDrawerConfig">
@@ -281,7 +281,7 @@ function Menu({ children }) {
                     button
                     selected={currentPage === listItem.pathName}
                     onClick={() => {
-                      handleClick(listItem.pathName), handleDrawer(false);
+                      return handleClick(listItem.pathName), handleDrawer(false);
                     }}
                   >
                     <div className="buttonsDrawerConfig">

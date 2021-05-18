@@ -6,6 +6,8 @@ import Button from "react-bootstrap/Button";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
+import { useHistory } from "react-router-dom";
+import AnimaisReais from "../../Componentes/AnimaisReais"
 
 const responsive = {
   superLargeDesktop: {
@@ -30,16 +32,35 @@ const responsive = {
   },
 };
 
+
 function Animal() {
+  const history = useHistory();
+  function adotado() {
+      alert("Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.");
+      history.push("home");
+    }
+
   return (
     <div>
       <div className="divAnimalDescricao">
         <div className="containerAnimal">
           <div className="itemAnimalImage">
-            <div className="divImageAnimal">
+            {AnimaisReais[0].imagem.map((Imagem)=>
+              <div className="divImageAnimal">
+                <Image
+                  className="animalItem"
+                  // src="./images/dogHome1.png"
+                  src={Imagem}
+                  rounded
+                />
+              </div>
+            )}
+            {/* <div className="divImageAnimal">
+
               <Image
                 className="animalItem"
-                src="./images/dogHome1.png"
+                // src="./images/dogHome1.png"
+                src={AnimaisReais[0].imagem[0]}
                 rounded
               />
             </div>
@@ -63,8 +84,8 @@ function Animal() {
                 src="./images/dogHome1.png"
                 rounded
               />
-            </div>
-          </div>
+            </div>*/}
+          </div> 
           <div className="divImageCentral">
             <Image
               className="imageCentral"
@@ -102,7 +123,7 @@ function Animal() {
                 borderRadius: "0.9rem",
                 width: "15rem",
                 height: "3rem",
-              }}
+              }} onClick={adotado}
             >
               <p className="adoteAnimal50"> Adote agora </p>
             </Button>
@@ -156,8 +177,8 @@ function Animal() {
                 <u>
                   <b>Tony Stark:</b>
                 </u>{" "}
-                Lindo cachorro dócil e brincalhão, necessita de cuidadose
-                especiais pela dificultade de andar.
+                Pet lindo dócil e brincalhão, necessita de cuidadose
+                especiais.
               </p>
             </div>
           </div>
@@ -170,7 +191,7 @@ function Animal() {
                 <u>
                   <b>Juliette:</b>
                 </u>{" "}
-                Billie é maravilhoso, porém meio arrisco, sempre desconfiado.
+                Esse pet é maravilhoso, porém meio arrisco, sempre desconfiado.
               </p>
             </div>
           </div>
@@ -183,7 +204,7 @@ function Animal() {
                 <u>
                   <b>Gilberto:</b>
                 </u>{" "}
-                Billie é um cãozinho especial, com muito amor para dar.
+                Esse pet é especial, com muito amor para dar.
               </p>
             </div>
           </div>

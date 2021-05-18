@@ -2,10 +2,12 @@ export const animaisReais = [
   {
     id: 1,
     imagem: [
+
       "/images/sansao1.jpeg",
       "/images/sansao2.jpeg",
       "/images/sansao3.jpeg",
       "/images/sansao4.jpeg",
+
     ],
     nome: "Sansão",
     tempo: "1 ano",
