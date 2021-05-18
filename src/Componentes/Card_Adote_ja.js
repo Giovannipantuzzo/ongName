@@ -7,7 +7,7 @@ import { useHistory } from "react-router";
 function Produto({ animal }) {
   const history = useHistory();
   function Sexo() {
-    if (animal.sexo === "Male") return <BiMaleSign />;
+    if (animal.sexo === "Macho") return <BiMaleSign />;
     else return <BiFemaleSign />;
   }
   function telaAnimal() {
