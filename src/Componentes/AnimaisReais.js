@@ -1,11 +1,11 @@
-const animaisReais = [
+export const animaisReais = [
   {
     id: 1,
     imagem: [
-      "/images/sansao1.jpg",
-      "/images/sansao2.jpg",
-      "/images/sansao3.jpg",
-      "/images/sansao4.jpg",
+      "/images/sansao1.jpeg",
+      "/images/sansao2.jpeg",
+      "/images/sansao3.jpeg",
+      "/images/sansao4.jpeg",
     ],
     nome: "Sansão",
     tempo: "1 ano",
@@ -19,10 +19,10 @@ const animaisReais = [
   {
     id: 2,
     imagem: [
-      "/images/dalila1.jpg",
-      "/images/dalila2.jpg",
-      "/images/dalila3.jpg",
-      "/images/dalila4.jpg",
+      "/images/dalila1.jpeg",
+      "/images/dalila2.jpeg",
+      "/images/dalila3.jpeg",
+      "/images/dalila4.jpeg",
     ],
     nome: "Dalila (Lilica)",
     tempo: "1 anos",
@@ -30,7 +30,7 @@ const animaisReais = [
     tamanho: "P",
     sexo: "Femêa",
     descricao:
-      "Gosta de estar no ambiente e de atividades apenas de companhia.Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade: média-baixa (apenas com a família), apegada a poucos membros da família e brinca raramente, mas extremamente amorosa",
+      "Gosta de estar no ambiente e se contenta com qualquer companhia. Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade:apenas com a família, apegada a poucos membros e brinca raramente.",
     Raca: "Pequinês",
   },
   {
@@ -47,12 +47,17 @@ const animaisReais = [
     tamanho: "P",
     sexo: "Femêa",
     descricao:
-      "Dentre as coisas que ela gosta de fazer, cabe citar, deitar nas nossas camas e ficar debaixo das cobertas, beber água direto do tanque e ficar miando na minha porta quando ela está fechada. Além disso, ela gosta de roubar nossos biscoitos de polvilho e arranhar o tapete.",
+      "Ama deitar nas nossas camas, debaixo das cobertas, beber água direto do tanque e ficar miando na minha porta quando ela está fechada. Além disso, ela ama roubar biscoitos de polvilho e arranhar o tapete.",
     Raca: "Não Definida",
   },
   {
     id: 4,
-    imagem: ["/imaes/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
+    imagem: [
+      "/images/pacoca1.jpeg",
+      "/images/pacoca2.jpeg",
+      "/images/pacoca3.jpeg",
+      "/images/pacoca4.jpeg",
+    ],
     nome: "Paçoca",
     tempo: "5 anos",
     local: "Ouro Preto/MG",

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Adote.css";
 import Produto from "../../Componentes/Card_Adote_ja";
-
+import Animais from "../../Componentes/AnimaisReais";
 const animais = [
   {
     id: 1,
@@ -127,7 +127,7 @@ function Adote_ja() {
       </div>
       <div className="background_Image_Adote_ja">
         <div className="marketplace">
-          {animais.map((animal) => (
+          {Animais.map((animal) => (
             <Produto key={animal.id} animal={animal} />
           ))}
         </div>

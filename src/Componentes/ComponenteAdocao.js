@@ -19,7 +19,7 @@ function ComponenteAdocao({ animal }) {
 
   return (
     <Card
-      style={{ width: "18rem", cursor: "pointer" }}
+      style={{ width: "18rem", cursor: "pointer", height: "auto" }}
       onClick={() => adotar()}
       className="sombra_AdocaoAnimais"
     >

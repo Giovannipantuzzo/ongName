@@ -22,9 +22,9 @@ function Produto({ animal }) {
     >
       <Card.Img
         variant="top"
-        src={animal.imagem}
+        src={animal.imagem[0]}
         alt="Exemplo"
-        height="200px"
+        height="250px"
         width="100%"
         style={{ borderRadius: "30px", objectFit: "cover" }}
         className="imgAdoteJa"
