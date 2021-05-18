@@ -7,7 +7,7 @@ import { useHistory } from "react-router";
 function Produto({ animal }) {
   const history = useHistory();
   function Sexo() {
-    if (animal.sexo === "Male") return <BiMaleSign />;
+    if (animal.sexo === "Macho") return <BiMaleSign />;
     else return <BiFemaleSign />;
   }
   function telaAnimal() {
@@ -22,9 +22,9 @@ function Produto({ animal }) {
     >
       <Card.Img
         variant="top"
-        src={animal.imagem}
+        src={animal.imagem[0]}
         alt="Exemplo"
-        height="200px"
+        height="250px"
         width="100%"
         style={{ borderRadius: "30px", objectFit: "cover" }}
         className="imgAdoteJa"

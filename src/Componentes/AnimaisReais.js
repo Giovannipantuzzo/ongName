@@ -1,11 +1,13 @@
-const animaisReais = [
+export const animaisReais = [
   {
     id: 1,
     imagem: [
-      "./images/sansao1.jpeg",
-      "./images/sansao2.jpeg",
-      "./images/sansao3.jpeg",
-      "./images/sansao4.jpeg",
+
+      "/images/sansao1.jpeg",
+      "/images/sansao2.jpeg",
+      "/images/sansao3.jpeg",
+      "/images/sansao4.jpeg",
+
     ],
     nome: "Sansão",
     tempo: "1 ano",
@@ -19,10 +21,10 @@ const animaisReais = [
   {
     id: 2,
     imagem: [
-      "/images/dalila1.jpg",
-      "/images/dalila2.jpg",
-      "/images/dalila3.jpg",
-      "/images/dalila4.jpg",
+      "/images/dalila1.jpeg",
+      "/images/dalila2.jpeg",
+      "/images/dalila3.jpeg",
+      "/images/dalila4.jpeg",
     ],
     nome: "Dalila (Lilica)",
     tempo: "1 anos",
@@ -30,7 +32,7 @@ const animaisReais = [
     tamanho: "P",
     sexo: "Femêa",
     descricao:
-      "Gosta de estar no ambiente e de atividades apenas de companhia.Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade: média-baixa (apenas com a família), apegada a poucos membros da família e brinca raramente, mas extremamente amorosa",
+      "Gosta de estar no ambiente e se contenta com qualquer companhia. Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade:apenas com a família, apegada a poucos membros e brinca raramente.",
     Raca: "Pequinês",
   },
   {
@@ -47,12 +49,17 @@ const animaisReais = [
     tamanho: "P",
     sexo: "Femêa",
     descricao:
-      "Dentre as coisas que ela gosta de fazer, cabe citar, deitar nas nossas camas e ficar debaixo das cobertas, beber água direto do tanque e ficar miando na minha porta quando ela está fechada. Além disso, ela gosta de roubar nossos biscoitos de polvilho e arranhar o tapete.",
+      "Ama deitar nas nossas camas, debaixo das cobertas, beber água direto do tanque e ficar miando na minha porta quando ela está fechada. Além disso, ela ama roubar biscoitos de polvilho e arranhar o tapete.",
     Raca: "Não Definida",
   },
   {
     id: 4,
-    imagem: ["/imaes/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
+    imagem: [
+      "/images/pacoca1.jpeg",
+      "/images/pacoca2.jpeg",
+      "/images/pacoca3.jpeg",
+      "/images/pacoca4.jpeg",
+    ],
     nome: "Paçoca",
     tempo: "5 anos",
     local: "Ouro Preto/MG",
@@ -65,10 +72,10 @@ const animaisReais = [
   {
     id: 5,
     imagem: [
-      "/images/benji1.jpg",
-      "/images/benji2.jpg",
-      "/images/benji3.jpg",
-      "/images/benji4.jpg",
+      "/images/benji1.jpeg",
+      "/images/benji2.jpeg",
+      "/images/benji3.jpeg",
+      "/images/benji4.jpeg",
     ],
     nome: "Benji",
     tempo: "5 anos",
@@ -82,10 +89,10 @@ const animaisReais = [
   {
     id: 6,
     imagem: [
-      "/images/belinha1.jpg",
-      "/images/belinha2.jpg",
-      "/images/belinha3.jpg",
-      "/images/belinha4.jpg",
+      "/images/belinha1.jpeg",
+      "/images/belinha2.jpeg",
+      "/images/belinha3.jpeg",
+      "/images/belinha4.jpeg",
     ],
     nome: "Belinha",
     tempo: "2 ano",
@@ -99,10 +106,10 @@ const animaisReais = [
   {
     id: 7,
     imagem: [
-      "/images/suzi1.jpg",
-      "/images/suzi2.jpg",
-      "/images/suzi3.jpg",
-      "/images/suzi4.jpg",
+      "/images/suzi1.jpeg",
+      "/images/suzi2.jpeg",
+      "/images/suzi3.jpeg",
+      "/images/suzi4.jpeg",
     ],
     nome: "Suzi",
     tempo: "2 anos",
@@ -116,10 +123,10 @@ const animaisReais = [
   {
     id: 8,
     imagem: [
-      "/images/x1.jpg",
-      "/images/x2.jpg",
-      "/images/x3.jpg",
-      "/images/x4.jpg",
+      "/images/x1.jpeg",
+      "/images/x2.jpeg",
+      "/images/x3.jpeg",
+      "/images/x4.jpeg",
     ],
     nome: "X",
     tempo: "1 ano",
@@ -133,10 +140,10 @@ const animaisReais = [
   {
     id: 9,
     imagem: [
-      "/images/joaoTodoroki1.jpg",
-      "/images/joaoTodoroki2.jpg",
-      "/images/joaoTodoroki3.jpg",
-      "/images/joaoTodoroki4.jpg",
+      "/images/joaoTodoroki1.jpeg",
+      "/images/joaoTodoroki2.jpeg",
+      "/images/joaoTodoroki3.jpeg",
+      "/images/joaoTodoroki4.jpeg",
     ],
     nome: "João Todoroki",
     tempo: "3 meses",
@@ -150,10 +157,10 @@ const animaisReais = [
   {
     id: 10,
     imagem: [
-      "/images/1.jpg",
-      "/images/2.jpg",
-      "/images/3.jpg",
-      "/images/4.jpg",
+      "/images/lancelot1.jpeg",
+      "/images/lancelot2.jpeg",
+      "/images/lancelot3.jpeg",
+      "/images/lancelot4.jpeg",
     ],
     nome: "Lancelot",
     tempo: "6 anos",
@@ -167,10 +174,10 @@ const animaisReais = [
   {
     id: 11,
     imagem: [
-      "/images/amora1.jpg",
-      "/images/amora2.jpg",
-      "/images/amora3.jpg",
-      "/images/amora4.jpg",
+      "/images/amora1.jpeg",
+      "/images/amora2.jpge",
+      "/images/amora3.jpeg",
+      "/images/amora4.jpeg",
     ],
     nome: "Amora",
     tempo: "3 anos",
@@ -184,10 +191,10 @@ const animaisReais = [
   {
     id: 12,
     imagem: [
-      "/images/juca1.jpg",
-      "/images/juca2.jpg",
-      "/images/juca3.jpg",
-      "/images/juca4.jpg",
+      "/images/juca1.jpeg",
+      "/images/juca2.jpeg",
+      "/images/juca3.jpeg",
+      "/images/juca4.jpeg",
     ],
     nome: "Juca",
     tempo: "3 anos",
@@ -201,10 +208,10 @@ const animaisReais = [
   {
     id: 13,
     imagem: [
-      "/images/meg1.jpg",
-      "/images/meg2.jpg",
-      "/images/meg3.jpg",
-      "/images/meg4.jpg",
+      "/images/meg1.jpeg",
+      "/images/meg2.jpeg",
+      "/images/meg3.jpeg",
+      "/images/meg4.jpeg",
     ],
     nome: "Meg",
     tempo: "2 anos",
@@ -218,10 +225,10 @@ const animaisReais = [
   {
     id: 14,
     imagem: [
-      "/images/pantera1.jpg",
-      "/images/pantera2.jpg",
-      "/images/pantera3.jpg",
-      "/images/pantera4.jpg",
+      "/images/pantera1.jpeg",
+      "/images/pantera2.jpeg",
+      "/images/pantera3.jpeg",
+      "/images/pantera4.jpeg",
     ],
     nome: "Pantera",
     tempo: "4 anos",
@@ -234,10 +241,10 @@ const animaisReais = [
   {
     id: 15,
     imagem: [
-      "/images/juju1.jpg",
-      "/images/juju2.jpg",
-      "/images/juju3.jpg",
-      "/images/juju4.jpg",
+      "/images/juju1.jpeg",
+      "/images/juju2.jpeg",
+      "/images/juju3.jpeg",
+      "/images/juju4.jpeg",
     ],
     nome: "Juju",
     tempo: "4 anos",
@@ -250,10 +257,10 @@ const animaisReais = [
   {
     id: 16,
     imagem: [
-      "/images/thor1.jpg",
-      "/images/thor2.jpg",
-      "/images/thor3.jpg",
-      "/images/thor4.jpg",
+      "/images/thor2.jpeg",
+      "/images/thor1.jpeg",
+      "/images/thor3.jpeg",
+      "/images/thor4.jpeg",
     ],
     nome: "Thor",
     tempo: "2 anos",
@@ -267,10 +274,10 @@ const animaisReais = [
   {
     id: 17,
     imagem: [
-      "/images/dumbo1.jpg",
-      "/images/dumbo2.jpg",
-      "/images/dumbo3.jpg",
-      "/images/dumbo4.jpg",
+      "/images/dumbo1.jpeg",
+      "/images/dumbo2.jpeg",
+      "/images/dumbo3.jpeg",
+      "/images/dumbo4.jpeg",
     ],
     nome: "Dumbo",
     tempo: "3 anos",
@@ -284,10 +291,10 @@ const animaisReais = [
   {
     id: 18,
     imagem: [
-      "/images/lessie1.jpg",
-      "/images/lessie2.jpg",
-      "/images/lessie3.jpg",
-      "/images/lessie4.jpg",
+      "/images/lessie1.jpeg",
+      "/images/lessie2.jpeg",
+      "/images/lessie3.jpeg",
+      "/images/lessie4.jpeg",
     ],
     nome: "Lessie",
     tempo: "2 anos",
@@ -301,10 +308,10 @@ const animaisReais = [
   {
     id: 19,
     imagem: [
-      "/images/zuko1.jpg",
-      "/images/zuko2.jpg",
-      "/images/zuko3.jpg",
-      "/images/zuko4.jpg",
+      "/images/zuko1.jpeg",
+      "/images/zuko2.jpeg",
+      "/images/zuko3.jpeg",
+      "/images/zuko4.jpeg",
     ],
     nome: "Zuko",
     tempo: "3 anos",
@@ -318,10 +325,10 @@ const animaisReais = [
   {
     id: 20,
     imagem: [
-      "/images/atena1.jpg",
-      "/images/atena2.jpg",
-      "/images/atena3.jpg",
-      "/images/atena4.jpg",
+      "/images/atena1.jpeg",
+      "/images/atena2.jpeg",
+      "/images/atena3.jpeg",
+      "/images/atena4.jpeg",
     ],
     nome: "Atena",
     tempo: "2 anos",
@@ -335,10 +342,10 @@ const animaisReais = [
   {
     id: 21,
     imagem: [
-      "/images/amoraELilica1.jpg",
-      "/images/amoraELilica2.jpg",
-      "/images/amoraELilica3.jpg",
-      "/images/amoraELilica4.jpg",
+      "/images/amoraELilica1.jpeg",
+      "/images/amoraELilica2.jpeg",
+      "/images/amoraELilica3.jpeg",
+      "/images/amoraELilica4.jpeg",
     ],
     nome: "Amora e Lilica",
     tempo: "8 anos e 1 mês",
@@ -351,10 +358,10 @@ const animaisReais = [
   {
     id: 22,
     imagem: [
-      "/images/mel1.jpg",
-      "/images/mel2.jpg",
-      "/images/mel3.jpg",
-      "/images/mel4.jpg",
+      "/images/mel1.jpeg",
+      "/images/mel2.jpeg",
+      "/images/mel3.jpeg",
+      "/images/mel4.jpeg",
     ],
     nome: "Mel",
     tempo: "16 anos",
@@ -368,10 +375,10 @@ const animaisReais = [
   {
     id: 23,
     imagem: [
-      "/images/sauron1.jpg",
-      "/images/sauron2.jpg",
-      "/images/sauron3.jpg",
-      "/images/sauron4.jpg",
+      "/images/sauron1.jpeg",
+      "/images/sauron2.jpeg",
+      "/images/sauron3.jpeg",
+      "/images/sauron4.jpeg",
     ],
     nome: "Sauron",
     tempo: "1 ano",
@@ -385,10 +392,10 @@ const animaisReais = [
   {
     id: 24,
     imagem: [
-      "/images/bruno1.jpg",
-      "/images/bruno2.jpg",
-      "/images/bruno3.jpg",
-      "/images/bruno4.jpg",
+      "/images/bruno1.jpeg",
+      "/images/bruno2.jpeg",
+      "/images/bruno3.jpeg",
+      "/images/bruno4.jpeg",
     ],
     nome: "Bruno",
     tempo: "1 ano",
@@ -402,10 +409,10 @@ const animaisReais = [
   {
     id: 25,
     imagem: [
-      "/images/edSheeran1.jpg",
-      "/images/edSheeran2.jpg",
-      "/images/edSheeran3.jpg",
-      "/images/edSheeran4.jpg",
+      "/images/edSheeran1.jpeg",
+      "/images/edSheeran2.jpeg",
+      "/images/edSheeran3.jpeg",
+      "/images/edSheeran4.jpeg",
     ],
     nome: "Ed Sheeran",
     tempo: "3 anos",
@@ -419,10 +426,10 @@ const animaisReais = [
   {
     id: 26,
     imagem: [
-      "/images/ayka1.jpg",
-      "/images/ayka2.jpg",
+      "/images/ayka1.jpeg",
+      "/images/ayka2.jpeg",
       "/images/ayka3.jpg",
-      "/images/ayka4.jpg",
+      "/images/ayka4.jpeg",
     ],
     nome: "Ayka",
     tempo: "12 anos",
@@ -436,10 +443,10 @@ const animaisReais = [
   {
     id: 27,
     imagem: [
-      "/images/evie1.jpg",
-      "/images/evie2.jpg",
-      "/images/evie3.jpg",
-      "/images/evie4.jpg",
+      "/images/evie1.jpeg",
+      "/images/evie2.jpeg",
+      "/images/evie3.jpeg",
+      "/images/evie4.jpeg",
     ],
     nome: "Evie",
     tempo: "4 anos",
@@ -453,10 +460,10 @@ const animaisReais = [
   {
     id: 28,
     imagem: [
-      "/images/nina1.jpg",
-      "/images/nina2.jpg",
-      "/images/nina3.jpg",
-      "/images/nina4.jpg",
+      "/images/nina1.jpeg",
+      "/images/nina2.jpeg",
+      "/images/nina3.jpeg",
+      "/images/nina4.jpeg",
     ],
     nome: "Nina",
     tempo: "Fêmea",
@@ -470,10 +477,10 @@ const animaisReais = [
   {
     id: 29,
     imagem: [
-      "/images/kappa1.jpg",
-      "/images/kappa2.jpg",
-      "/images/kappa3.jpg",
-      "/images/kappa4.jpg",
+      "/images/kappa1.jpeg",
+      "/images/kappa2.jpeg",
+      "/images/kappa3.jpeg",
+      "/images/kappa4.jpeg",
     ],
     nome: "Kappa",
     tempo: "6 meses",
@@ -487,10 +494,10 @@ const animaisReais = [
   {
     id: 30,
     imagem: [
-      "/images/teddy1.jpg",
-      "/images/teddy2.jpg",
-      "/images/teddy3.jpg",
-      "/images/teddy4.jpg",
+      "/images/teddy1.jpeg",
+      "/images/teddy2.jpeg",
+      "/images/teddy3.jpeg",
+      "/images/teddy4.jpeg",
     ],
     nome: "Teddy",
     tempo: "6 anos",
@@ -504,10 +511,10 @@ const animaisReais = [
   {
     id: 31,
     imagem: [
-      "/images/ninna1.jpg",
-      "/images/ninna2.jpg",
-      "/images/ninna3.jpg",
-      "/images/ninna4.jpg",
+      "/images/ninna1.jpeg",
+      "/images/ninna2.jpeg",
+      "/images/ninna3.jpeg",
+      "/images/ninna4.jpeg",
     ],
     nome: "Ninna",
     tempo: "5 anos",
@@ -521,10 +528,10 @@ const animaisReais = [
   {
     id: 32,
     imagem: [
-      "/images/tempestade1.jpg",
-      "/images/tempestade2.jpg",
-      "/images/tempestade3.jpg",
-      "/images/tempestade4.jpg",
+      "/images/tempestade1.jpeg",
+      "/images/tempestade2.jpeg",
+      "/images/tempestade3.jpeg",
+      "/images/tempestade4.jpeg",
     ],
     nome: "Tempestade",
     tempo: "7 meses",
@@ -538,10 +545,10 @@ const animaisReais = [
   {
     id: 33,
     imagem: [
-      "/images/1.jpg",
-      "/images/2.jpg",
-      "/images/3.jpg",
-      "/images/4.jpg",
+      "/images/saori1.jpeg",
+      "/images/saori2.jpeg",
+      "/images/saori3.jpeg",
+      "/images/saori4.jpeg",
     ],
     nome: "Saori",
     tempo: "9 meses",
@@ -555,8 +562,8 @@ const animaisReais = [
   {
     id: 34,
     imagem: [
-      "/images/bob1.jpg",
       "/images/bob2.jpg",
+      "/images/bob1.jpg",
       "/images/bob3.jpg",
       "/images/bob4.jpg",
     ],
@@ -588,10 +595,10 @@ const animaisReais = [
   {
     id: 36,
     imagem: [
-      "/images/pepeu1.jpg",
-      "/images/pepeu2.jpg",
-      "/images/pepeu3.jpg",
-      "/images/pepeu4.jpg",
+      "/images/pepeu3.jpeg",
+      "/images/pepeu1.jpeg",
+      "/images/pepeu2.jpeg",
+      "/images/pepeu4.jpeg",
     ],
     nome: "Pepeu",
     tempo: "8 anos",
@@ -605,10 +612,10 @@ const animaisReais = [
   {
     id: 37,
     imagem: [
-      "/images/lola1.jpg",
-      "/images/lola2.jpg",
-      "/images/lola3.jpg",
-      "/images/lola4.jpg",
+      "/images/lola1.jpeg",
+      "/images/lola2.jpeg",
+      "/images/lola3.jpeg",
+      "/images/lola4.jpeg",
     ],
     nome: "Lola",
     tempo: "3 anos",
@@ -622,10 +629,10 @@ const animaisReais = [
   {
     id: 38,
     imagem: [
-      "/images/darwin1.jpg",
-      "/images/darwin2.jpg",
-      "/images/darwin3.jpg",
-      "/images/darwin4.jpg",
+      "/images/darwin1.jpeg",
+      "/images/darwin2.jpeg",
+      "/images/darwin3.jpeg",
+      "/images/darwin4.jpeg",
     ],
     nome: "Darwin",
     tempo: "tem 5 meses",
@@ -639,10 +646,10 @@ const animaisReais = [
   {
     id: 39,
     imagem: [
-      "/images/frida1.jpg",
-      "/images/frida2.jpg",
-      "/images/frida3.jpg",
-      "/images/frida4.jpg",
+      "/images/frida2.jpeg",
+      "/images/frida1.jpeg",
+      "/images/frida3.jpeg",
+      "/images/frida4.jpeg",
     ],
     nome: "Frida",
     tempo: "4 anos",
