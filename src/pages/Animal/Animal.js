@@ -45,6 +45,10 @@ function Animal({ location, ...props }) {
   function mudaImagem(endereco) {
     setimagemEndereco(endereco);
   }
+  function adotarEsse(animal) {
+    history.push({ pathname: "/animal", state: { animal } });
+    setimagemEndereco(animal.imagem[0]);
+  }
 
   return (
     <div>
@@ -97,7 +101,7 @@ function Animal({ location, ...props }) {
               }}
               onClick={adotado}
             >
-              <p className="adoteAnimal50"> Adote agora </p>
+              <p> Adote agora </p>
             </Button>
           </div>
         </div>
@@ -105,33 +109,22 @@ function Animal({ location, ...props }) {
       <div className="paiCarrosselComentario">
         <div className="carrosselAnimal">
           <Carousel responsive={responsive}>
-            <div className="itemAnimalCarrossel">
-              <img src="./images/dogHome1.png" className="imageAnimal" />
-              <div class="middleAnimal">
-                <div class="textAnimal">
-                  Pluto <br />
-                  Bicas/MG
+            {AnimaisReais.map((animaisAdoteJa) => (
+              <div
+                className="itemAnimalCarrossel"
+                onClick={() => {
+                  adotarEsse(animaisAdoteJa);
+                }}
+              >
+                <img src={animaisAdoteJa.imagem[0]} className="imageAnimal" />
+                <div class="middleAnimal">
+                  <div class="textAnimal">
+                    {animaisAdoteJa.nome} <br />
+                    {animaisAdoteJa.local}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="itemAnimalCarrossel">
-              <img src="./images/dogHome1.png" className="imageAnimal" />
-              <div class="middleAnimal">
-                <div class="textAnimal">John Doe</div>
-              </div>
-            </div>
-            <div className="itemAnimalCarrossel">
-              <img src="./images/dogHome1.png" className="imageAnimal" />
-              <div class="middleAnimal">
-                <div class="textAnimal">John Doe</div>
-              </div>
-            </div>
-            <div className="itemAnimalCarrossel">
-              <img src="./images/dogHome1.png" className="imageAnimal" />
-              <div class="middleAnimal">
-                <div class="textAnimal">John Doe</div>
-              </div>
-            </div>
+            ))}
           </Carousel>
         </div>
         <div className="comentariosAnimal">
