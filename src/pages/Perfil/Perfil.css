@@ -1,0 +1,112 @@
+.containerPerfil {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  height: auto;
+  flex-grow: 1;
+  border-style: solid;
+  border-width: 0.1rem;
+  background-color: #dad9d7;
+  border-radius: 1.9rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.basePerfil {
+  width: 100%;
+  min-height: 77.5vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(./Cachorros.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.titlePerfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.inputsPerfil {
+  padding: 40px;
+  display: grid;
+  justify-items: center;
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#usernamePerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cpfPerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#emailPerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cepPerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#passwordPerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#complementPerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#cellphonePerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+#birthdatePerfil {
+  width: 20rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.buttonsave {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  width: 12rem;
+  border-radius: 2rem !important;
+}
+
+.buttonsave2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}

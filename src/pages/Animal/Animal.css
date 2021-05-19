@@ -1,6 +1,7 @@
-.divPai {
+.divAnimalDescricao {
   display: flex;
   width: 100%;
+  height: 33em;
 }
 .containerAnimal {
   display: flex;
@@ -8,34 +9,15 @@
   border: 1px solid #ccc;
 }
 
-.flexAnimal {
-  display: flex;
-}
-
-.itemAnimal {
+.itemAnimalImage {
   display: flex;
   width: 30%;
   justify-items: center;
-  /* grid-row-gap: 0.3rem;  */
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   padding-top: 1.1rem;
-}
-.base_AdocaoAnimais {
-  padding: 40px;
-  display: grid;
-  justify-items: center;
-  grid-column-gap: 70px;
-  grid-row-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.flexItemAnimal {
   flex: 1;
-}
-
-.columnAnimal {
-  flex-direction: column;
 }
 
 .containerLateral {
@@ -46,23 +28,52 @@
   justify-content: space-around;
   border: 1px solid #ccc;
 }
-.imagemCentral {
+
+.divImageCentral {
   display: flex;
   width: 70%;
   align-items: center;
   justify-content: center;
 }
 
-.buttonAdote {
+.imageCentral {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 75% !important;
+  width: 90% !important;
+  object-fit: cover;
 }
 
 .divImageAnimal {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  padding: 0.3rem;
+}
+
+.animalItem {
+  display: flex;
+  height: 5em;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.imageAnimal {
+  display: flex;
+  height: 8em !important;
+  width: 9em !important;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.nomePet {
+  font-size: 4rem;
+  font-family: Roboto, sans-serif;
+}
+
+.subTitlePet {
+  font-size: 2rem;
 }
 
 .paragrafoAnimal {
@@ -71,15 +82,74 @@
   text-align: justify;
 }
 
+.divButtonAdote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .paiCarrosselComentario {
   display: flex;
   width: 100%;
 }
 
 .carrosselAnimal {
-  display: flex;
+  padding: 1rem;
   width: 60%;
+  height: 12em;
   border: 1px solid #ccc;
+}
+
+.itemAnimalCarrossel {
+  position: relative;
+  width: 50%;
+  padding: 0.7rem;
+}
+
+.adoteAnimal50 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageAnimal {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.itemAnimalCarrossel {
+  position: relative;
+  width: 50%;
+}
+
+.middleAnimal {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.itemAnimalCarrossel:hover .imageAnimal {
+  opacity: 0.3;
+}
+
+.itemAnimalCarrossel:hover .middleAnimal {
+  opacity: 1;
+}
+
+.textAnimal {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 1em;
+  text-align: center;
 }
 
 .comentariosAnimal {
@@ -112,12 +182,87 @@
 }
 
 .imagePerfil {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .textoComentario {
   display: flex;
   width: 75%;
+  font-size: 0.9rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .divAnimalDescricao {
+    flex-direction: column;
+  }
+  .containerAnimal {
+    width: 100%;
+  }
+  .containerLateral {
+    width: 100%;
+  }
+
+  .paiCarrosselComentario {
+    flex-direction: column;
+  }
+  .carrosselAnimal {
+    width: 100%;
+    /* align-items: center; */
+    height: 15em;
+    padding-top: 5.2rem;
+  }
+
+  .comentariosAnimal {
+    width: 100%;
+    align-items: center;
+  }
+  .nomePet {
+    font-size: 2rem;
+  }
+
+  .paragrafoAnimal {
+    font-size: 0.7rem;
+  }
+  .subTitlePet {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .divAnimalDescricao {
+    flex-direction: column;
+  }
+  .containerAnimal {
+    width: 100%;
+  }
+  .containerLateral {
+    width: 100%;
+  }
+
+  .paiCarrosselComentario {
+    flex-direction: column;
+  }
+  .carrosselAnimal {
+    width: 100%;
+    align-items: center;
+    height: 17em;
+    padding-top: 7rem;
+  }
+
+  .comentariosAnimal {
+    width: 100%;
+    align-items: center;
+  }
+  .nomePet {
+    font-size: 2rem;
+  }
+
+  .paragrafoAnimal {
+    font-size: 0.7rem;
+  }
+  .subTitlePet {
+    font-size: 1rem;
+  }
 }

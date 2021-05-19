@@ -14,6 +14,7 @@
   width: 100%;
   min-height: 77.5vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url(./Cachorros.png);

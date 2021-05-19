@@ -57,7 +57,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
+  flex-direction: column;
+}
+
+.linkConfig2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end !important;
+  height: 4.5rem;
 }
 
 input[type="email"] {

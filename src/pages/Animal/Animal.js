@@ -1,104 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Animal.css";
 import Figure from "react-bootstrap/Figure";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Image from "react-bootstrap/Image";
+import { useHistory } from "react-router-dom";
+import AnimaisReais from "../../Componentes/AnimaisReais";
 
-function Animal() {
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 7.5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3.2,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 750 },
+    items: 2.7,
+  },
+  tablet: {
+    breakpoint: { max: 750, min: 464 },
+    items: 2.4,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1.8,
+  },
+};
+
+function Animal({ location, ...props }) {
+  const history = useHistory();
+  const { animal } = location.state;
+  const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
+  function adotado() {
+    alert(
+      "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+    );
+    history.push("home");
+  }
+  function mudaImagem(endereco) {
+    setimagemEndereco(endereco);
+  }
+
   return (
-    <>
-      <div className="divPai">
+    <div>
+      <div className="divAnimalDescricao">
         <div className="containerAnimal">
-          <div className="itemAnimal">
-            <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
+          <div className="itemAnimalImage">
+            {animal.imagem.map((Imagem) => (
+              <div className="divImageAnimal">
+                <Image
+                  className="animalItem"
+                  key={Imagem}
+                  src={Imagem}
+                  onClick={() => {
+                    mudaImagem(Imagem);
                   }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
+                  rounded
                 />
-              </Figure>
-            </div>
-            <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
-            </div>
-            <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
-            </div>
-            <div className="divImageAnimal">
-              <Figure>
-                <Figure.Image
-                  style={{
-                    alignItems: "center",
-                    width: "13rem",
-                    borderRadius: "0.5rem",
-                  }}
-                  alt="171x180"
-                  src="./images/dogHome1.png"
-                />
-              </Figure>
-            </div>
+              </div>
+            ))}
           </div>
-          <div className="imagemCentral">
-            <Figure>
-              <Figure.Image
-                style={{
-                  position: "top",
-                  width: "30rem",
-                  borderRadius: "0.5rem",
-                }}
-                alt="171x180"
-                src="./images/dogHome1.png"
-              />
-            </Figure>
+          <div className="divImageCentral">
+            <Image className="imageCentral" src={imagemEndereco} rounded />
           </div>
         </div>
         <div className="containerLateral">
           <Card>
             <Card.Body>
-              <Card.Title style={{ fontSize: "4rem", fontFamily: "Roboto" }}>
-                Bile, 2 anos
+              <Card.Title className="nomePet">
+                {animal.nome}, {animal.tempo}
               </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                Belo Horizonte
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
+                {animal.local}, tamanho {animal.tamanho}
               </Card.Subtitle>
-              <Card.Subtitle className="mb-2 text-muted">
-                Vira lata
+              <Card.Subtitle className="mb-2 text-muted subTitlePet">
+                {animal.Raca}
               </Card.Subtitle>
-              <p className="paragrafoAnimal">
-                Olá! Meu nome é Billie, tenho 2 anos e estou a procura de um
-                novo lar. Sou muito dócil, brincalhão, e adoro passear. Perdi
-                uma perna quando era bebê, mas isso não me impede de brincar
-                bastante. A ONG me encontrou ainda novinho, tinha apenas 4
-                meses, estava bem magrinho e desnutrido.
-              </p>
+              <p className="paragrafoAnimal">{animal.descricao}</p>
             </Card.Body>
           </Card>
-          <div className="buttonAdote">
+          <div className="divButtonAdote">
             <Button
               style={{
                 background: "#EDFE26",
@@ -109,14 +95,45 @@ function Animal() {
                 width: "15rem",
                 height: "3rem",
               }}
+              onClick={adotado}
             >
-              Adote agora
+              <p className="adoteAnimal50"> Adote agora </p>
             </Button>
           </div>
         </div>
       </div>
       <div className="paiCarrosselComentario">
-        <div className="carrosselAnimal"></div>
+        <div className="carrosselAnimal">
+          <Carousel responsive={responsive}>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">
+                  Pluto <br />
+                  Bicas/MG
+                </div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+            <div className="itemAnimalCarrossel">
+              <img src="./images/dogHome1.png" className="imageAnimal" />
+              <div class="middleAnimal">
+                <div class="textAnimal">John Doe</div>
+              </div>
+            </div>
+          </Carousel>
+        </div>
         <div className="comentariosAnimal">
           <div className="tituloComentario">
             <p>
@@ -132,8 +149,7 @@ function Animal() {
                 <u>
                   <b>Tony Stark:</b>
                 </u>{" "}
-                Lindo cachorro dócil e brincalhão, necessita de cuidadose
-                especiais pela dificultade de andar.
+                Pet lindo dócil e brincalhão, necessita de cuidadose especiais.
               </p>
             </div>
           </div>
@@ -146,7 +162,7 @@ function Animal() {
                 <u>
                   <b>Juliette:</b>
                 </u>{" "}
-                Billie é maravilhoso, porém meio arrisco, sempre desconfiado.
+                Esse pet é maravilhoso, porém meio arrisco, sempre desconfiado.
               </p>
             </div>
           </div>
@@ -159,13 +175,13 @@ function Animal() {
                 <u>
                   <b>Gilberto:</b>
                 </u>{" "}
-                Billie é um cãozinho especial, com muito amor para dar.
+                Esse pet é especial, com muito amor para dar.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

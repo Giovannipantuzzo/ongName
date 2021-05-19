@@ -24,6 +24,7 @@
   border-radius: 30px !important;
   max-height: 503px !important;
   max-width: 380px;
+  min-width: 380px;
 }
 .tituloAdote_ja {
   font-family: "Roboto", sans-serif;
@@ -36,8 +37,10 @@
 }
 .descriptionAdoteJa {
   padding: 5px;
-  family: "Roboto", sans-serif;
-  font-size: 17px;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 15x;
+  max-height: 125px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
