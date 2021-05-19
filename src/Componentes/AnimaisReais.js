@@ -658,6 +658,22 @@ export const animaisReais = [
       "É a dona da casa. Ela é muito anti-social, não gostou nem um pouquinho dos filhotes qd eles chegaram, odeia ser pega no colo, odeia crianças, mas adora um carinho na cabeça e passa o dia inteiro na varanda ou dando role nos muros",
     Raca: "Vira-lata",
   },
+  {
+    id: 40,
+    imagem: [
+      "/images/akira1.jpg",
+      "/images/akira2.jpg",
+      "/images/akira3.jpg",
+      "/images/akira4.jpg",
+    ],
+    nome: "Akíra",
+    tempo: "2 anos",
+    local: "Sete Lagoas/MG",
+    tamanho: "P",
+    sexo: "Fêmea",
+    descricao: "É triloca, não adote, se não vai ter problema com o dono.",
+    Raca: "Lhasa apso",
+  },
 ];
 
 export default animaisReais;
