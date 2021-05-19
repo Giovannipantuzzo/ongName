@@ -45,28 +45,34 @@ function Home() {
         </Carousel>
       </div>
       <div className="Descricao_Home">
-        <p className="SobreNosTitulo_Home">Sobre Nós</p>
-        <p className="SobreNosDescricao_Home">
-          ​Como um(a) Organização de adoção de animais líder, nossos projetos e
-          campanhas são reconhecidos em todo o mundo. Trabalhamos para unir
-          pessoas de todas as idades e origens que compartilham da crença de um
-          mundo onde os animais estão livres de tratamentos cruéis e desumanos.
-          A Pet Family é administrada por membros para seus membros, oferecendo
-          uma voz unida e ampliada para todos os que se juntam à nossa
-          comunidade.
-        </p>
-        <p className="ComoDoarTitulo_Home">Como Doar</p>
-        <p className="ComoDoarDescricao_Home">
-          Nossa instituição precisa muito de doações para poder manter o pleno
-          funcionamento da ONG, por isso, pedimos contribuições em forma de
-          depósito bancário ou pix. Conta: 25478-1 Pix: petfamily@gmail.com
-        </p>
-        <p className="ColaboradoresTitulo_Home">Colaboradores</p>
-        <p className="ColaboradoresDescricao_Home">
-          Bruno Campos <br></br> Gabriel Dias <br></br> Giovanni Pantuzzo
-          <br></br> Matheus Franklin <br></br>
-          Tainan Albuquerque
-        </p>
+        <div className="SobreNos">
+          <p className="SobreNosTitulo_Home">Sobre Nós</p>
+          <p className="SobreNosDescricao_Home">
+            ​Como um(a) Organização de adoção de animais líder, nossos projetos
+            e campanhas são reconhecidos em todo o mundo. Trabalhamos para unir
+            pessoas de todas as idades e origens que compartilham da crença de
+            um mundo onde os animais estão livres de tratamentos cruéis e
+            desumanos. A Pet Family é administrada por membros para seus
+            membros, oferecendo uma voz unida e ampliada para todos os que se
+            juntam à nossa comunidade.
+          </p>
+        </div>
+        <div className="ComoDoar">
+          <p className="ComoDoarDescricao_Home">
+            Nossa instituição precisa muito de doações para poder manter o pleno
+            funcionamento da ONG, por isso, pedimos contribuições em forma de
+            depósito bancário ou pix. Conta: 25478-1 Pix: petfamily@gmail.com
+          </p>
+          <p className="ComoDoarTitulo_Home">Como Doar</p>
+        </div>
+        <div className="Colaboradores">
+          <p className="ColaboradoresTitulo_Home">Colaboradores</p>
+          <p className="ColaboradoresDescricao_Home">
+            Bruno Campos <br></br> Gabriel Dias <br></br> Giovanni Pantuzzo
+            <br></br> Matheus Franklin <br></br>
+            Tainan Albuquerque
+          </p>
+        </div>
       </div>
     </div>
   );
