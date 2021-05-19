@@ -1,57 +1,6 @@
-export const animaisReais = [
+export const AnimaisAdoteJa = [
   {
     id: 1,
-    imagem: [
-      "/images/sansao1.jpeg",
-      "/images/sansao2.jpeg",
-      "/images/sansao3.jpeg",
-      "/images/sansao4.jpeg",
-    ],
-    nome: "Sansão",
-    tempo: "1 ano",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Female",
-    descricao:
-      "Pastoreio ( Vigiava os mosteiros ); Cão de companhia e pouco sociável; Territorialista. Comida preferida: Qualquer tipo de carne. Sociabilidade: Baixa, apenas com alguns membros da família.",
-    Raca: "Spainel Tibetano",
-  },
-  {
-    id: 2,
-    imagem: [
-      "/images/dalila1.jpeg",
-      "/images/dalila2.jpeg",
-      "/images/dalila3.jpeg",
-      "/images/dalila4.jpeg",
-    ],
-    nome: "Dalila",
-    tempo: "1 anos",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Femêa",
-    descricao:
-      "Gosta de estar no ambiente e se contenta com qualquer companhia. Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade:apenas com a família, apegada a poucos membros e brinca raramente.",
-    Raca: "Pequinês",
-  },
-  {
-    id: 3,
-    imagem: [
-      "/images/moon1.jpg",
-      "/images/moon2.jpg",
-      "/images/moon3.jpg",
-      "/images/moon4.jpg",
-    ],
-    nome: "Moon",
-    tempo: "1 ano",
-    local: "Teófilo Otoni/MG",
-    tamanho: "P",
-    sexo: "Femêa",
-    descricao:
-      "Ama deitar nas nossas camas, debaixo das cobertas, beber água direto do tanque e ficar miando na minha porta quando ela está fechada. Além disso, ela ama roubar biscoitos de polvilho e arranhar o tapete.",
-    Raca: "Não Definida",
-  },
-  {
-    id: 4,
     imagem: [
       "/images/pacoca1.jpeg",
       "/images/pacoca2.jpeg",
@@ -68,7 +17,7 @@ export const animaisReais = [
     Raca: "Shih Tzu",
   },
   {
-    id: 5,
+    id: 2,
     imagem: [
       "/images/benji1.jpeg",
       "/images/benji2.jpeg",
@@ -85,24 +34,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 6,
-    imagem: [
-      "/images/belinha1.jpeg",
-      "/images/belinha2.jpeg",
-      "/images/belinha3.jpeg",
-      "/images/belinha4.jpeg",
-    ],
-    nome: "Belinha",
-    tempo: "2 ano",
-    local: "Betim/MG",
-    tamanho: "P",
-    sexo: "Fêmea",
-    descricao:
-      "A Belinha é muito mansinha, sempre que vê alguém fica muito feliz. Ela odeia gatos e sempre procura briga com os animais maiores que ela. Sempre que possível procura um cantinho pra dormir e pegar sol. Também adora bichinhos de pelúcia, uma de suas brincadeiras favoritas é tentar rasgar esses bichinhos.",
-    Raca: "Pinscher (n° 1)",
-  },
-  {
-    id: 7,
+    id: 3,
     imagem: [
       "/images/suzi1.jpeg",
       "/images/suzi2.jpeg",
@@ -118,42 +50,9 @@ export const animaisReais = [
       "Suzi é a cadelinha mais brincalhona que eu já tive, ela adora fazer bagunça e brincar, seja com adultos ou crianças. Uma cadela amável que adora brincar com a bolinha dela e de morder (suavemente) as pessoas pedindo atenção. Nas horas vagas ela dorme, na verdade ela hiberna em sua caminha.Entretanto quando ela está elétrica não pode ver um portão que já quer ir pra rua correr.",
     Raca: "Shih-tzu",
   },
+
   {
-    id: 8,
-    imagem: [
-      "/images/x1.jpeg",
-      "/images/x2.jpeg",
-      "/images/x3.jpeg",
-      "/images/x4.jpeg",
-    ],
-    nome: "X",
-    tempo: "1 ano",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Macho",
-    descricao:
-      "Esse é o X. Foi resgatado por mim durante uma corrida na orla da lagoa da Pampulha. Me seguiu por uns 3 metros e foi o suficiente. Chuto q na época ele tinha uns 3 meses. Ficou doente e foi salvo por um veterinário+ mediante à verba que eu tinha para comprar cerveja pelo resto do mês. Está comigo desde novembro de 2020, tem como alimentação básica a ração misturada com um patêzinho pra dar uma norteada, e ganha uns tiragosto de sachê, ovo de codorna cru e uns belisquete de carne crua. Qdo chegou tinha 600g, hj tem uns 4kg. Ainda não está castrado, pois a cirurgia ainda não coube no orçamento (professor é falido, estudante é falido ao quadrado, então estudante q é professor é falido ao cubo). Mas garanto que tem uma vida mais digna do que teria na orla da lagoa. Parceria construída na pandemia.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 9,
-    imagem: [
-      "/images/joaoTodoroki1.jpeg",
-      "/images/joaoTodoroki2.jpeg",
-      "/images/joaoTodoroki3.jpeg",
-      "/images/joaoTodoroki4.jpeg",
-    ],
-    nome: "João Todoroki",
-    tempo: "3 meses",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Macho",
-    descricao:
-      "O João tem cerca de 3 meses, ele tem muita energia, ele é muito carinhoso e brinca bastante, especialmente com o outro gato, ele tem muita necessidade de atenção e por isso mia muito, mas ele é muito amigável com todos mundo no geral.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 10,
+    id: 4,
     imagem: [
       "/images/lancelot1.jpeg",
       "/images/lancelot2.jpeg",
@@ -170,7 +69,7 @@ export const animaisReais = [
     Raca: "",
   },
   {
-    id: 11,
+    id: 5,
     imagem: [
       "/images/amora1.jpeg",
       "/images/amora2.jpge",
@@ -187,7 +86,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 12,
+    id: 6,
     imagem: [
       "/images/juca1.jpeg",
       "/images/juca2.jpeg",
@@ -204,24 +103,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 13,
-    imagem: [
-      "/images/meg1.jpeg",
-      "/images/meg2.jpeg",
-      "/images/meg3.jpeg",
-      "/images/meg4.jpeg",
-    ],
-    nome: "Meg",
-    tempo: "2 anos",
-    local: "Conselheiro Lafaiete/MG",
-    tamanho: "P",
-    sexo: "Fêmea",
-    descricao:
-      "Ela é brava, morde as pessoas, mas quando chove ela tem medo e corre pra ficar no colo. Também mostra carinho esfregando a cara dela no rosto das pessoas que deitarem no sofá. Ela gosta de pegar o travesseiro dela pela boca e arrastar até a varanda pra tomar sol também.",
-    Raca: "Pequinês",
-  },
-  {
-    id: 14,
+    id: 7,
     imagem: [
       "/images/pantera1.jpeg",
       "/images/pantera2.jpeg",
@@ -237,7 +119,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 15,
+    id: 8,
     imagem: [
       "/images/juju1.jpeg",
       "/images/juju2.jpeg",
@@ -253,7 +135,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 16,
+    id: 9,
     imagem: [
       "/images/thor2.jpeg",
       "/images/thor1.jpeg",
@@ -270,7 +152,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 17,
+    id: 10,
     imagem: [
       "/images/dumbo1.jpeg",
       "/images/dumbo2.jpeg",
@@ -287,24 +169,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 18,
-    imagem: [
-      "/images/lessie1.jpeg",
-      "/images/lessie2.jpeg",
-      "/images/lessie3.jpeg",
-      "/images/lessie4.jpeg",
-    ],
-    nome: "Lessie",
-    tempo: "2 anos",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Fêmea",
-    descricao:
-      "Brinca muito, fica correndo em volta da arvore no quintal e gosta muito de morder a orelha dos outros cachorros aqui de casa. Ela é bem ciumenta e gosta muito de colo também.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 19,
+    id: 11,
     imagem: [
       "/images/zuko1.jpeg",
       "/images/zuko2.jpeg",
@@ -320,25 +185,9 @@ export const animaisReais = [
       "O Zuko é um cachorro q adora atenção e ficar perto das pessoas, ele é bem calmo até você deixar ele empolgado, a partir disso nem ele consegue se controlar mais. No geral ele é bem inteligente e obediente (um pouco medroso também) ou seja, a companhia perfeita.",
     Raca: "Pastor alemão",
   },
+
   {
-    id: 20,
-    imagem: [
-      "/images/atena1.jpeg",
-      "/images/atena2.jpeg",
-      "/images/atena3.jpeg",
-      "/images/atena4.jpeg",
-    ],
-    nome: "Atena",
-    tempo: "2 anos",
-    local: "Belo Horizonte/MG",
-    tamanho: "M",
-    sexo: "Fêmea",
-    descricao:
-      "É uma mistura de labrador com Golden e gosta de passear, de brincar de buscar a bola e de brigar com a irmã mais nova dela.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 21,
+    id: 12,
     imagem: [
       "/images/amoraELilica1.jpeg",
       "/images/amoraELilica2.jpeg",
@@ -354,7 +203,7 @@ export const animaisReais = [
     Raca: "Rottweiler",
   },
   {
-    id: 22,
+    id: 13,
     imagem: [
       "/images/mel1.jpeg",
       "/images/mel2.jpeg",
@@ -371,41 +220,7 @@ export const animaisReais = [
     Raca: "Poodle",
   },
   {
-    id: 23,
-    imagem: [
-      "/images/sauron1.jpeg",
-      "/images/sauron2.jpeg",
-      "/images/sauron3.jpeg",
-      "/images/sauron4.jpeg",
-    ],
-    nome: "Sauron",
-    tempo: "1 ano",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Macho",
-    descricao:
-      "Sauron é o cachorro mais amoroso do mundo! Além de ser um gordinho super fofo, nasceu com um rabinho curtinho, diferente do seu irmão. É muito faminto e tem espírito de velho, mas ao mesmo tempo ama brincar com seu irmão gêmeo. Ama carinho e, principalmente, AMA dar lambeijos.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 24,
-    imagem: [
-      "/images/bruno1.jpeg",
-      "/images/bruno2.jpeg",
-      "/images/bruno3.jpeg",
-      "/images/bruno4.jpeg",
-    ],
-    nome: "Bruno",
-    tempo: "1 ano",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Macho",
-    descricao:
-      "Bruno é o cachorro mais ciumento do mundo. Não pode nem falar o nome da sua dona que ele começa a rosnar. Mas ao mesmo tempo é muuuito carente e carinhoso, ama deitar no colo dos humanos e receber carinho na barriga. Ama brincar com os humanos e com seu irmão gêmeo, o Sauron. Faz xixi nos lugares errados e ama comer petiscos caninos.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 25,
+    id: 14,
     imagem: [
       "/images/edSheeran1.jpeg",
       "/images/edSheeran2.jpeg",
@@ -422,7 +237,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 26,
+    id: 15,
     imagem: [
       "/images/ayka1.jpeg",
       "/images/ayka2.jpeg",
@@ -439,7 +254,7 @@ export const animaisReais = [
     Raca: "Pinscher",
   },
   {
-    id: 27,
+    id: 16,
     imagem: [
       "/images/evie1.jpeg",
       "/images/evie2.jpeg",
@@ -456,7 +271,7 @@ export const animaisReais = [
     Raca: "Vira-lata",
   },
   {
-    id: 28,
+    id: 17,
     imagem: [
       "/images/nina1.jpeg",
       "/images/nina2.jpeg",
@@ -472,25 +287,9 @@ export const animaisReais = [
       "A cadela é uma Golden Retriever que ama brincar com um flamingo de brinquedo, também gosta de dormir muito e come bastante.",
     Raca: "Golden Retriever",
   },
+
   {
-    id: 29,
-    imagem: [
-      "/images/kappa1.jpeg",
-      "/images/kappa2.jpeg",
-      "/images/kappa3.jpeg",
-      "/images/kappa4.jpeg",
-    ],
-    nome: "Kappa",
-    tempo: "6 meses",
-    local: "Belo Horizonte/MG",
-    tamanho: "5 cm",
-    sexo: "Macho",
-    descricao:
-      "É muito bravo, ele adora comer ração e odei divirto o espaço dele com qualquer outro animal. Já matou dois peixinhos durante a fase de adaptação deles",
-    Raca: "Betta",
-  },
-  {
-    id: 30,
+    id: 18,
     imagem: [
       "/images/teddy1.jpeg",
       "/images/teddy2.jpeg",
@@ -506,59 +305,9 @@ export const animaisReais = [
       "Ele adora brincar e dormir na cama, mas odeia que tirem foto ou filmes ele, ele é adulto de porte pequeno.",
     Raca: "Vira-lata",
   },
+
   {
-    id: 31,
-    imagem: [
-      "/images/ninna1.jpeg",
-      "/images/ninna2.jpeg",
-      "/images/ninna3.jpeg",
-      "/images/ninna4.jpeg",
-    ],
-    nome: "Ninna",
-    tempo: "5 anos",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Fêmea",
-    descricao:
-      "Ela adora comer e receber carinho, inclusive ela fica arranhando as pessoas até que elas façam carinho nela.",
-    Raca: "Shitszu",
-  },
-  {
-    id: 32,
-    imagem: [
-      "/images/tempestade1.jpeg",
-      "/images/tempestade2.jpeg",
-      "/images/tempestade3.jpeg",
-      "/images/tempestade4.jpeg",
-    ],
-    nome: "Tempestade",
-    tempo: "7 meses",
-    local: "Belo Horizonte/MG",
-    tamanho: "M",
-    sexo: "Fêmea",
-    descricao:
-      "Super caseiro e dócil. Adora um carinho e é o melhor amigo em tempos frios! Gosta de ficar deitadinha em cobertas quentinhas e gosta de acompanhar o dono por toda casa.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 33,
-    imagem: [
-      "/images/saori1.jpeg",
-      "/images/saori2.jpeg",
-      "/images/saori3.jpeg",
-      "/images/saori4.jpeg",
-    ],
-    nome: "Saori",
-    tempo: "9 meses",
-    local: "Belo Horizonte/MG",
-    tamanho: "M",
-    sexo: "Fêmea",
-    descricao:
-      "Carinhosa, adora sache e ficar em casa. Gosta de deitar em baixo das cobertas e amassar o pãozinho no pé das pessoas. O lugar favorito dela é em cima do guarda roupa.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 34,
+    id: 19,
     imagem: [
       "/images/bob2.jpg",
       "/images/bob1.jpg",
@@ -573,25 +322,9 @@ export const animaisReais = [
     descricao: "Um cachorro dócil e amigáve",
     Raca: "Vira-lata",
   },
+
   {
-    id: 35,
-    imagem: [
-      "/images/jade1.jpg",
-      "/images/jade2.jpg",
-      "/images/jade3.jpg",
-      "/images/jade4.jpg",
-    ],
-    nome: "Jade",
-    tempo: "1 ano e 9 meses",
-    local: "Divinópolis/MG",
-    tamanho: "M",
-    sexo: "Fêmea",
-    descricao:
-      "Ela adora brincar e passear, é muito carente e gosta muito de receber atenção.",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 36,
+    id: 20,
     imagem: [
       "/images/pepeu3.jpeg",
       "/images/pepeu1.jpeg",
@@ -608,7 +341,7 @@ export const animaisReais = [
     Raca: "Poodle",
   },
   {
-    id: 37,
+    id: 21,
     imagem: [
       "/images/lola1.jpeg",
       "/images/lola2.jpeg",
@@ -624,25 +357,9 @@ export const animaisReais = [
       "A coisa que Lola mais ama fazer é dormir. Enquanto tiver alguém deitado, ela está junto. Se o quarto estiver escuro então, melhor ainda. Além disso Lola odeia que não durmam no horário certo, ela começa a ficar estressada e vai procurar outro quarto ou então embaixo da cama pra dormir.",
     Raca: "Poodle",
   },
+
   {
-    id: 38,
-    imagem: [
-      "/images/darwin1.jpeg",
-      "/images/darwin2.jpeg",
-      "/images/darwin3.jpeg",
-      "/images/darwin4.jpeg",
-    ],
-    nome: "Darwin",
-    tempo: "tem 5 meses",
-    local: "Belo Horizonte/MG",
-    tamanho: "P",
-    sexo: "Macho",
-    descricao:
-      "É muito agitado, muito apegado. Ele tem um pouquinho de espirito de gato, gosta de subir nas coisas e aconchegar no colo",
-    Raca: "Vira-lata",
-  },
-  {
-    id: 39,
+    id: 22,
     imagem: [
       "/images/frida2.jpeg",
       "/images/frida1.jpeg",
@@ -660,4 +377,4 @@ export const animaisReais = [
   },
 ];
 
-export default animaisReais;
+export default AnimaisAdoteJa;

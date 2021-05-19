@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./Animal.css";
-import Figure from "react-bootstrap/Figure";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
-import AnimaisReais from "../../Componentes/AnimaisReais";
-
+import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -108,19 +106,21 @@ function Animal({ location, ...props }) {
       </div>
       <div className="paiCarrosselComentario">
         <div className="carrosselAnimal">
+          <h1 className="tittleAdoteAnimal"> Adote já </h1>
+
           <Carousel responsive={responsive}>
-            {AnimaisReais.map((animaisAdoteJa) => (
+            {AnimaisAdoteJa.map((animalAdoteJa) => (
               <div
                 className="itemAnimalCarrossel"
                 onClick={() => {
-                  adotarEsse(animaisAdoteJa);
+                  adotarEsse(animalAdoteJa);
                 }}
               >
-                <img src={animaisAdoteJa.imagem[0]} className="imageAnimal" />
+                <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
                 <div class="middleAnimal">
                   <div class="textAnimal">
-                    {animaisAdoteJa.nome} <br />
-                    {animaisAdoteJa.local}
+                    {animalAdoteJa.nome} <br />
+                    {animalAdoteJa.local}
                   </div>
                 </div>
               </div>
@@ -128,11 +128,7 @@ function Animal({ location, ...props }) {
           </Carousel>
         </div>
         <div className="comentariosAnimal">
-          <div className="tituloComentario">
-            <p>
-              <b>Comentários</b>
-            </p>
-          </div>
+          <div className="tituloComentario">Comentários</div>
           <div className="comentarioFuncionario">
             <div className="perfilComentario">
               <img src="./images/tonyStark.png" className="imagePerfil" />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Adote.css";
 import Produto from "../../Componentes/Card_Adote_ja";
-import Animais from "../../Componentes/AnimaisReais";
+import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 
 function Adote_ja() {
   return (
@@ -16,7 +16,7 @@ function Adote_ja() {
       </div>
       <div className="background_Image_Adote_ja">
         <div className="marketplace">
-          {Animais.map((animal) => (
+          {AnimaisAdoteJa.map((animal) => (
             <Produto key={animal.id} animal={animal} />
           ))}
         </div>
