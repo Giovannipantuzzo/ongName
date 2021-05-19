@@ -199,8 +199,7 @@ function Home() {
             </div>
           </div>
         </Carousel>
-      </div>
-
+      </div>{" "}
       <div className="Descricao_Home">
         <div className="SobreNos">
           <p className="SobreNosTitulo_Home">Sobre Nós</p>
