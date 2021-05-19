@@ -50,7 +50,6 @@ function Home() {
   const history = useHistory();
   return (
     <div>
-
       <div>
         <Carousel fade>
           <Carousel.Item
@@ -89,7 +88,6 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </div>
-      
 
       <CarouselBootstrap fade>
         <CarouselBootstrap.Item
@@ -126,7 +124,7 @@ function Home() {
           </CarouselBootstrap.Caption>
         </CarouselBootstrap.Item>
       </CarouselBootstrap>
-      <h1 className="tittleAdoteHome"> Adote já </h1>
+      {/* <h1 className="tittleAdoteHome"> Adote já </h1>
       <div className="baseCarrosel2">
         <Carousel responsive={responsive}>
           <div className="CarrosselHome2">
@@ -240,9 +238,9 @@ function Home() {
             </div>
           </div>
         </Carousel>
-      </div>
+      </div> */}
 
-      <div className="Descricao_Home">
+      {/* <div className="Descricao_Home">
         <div className="SobreNos">
           <p className="SobreNosTitulo_Home">Sobre Nós</p>
           <p className="SobreNosDescricao_Home">
@@ -271,8 +269,7 @@ function Home() {
             Tainan Albuquerque
           </p>
         </div>
-      </div>
-
+      </div> */}
     </div>
   );
 }
