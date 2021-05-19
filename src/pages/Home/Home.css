@@ -1,3 +1,104 @@
+
+.Descricao_Home {
+  background-color: #fffcc1;
+}
+
+.SobreNos {
+  display: flex;
+  padding: 30px;
+  align-items: "center";
+  width: "100%";
+  height: "40vh";
+}
+
+.SobreNosTitulo_Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4rem;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.SobreNosDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  text-align: justify;
+  padding: 10px;
+  width: 50%;
+}
+
+.ComoDoar {
+  display: flex;
+  padding: 30px;
+  margin-top: 50px;
+  align-items: "center";
+  width: "100%";
+  height: "40vh";
+}
+
+.ComoDoarTitulo_Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4rem;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ComoDoarDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  text-align: justify;
+  padding: 10px;
+  width: 50%;
+}
+
+.Colaboradores {
+  display: flex;
+  padding: 30px;
+  margin-top: 50px;
+  align-items: "center";
+  width: "100%";
+  height: "40vh";
+}
+
+.ColaboradoresTitulo_Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4rem;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ColaboradoresDescricao_Home {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+
 .tittleAdoteHome {
   display: flex;
   align-items: center;
@@ -72,4 +173,5 @@
     font-size: 2.5em;
     font-weight: bold;
   }
+
 }
