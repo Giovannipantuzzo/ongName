@@ -176,6 +176,7 @@
 }
 
 .boxmsg1 {
+  display: flex;
   position: absolute;
   width: auto;
   height: auto;
@@ -188,7 +189,9 @@
   min-width: 20%;
   min-height: 70%;
   max-height: 50%;
-  border-radius: 0.1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .msg1 {
