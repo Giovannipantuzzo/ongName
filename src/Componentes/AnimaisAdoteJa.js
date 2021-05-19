@@ -30,7 +30,7 @@ export const AnimaisAdoteJa = [
     tamanho: "M",
     sexo: "Macho",
     descricao:
-      "Ele era de um parente da minha família, porém essa pessoa estava passando por problemas difíceis uma época e chegou até a tomar remédios controlados, e nesse momento o Benji acabou sendo maltratado. Quando pegamos ele, estava um pouco traumatizado, mas com o tempo aqui em casa, dando carinho para ele, melhorou bastante. Ainda hoje ele é bem sensível a barulhos ou quaisquer sustos. Fica com medo facilmente e começa a chorar. É um cachorro muito dócil, amoroso e inteligente. Uma pessoa ao demonstrar algum sinal de violência para ele, ele deita no chão e fica virado de barriga pra cima. Gosta de comer coisas variadas como, batata doce, maçãs, banana, biscoitos. Algumas vezes ele chegou a sair pra rua, por descuido aqui em casa. Mas ele retornou haha. Um dia em especial, ele tinha fugido e por volta de umas 22:00 da noite escutamos ele batendo a patinha no portão, pedindo pra entrar.",
+      "Ele era de um parente da minha família, porém essa pessoa estava passando por problemas difíceis uma época e chegou até a tomar remédios controlados, e nesse momento o Benji acabou sendo maltratado. Quando pegamos ele, estava um pouco traumatizado, mas com o tempo aqui em casa, dando carinho para ele, melhorou bastante. ",
     Raca: "Vira-lata",
   },
   {
@@ -72,7 +72,7 @@ export const AnimaisAdoteJa = [
     id: 5,
     imagem: [
       "/images/amora1.jpeg",
-      "/images/amora2.jpge",
+      "/images/amora2.jpeg",
       "/images/amora3.jpeg",
       "/images/amora4.jpeg",
     ],
@@ -241,7 +241,7 @@ export const AnimaisAdoteJa = [
     imagem: [
       "/images/ayka1.jpeg",
       "/images/ayka2.jpeg",
-      "/images/ayka3.jpg",
+      "/images/ayka3.jpeg",
       "/images/ayka4.jpeg",
     ],
     nome: "Ayka",

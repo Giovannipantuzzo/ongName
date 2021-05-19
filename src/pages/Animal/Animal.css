@@ -70,16 +70,20 @@
 
 .nomePet {
   font-size: 4rem;
-  font-family: Roboto, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .subTitlePet {
-  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: grey;
 }
 
 .paragrafoAnimal {
+  padding-top: 10px;
   font-size: 1.1rem;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: justify;
 }
 
@@ -87,6 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30%;
 }
 .paiCarrosselComentario {
   display: flex;
@@ -159,6 +164,7 @@
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   padding-bottom: 5px;
+  text-decoration: underline;
 }
 
 .comentarioFuncionario {
@@ -267,4 +273,5 @@
   padding-bottom: 5px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  text-decoration: underline;
 }

@@ -72,20 +72,16 @@ function Animal({ location, ...props }) {
           </div>
         </div>
         <div className="containerLateral">
-          <Card>
-            <Card.Body>
-              <Card.Title className="nomePet">
-                {animal.nome}, {animal.tempo}
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                {animal.local}, tamanho {animal.tamanho}
-              </Card.Subtitle>
-              <Card.Subtitle className="mb-2 text-muted subTitlePet">
-                {animal.Raca}
-              </Card.Subtitle>
-              <p className="paragrafoAnimal">{animal.descricao}</p>
-            </Card.Body>
-          </Card>
+          <Card.Body>
+            <p className="nomePet">
+              {animal.nome}, {animal.tempo}
+            </p>
+            <p className="subTitlePet">
+              {animal.local}, tamanho {animal.tamanho}
+            </p>
+            <p className="subTitlePet">Raça: {animal.Raca}</p>
+            <p className="paragrafoAnimal">{animal.descricao}</p>
+          </Card.Body>
           <div className="divButtonAdote">
             <Button
               style={{
