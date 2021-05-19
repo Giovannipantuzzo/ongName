@@ -12,8 +12,15 @@ function Cadastro() {
   const history = useHistory();
 
   function cadastrar() {
-    alert("Conta criada com sucesso!\n" + email);
-    history.push("login");
+    console.log(name);
+    if (!name || !email || !password || !confirmPassword || !number) {
+      alert("Preencha todos os campos para efetuar o cadastro!");
+    } else if (password !== confirmPassword) {
+      alert("Senhas diferentes, por favor, coloque senhas iguais!");
+    } else if (password == confirmPassword) {
+      alert("Conta criada com sucesso!\n" + email);
+      history.push("login");
+    }
   }
 
   return (
@@ -30,7 +37,7 @@ function Cadastro() {
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
-          <Form.Group controlId="email2">
+          <Form.Group controlId="email">
             <Form.Control
               type="email2"
               placeholder="email"
@@ -38,18 +45,22 @@ function Cadastro() {
             />
           </Form.Group>
           <Form.Group controlId="password2">
-            <Form.Control type="password2" placeholder="password" />
+            <Form.Control
+              type="password"
+              placeholder="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </Form.Group>
           <Form.Group controlId="confirmPassword">
             <Form.Control
-              type="confirmPassword"
+              type="password"
               placeholder="confirm password"
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </Form.Group>
           <Form.Group controlId="number">
             <Form.Control
-              type="number"
+              type="text"
               placeholder="cell phone number"
               onChange={(e) => setNumber(e.target.value)}
             />

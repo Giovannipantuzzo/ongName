@@ -54,14 +54,22 @@
 
 #email2 {
   border-radius: 1rem;
+  width: 100%;
+}
+
+input[type="email2"] {
+  border-radius: 1rem;
+  width: 100%;
 }
 
 #password2 {
   border-radius: 1rem;
+  width: 100%;
 }
 
 #confirmPassword {
   border-radius: 1rem;
+  width: 100%;
 }
 
 #number {
