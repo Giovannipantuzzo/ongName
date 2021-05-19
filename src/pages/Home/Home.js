@@ -59,6 +59,13 @@ function Home() {
             src="./images/dogHome1.png"
             alt="First slide"
           />
+          <div className="boxmsg1">
+            <p className="msg1">
+              Adotar é encher de esperanças um coração que antes não sabia o que
+              era carinho, e receber em troca um presente único: O Amor
+              Incondicional!!
+            </p>
+          </div>
           <CarouselBootstrap.Caption>
             <Card.Text></Card.Text>
           </CarouselBootstrap.Caption>
@@ -71,6 +78,12 @@ function Home() {
             src="./images/dogHome2.png"
             alt="Second slide"
           />
+          <div className="boxmsg1">
+            <p className="msg2">
+              Eles já nascem sabendo amar, de um jeito que nós levamos a vida
+              inteira para aprender.
+            </p>
+          </div>
         </CarouselBootstrap.Item>
         <CarouselBootstrap.Item
           style={{ display: "flex", flexDirection: "row", width: "100%" }}
@@ -80,6 +93,12 @@ function Home() {
             src="./images/dogHome3.png"
             alt="Third slide"
           />
+          <div className="boxmsg1">
+            <p className="msg2">
+              Eles já nascem sabendo amar, de um jeito que nós levamos a vida
+              inteira para aprender.
+            </p>
+          </div>
           <CarouselBootstrap.Caption>
             <Card.Text></Card.Text>
           </CarouselBootstrap.Caption>
