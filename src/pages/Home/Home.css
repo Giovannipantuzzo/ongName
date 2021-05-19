@@ -200,38 +200,20 @@
   font-size: 3vw;
 }
 
-/* @media screen and (max-width: 1098px) and (min-width: 1064px) {
-  .msg1 {
-    font-size: 2.9rem;
-  }
+.msg2 {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 3vw;
 }
 
-@media screen and (max-width: 1064px) and (min-width: 923px) {
-  .msg1 {
-    font-size: 2.5rem;
-  }
+.msg3 {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 3vw;
 }
-
-@media screen and (max-width: 923px) and (min-width: 852px) {
-  .msg1 {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 923px) and (min-width: 852px) {
-  .msg1 {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 852px) and (min-width: 746px) {
-  .msg1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 852px) and (min-width: 746px) {
-  .msg1 {
-    font-size: 2rem;
-  }
-} */
