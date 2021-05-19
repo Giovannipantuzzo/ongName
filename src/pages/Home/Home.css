@@ -174,3 +174,49 @@
     font-weight: bold;
   }
 }
+
+.boxmsg1 {
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #000000;
+  opacity: 0.5;
+  max-width: 50%;
+  min-width: 20%;
+  min-height: 70%;
+  max-height: 50%;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg1 {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 3vw;
+}
+
+.msg2 {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 3vw;
+}
+
+.msg3 {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 3vw;
+}
