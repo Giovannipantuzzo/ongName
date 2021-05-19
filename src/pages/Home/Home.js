@@ -6,6 +6,7 @@ import Card from "react-bootstrap/Card";
 import { useHistory } from "react-router-dom";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
 import "./Home.css";
+import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 
 const responsive = {
   superLargeDesktop: {
@@ -48,6 +49,10 @@ const responsive = {
 
 function Home() {
   const history = useHistory();
+  function adotarEsse(animal) {
+    history.push({ pathname: "/animal", state: { animal } });
+  }
+
   return (
     <div>
       <CarouselBootstrap fade>
@@ -107,116 +112,26 @@ function Home() {
       <h1 className="tittleAdoteHome"> Adote já </h1>
       <div className="baseCarrosel2">
         <Carousel responsive={responsive}>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
+          {AnimaisAdoteJa.map((animalAdoteJa) => (
+            <div
+              className="CarrosselHome2"
               onClick={() => {
-                history.push("animal");
+                adotarEsse(animalAdoteJa);
               }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                Pluto <br />
-                Bicas/MG
-                <BiMaleSign />
+            >
+              <img
+                className="imageAnimalCarrossel2"
+                src={animalAdoteJa.imagem[0]}
+              />
+              <div class="middleAnimalCarrossel2">
+                <div class="textAnimalCarrossel2">
+                  {animalAdoteJa.nome} <br />
+                  {animalAdoteJa.local}
+                  <BiMaleSign />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                history.push("animal");
-              }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiFemaleSign />
-              </div>
-            </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                history.push("animal");
-              }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiMaleSign />
-              </div>
-            </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                history.push("animal");
-              }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiFemaleSign />
-              </div>
-            </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiMaleSign />
-              </div>
-            </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiMaleSign />
-              </div>
-            </div>
-          </div>
-          <div className="CarrosselHome2">
-            <img
-              src="./images/dogHome1.png"
-              className="imageAnimalCarrossel2"
-              style={{ cursor: "pointer" }}
-            />
-            <div class="middleAnimalCarrossel2">
-              <div class="textAnimalCarrossel2">
-                John Doe <br />
-                Bicas/MG
-                <BiFemaleSign />
-              </div>
-            </div>
-          </div>
+          ))}
         </Carousel>
       </div>{" "}
       <div className="Descricao_Home">
