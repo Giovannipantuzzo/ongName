@@ -109,7 +109,8 @@ function Animal({ location, ...props }) {
           <h1 className="tittleAdoteAnimal"> Adote já </h1>
 
           <Carousel responsive={responsive}>
-            {AnimaisAdoteJa.map((animalAdoteJa) => (
+            { AnimaisAdoteJa.map((animalAdoteJa) => (
+              animalAdoteJa.id != animal.id?
               <div
                 className="itemAnimalCarrossel"
                 onClick={() => {
@@ -124,7 +125,7 @@ function Animal({ location, ...props }) {
                   </div>
                 </div>
               </div>
-            ))}
+            :null))}
           </Carousel>
         </div>
         <div className="comentariosAnimal">
