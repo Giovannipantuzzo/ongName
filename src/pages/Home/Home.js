@@ -50,45 +50,6 @@ function Home() {
   const history = useHistory();
   return (
     <div>
-      <div>
-        <Carousel fade>
-          <Carousel.Item
-            style={{ display: "flex", flexDirection: "row", width: "100%" }}
-          >
-            <div></div>
-            <img
-              className="d-block w-100"
-              src="./images/dogHome1.png"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <Card.Text></Card.Text>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item
-            style={{ display: "flex", flexDirection: "column", width: "100%" }}
-          >
-            <img
-              className="d-block w-100"
-              src="./images/dogHome2.png"
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item
-            style={{ display: "flex", flexDirection: "column", width: "100%" }}
-          >
-            <img
-              className="d-block w-100"
-              src="./images/dogHome3.png"
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <Card.Text></Card.Text>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-
       <CarouselBootstrap fade>
         <CarouselBootstrap.Item
           style={{ display: "flex", flexDirection: "row", width: "100%" }}
@@ -124,7 +85,7 @@ function Home() {
           </CarouselBootstrap.Caption>
         </CarouselBootstrap.Item>
       </CarouselBootstrap>
-      {/* <h1 className="tittleAdoteHome"> Adote já </h1>
+      <h1 className="tittleAdoteHome"> Adote já </h1>
       <div className="baseCarrosel2">
         <Carousel responsive={responsive}>
           <div className="CarrosselHome2">
@@ -238,9 +199,8 @@ function Home() {
             </div>
           </div>
         </Carousel>
-      </div> */}
-
-      {/* <div className="Descricao_Home">
+      </div>{" "}
+      <div className="Descricao_Home">
         <div className="SobreNos">
           <p className="SobreNosTitulo_Home">Sobre Nós</p>
           <p className="SobreNosDescricao_Home">
@@ -269,7 +229,7 @@ function Home() {
             Tainan Albuquerque
           </p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
