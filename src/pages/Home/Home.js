@@ -127,7 +127,7 @@ function Home() {
                 <div class="textAnimalCarrossel2">
                   {animalAdoteJa.nome} <br />
                   {animalAdoteJa.local}
-                  <BiMaleSign />
+                  {animalAdoteJa.icone}
                 </div>
               </div>
             </div>
