@@ -116,11 +116,15 @@
 
 .itemAnimalCarrossel {
   position: relative;
-  width: 50%;
+  width: 100%;
   cursor: pointer;
+  max-width: 144px;
+  padding: 0.7rem;
 }
 
 .middleAnimal {
+  display: flex;
+  justify-content: center;
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -129,6 +133,7 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  margin-left: 0.6rem;
 }
 
 .itemAnimalCarrossel:hover .imageAnimal {
@@ -144,8 +149,10 @@
   flex-wrap: wrap;
   color: black;
   font-size: 1em;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   font-weight: bold;
+  justify-content: center;
 }
 
 .comentariosAnimal {
