@@ -10,23 +10,31 @@ import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 7.5,
+    items: 10,
   },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3.2,
+  desktop1: {
+    breakpoint: { max: 3000, min: 2000 },
+    items: 7,
+  },
+  desktop2: {
+    breakpoint: { max: 2000, min: 1024 },
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 750 },
     items: 2.7,
   },
   tablet: {
-    breakpoint: { max: 750, min: 464 },
-    items: 2.4,
+    breakpoint: { max: 750, min: 520 },
+    items: 3.4,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1.8,
+    breakpoint: { max: 520, min: 281 },
+    items: 2.1,
+  },
+  Galaxy_Fold: {
+    breakpoint: { max: 280, min: 0 },
+    items: 1.7,
   },
 };
 
