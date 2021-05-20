@@ -127,7 +127,11 @@ function Home() {
                 <div class="textAnimalCarrossel2">
                   {animalAdoteJa.nome} <br />
                   {animalAdoteJa.local}
-                  <BiMaleSign />
+                  {animalAdoteJa.sexo === "Macho" ? (
+                    <BiMaleSign />
+                  ) : (
+                    <BiFemaleSign />
+                  )}
                 </div>
               </div>
             </div>

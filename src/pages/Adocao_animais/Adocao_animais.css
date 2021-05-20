@@ -15,10 +15,13 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+.card {
+  background-color: #fdfaba !important;
+}
+
 .sombra_AdocaoAnimais {
   box-shadow: 0 0 0.3em black;
   background-color: #eceff3 !important;
-  background-image: linear-gradient(rgb(230, 230, 230), rgb(240, 240, 122));
   border-radius: 30px !important;
 }
 

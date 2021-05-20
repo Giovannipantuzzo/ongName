@@ -18,9 +18,12 @@
   justify-content: space-between;
 }
 
+.card {
+  background-color: #fdfaba !important;
+}
+
 .Card_adoteJa {
   box-shadow: 0 0 1em black;
-  background-image: linear-gradient(rgb(230, 230, 230), rgb(240, 240, 122));
   border-radius: 30px !important;
   max-height: 503px !important;
   max-width: 380px;

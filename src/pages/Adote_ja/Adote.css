@@ -19,7 +19,7 @@
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-size: 40px;
-  color: white;
+  color: black;
   text-decoration: underline;
   border-top: 1px solid;
   font-weight: bold;
@@ -31,14 +31,14 @@
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
   text-align: center;
-  color: white;
+  color: black;
   border-bottom: 1px solid;
   text-align: center;
   padding: 10px;
 }
 
 .HeaderAdoteJa {
-  background-color: #747d86;
+  background-color: #fdfaba;
 }
 @media (max-width: 400px) {
   .TítuloAdoteJa {

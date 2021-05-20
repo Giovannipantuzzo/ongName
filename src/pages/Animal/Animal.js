@@ -7,6 +7,8 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
+import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -126,6 +128,11 @@ function Animal({ location, ...props }) {
                     <div class="textAnimal">
                       {animalAdoteJa.nome} <br />
                       {animalAdoteJa.local}
+                      {animalAdoteJa.sexo === "Macho" ? (
+                        <BiMaleSign />
+                      ) : (
+                        <BiFemaleSign />
+                      )}
                     </div>
                   </div>
                 </div>
