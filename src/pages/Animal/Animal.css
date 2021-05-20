@@ -1,7 +1,7 @@
 .divAnimalDescricao {
   display: flex;
   width: 100%;
-  max-height: 33em;
+  height: auto;
 }
 .containerAnimal {
   display: flex;
@@ -32,6 +32,7 @@
 .divImageCentral {
   display: flex;
   width: 70%;
+  max-height: 600px;
   align-items: center;
   justify-content: center;
 }
@@ -92,6 +93,7 @@
   justify-content: center;
   align-items: center;
   height: 30%;
+  padding: 20px;
 }
 .paiCarrosselComentario {
   display: flex;
@@ -193,7 +195,41 @@
   font-family: "Quicksand", sans-serif;
 }
 
-@media screen and (max-width: 700px) and (min-width: 500px) {
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .divAnimalDescricao {
+    flex-direction: column;
+  }
+  .containerAnimal {
+    width: 100%;
+  }
+  .containerLateral {
+    width: 100%;
+  }
+
+  .paiCarrosselComentario {
+    flex-direction: column;
+  }
+  .carrosselAnimal {
+    width: 100%;
+    height: auto;
+  }
+
+  .comentariosAnimal {
+    width: 100%;
+    align-items: center;
+  }
+  .nomePet {
+    font-size: 3.4rem;
+  }
+
+  .paragrafoAnimal {
+    font-size: 1rem;
+  }
+  .subTitlePet {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
   .divAnimalDescricao {
     flex-direction: column;
   }
@@ -270,7 +306,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   text-decoration: underline;
