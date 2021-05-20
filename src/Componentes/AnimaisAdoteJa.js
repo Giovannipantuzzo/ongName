@@ -1,5 +1,3 @@
-import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
-
 export const AnimaisAdoteJa = [
   {
     id: 1,
@@ -17,7 +15,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Adora passear todos os dias, ama andar de carro e tirar um cochilo depois do almoço. De manhã e de noite, é um anjo, mas de dia é uma fera. Come muito e morre de medo de tomar banho..",
     Raca: "Shih Tzu",
-    icone: <BiFemaleSign />,
   },
   {
     id: 2,
@@ -35,7 +32,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ele era de um parente da minha família, porém essa pessoa estava passando por problemas difíceis uma época e chegou até a tomar remédios controlados, e nesse momento o Benji acabou sendo maltratado. Quando pegamos ele, estava um pouco traumatizado, mas com o tempo aqui em casa, dando carinho para ele, melhorou bastante. ",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
   {
     id: 3,
@@ -53,7 +49,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Suzi é a cadelinha mais brincalhona que eu já tive, ela adora fazer bagunça e brincar, seja com adultos ou crianças. Uma cadela amável que adora brincar com a bolinha dela e de morder (suavemente) as pessoas pedindo atenção. Nas horas vagas ela dorme, na verdade ela hiberna em sua caminha.Entretanto quando ela está elétrica não pode ver um portão que já quer ir pra rua correr.",
     Raca: "Shih-tzu",
-    icone: <BiFemaleSign />,
   },
 
   {
@@ -72,7 +67,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Hobbys: entrar dentro de espaços apertados, dormir muito e brincar de pega pega.",
     Raca: "",
-    icone: <BiMaleSign />,
   },
   {
     id: 5,
@@ -90,7 +84,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ela é muito agitada, ansiosa e gosta de latir pra galera pra tá passando na rua. Mesmo assim, ela faz muita amizade com os vizinhos daqui, a rua toda conhece e gosta dela e os carteiros também.",
     Raca: "Vira-lata",
-    icone: <BiFemaleSign />,
   },
   {
     id: 6,
@@ -108,7 +101,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ele tem problema nas patas de trás, por isso, tem que usar cadeira de rodas. Ele é animado, gosta de carinho e companhia",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
   {
     id: 7,
@@ -125,7 +117,6 @@ export const AnimaisAdoteJa = [
     sexo: "Fêmea",
     descricao: "",
     Raca: "Vira-lata",
-    icone: <BiFemaleSign />,
   },
   {
     id: 8,
@@ -142,7 +133,6 @@ export const AnimaisAdoteJa = [
     sexo: "Fêmea",
     descricao: "",
     Raca: "Vira-lata",
-    icone: <BiFemaleSign />,
   },
   {
     id: 9,
@@ -160,7 +150,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ele é nem lerdo, tá sempre no ritmo dele e gosta de dormir no sofá quando alguém tá assistindo série.",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
   {
     id: 10,
@@ -178,7 +167,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ele é bff da Luna, desde que se conheceram não se separaram mais. ele gosta de carinho e é ciumento, além disso tem umas patinhas curtas que todo mundo ama.",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
   {
     id: 11,
@@ -196,7 +184,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "O Zuko é um cachorro q adora atenção e ficar perto das pessoas, ele é bem calmo até você deixar ele empolgado, a partir disso nem ele consegue se controlar mais. No geral ele é bem inteligente e obediente (um pouco medroso também) ou seja, a companhia perfeita.",
     Raca: "Pastor alemão",
-    icone: <BiMaleSign />,
   },
 
   {
@@ -214,7 +201,6 @@ export const AnimaisAdoteJa = [
     sexo: "Fêmea",
     descricao: "Gêmias inseparáveis e muito bricalhonas.",
     Raca: "Rottweiler",
-    icone: <BiFemaleSign />,
   },
   {
     id: 13,
@@ -232,7 +218,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Melzinha é e sempre foi muito mau humorada e bravinha! Sempre latiu muito e isso não mudou depois de velhinha. Ama comer de tudo, principalmente pão de sal. Gosta dos seus irmãozinhos, mas é impaciente com eles, já que eles são crianças ainda.",
     Raca: "Poodle",
-    icone: <BiFemaleSign />,
   },
   {
     id: 14,
@@ -250,7 +235,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ama sachê, odeia visitas, gosta de dormir sozinho em guarda roupas, é bem interesseiro e dramático e ruim (coitado dos passarinhos que caem no quintal).",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
   {
     id: 15,
@@ -268,7 +252,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ela é bem estressada, como toda pinscher, ela come todo tipo de alimento, é bem ciumenta, ama uma coberta e ama passear.",
     Raca: "Pinscher",
-    icone: <BiFemaleSign />,
   },
   {
     id: 16,
@@ -286,7 +269,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ela é bem dócil com a família, um pouco estressada, uma verdadeira caçadora de animais pequenos, ama brincar, além de destruir e dormir nas plantas.",
     Raca: "Vira-lata",
-    icone: <BiFemaleSign />,
   },
   {
     id: 17,
@@ -304,7 +286,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "A cadela é uma Golden Retriever que ama brincar com um flamingo de brinquedo, também gosta de dormir muito e come bastante.",
     Raca: "Golden Retriever",
-    icone: <BiFemaleSign />,
   },
 
   {
@@ -323,7 +304,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Ele adora brincar e dormir na cama, mas odeia que tirem foto ou filmes ele, ele é adulto de porte pequeno.",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
 
   {
@@ -341,7 +321,6 @@ export const AnimaisAdoteJa = [
     sexo: "Macho",
     descricao: "Um cachorro dócil e amigáve",
     Raca: "Vira-lata",
-    icone: <BiMaleSign />,
   },
 
   {
@@ -360,7 +339,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "Pepeu é um cachorro q apesar de ter VÁRIOS problemas de saúde(alergia até à terra), pepeu é muito aventureiro. Adora caçar, desde insetos até macacos. Ele é bem inquieto e companheiro, enquanto tiver gente acordada ele está junto. A coisa que ele mais gosta de fazer, dentro de casa é ficar na varanda olhando o movimento da rua.",
     Raca: "Poodle",
-    icone: <BiMaleSign />,
   },
   {
     id: 21,
@@ -378,7 +356,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "A coisa que Lola mais ama fazer é dormir. Enquanto tiver alguém deitado, ela está junto. Se o quarto estiver escuro então, melhor ainda. Além disso Lola odeia que não durmam no horário certo, ela começa a ficar estressada e vai procurar outro quarto ou então embaixo da cama pra dormir.",
     Raca: "Poodle",
-    icone: <BiFemaleSign />,
   },
 
   {
@@ -397,7 +374,6 @@ export const AnimaisAdoteJa = [
     descricao:
       "É a dona da casa. Ela é muito anti-social, não gostou nem um pouquinho dos filhotes qd eles chegaram, odeia ser pega no colo, odeia crianças, mas adora um carinho na cabeça e passa o dia inteiro na varanda ou dando role nos muros",
     Raca: "Vira-lata",
-    icone: <BiFemaleSign />,
   },
 ];
 

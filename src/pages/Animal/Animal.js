@@ -7,6 +7,8 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
+import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -105,23 +107,29 @@ function Animal({ location, ...props }) {
           <h1 className="tittleAdoteAnimal"> Adote já </h1>
 
           <Carousel responsive={responsive}>
-            { AnimaisAdoteJa.map((animalAdoteJa) => (
-              animalAdoteJa.id != animal.id?
-              <div
-                className="itemAnimalCarrossel"
-                onClick={() => {
-                  adotarEsse(animalAdoteJa);
-                }}
-              >
-                <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
-                <div class="middleAnimal">
-                  <div class="textAnimal">
-                    {animalAdoteJa.nome} <br />
-                    {animalAdoteJa.local}
+            {AnimaisAdoteJa.map((animalAdoteJa) =>
+              animalAdoteJa.id != animal.id ? (
+                <div
+                  className="itemAnimalCarrossel"
+                  onClick={() => {
+                    adotarEsse(animalAdoteJa);
+                  }}
+                >
+                  <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
+                  <div class="middleAnimal">
+                    <div class="textAnimal">
+                      {animalAdoteJa.nome} <br />
+                      {animalAdoteJa.local}
+                      {animalAdoteJa.sexo === "Macho" ? (
+                        <BiMaleSign />
+                      ) : (
+                        <BiFemaleSign />
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            :null))}
+              ) : null
+            )}
           </Carousel>
         </div>
         <div className="comentariosAnimal">
