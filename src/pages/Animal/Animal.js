@@ -105,23 +105,24 @@ function Animal({ location, ...props }) {
           <h1 className="tittleAdoteAnimal"> Adote já </h1>
 
           <Carousel responsive={responsive}>
-            { AnimaisAdoteJa.map((animalAdoteJa) => (
-              animalAdoteJa.id != animal.id?
-              <div
-                className="itemAnimalCarrossel"
-                onClick={() => {
-                  adotarEsse(animalAdoteJa);
-                }}
-              >
-                <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
-                <div class="middleAnimal">
-                  <div class="textAnimal">
-                    {animalAdoteJa.nome} <br />
-                    {animalAdoteJa.local}
+            {AnimaisAdoteJa.map((animalAdoteJa) =>
+              animalAdoteJa.id != animal.id ? (
+                <div
+                  className="itemAnimalCarrossel"
+                  onClick={() => {
+                    adotarEsse(animalAdoteJa);
+                  }}
+                >
+                  <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
+                  <div class="middleAnimal">
+                    <div class="textAnimal">
+                      {animalAdoteJa.nome} <br />
+                      {animalAdoteJa.local}
+                    </div>
                   </div>
                 </div>
-              </div>
-            :null))}
+              ) : null
+            )}
           </Carousel>
         </div>
         <div className="comentariosAnimal">
