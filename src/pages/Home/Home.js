@@ -148,19 +148,24 @@ function Home() {
           </p>
         </div>
         <div className="ComoDoar">
+          <p className="ComoDoarTitulo_Home1">Como Doar</p>
           <p className="ComoDoarDescricao_Home">
             Nossa instituição precisa muito de doações para poder manter o pleno
             funcionamento da ONG, por isso, pedimos contribuições em forma de
             depósito bancário ou pix. Conta: 25478-1 Pix: petfamily@gmail.com
           </p>
-          <p className="ComoDoarTitulo_Home">Como Doar</p>
+          <p className="ComoDoarTitulo_Home2">Como Doar</p>
         </div>
         <div className="Colaboradores">
           <p className="ColaboradoresTitulo_Home">Colaboradores</p>
           <p className="ColaboradoresDescricao_Home">
-            Bruno Campos <br></br> Gabriel Dias <br></br> Giovanni Pantuzzo
-            <br></br> Matheus Franklin <br></br>
-            Tainan Albuquerque
+            Arthur Lima
+            <br />
+            Bruno Campos <br /> Gabriel Dias <br />
+            Giovanni Pantuzzo <br />
+            Marcone Faria <br /> Matheus Franklin <br />
+            Tainan Albuquerque <br /> Fernanda Mattos <br /> Gabriel Mauad{" "}
+            <br /> Paulo Santos <br />
           </p>
         </div>
       </div>
