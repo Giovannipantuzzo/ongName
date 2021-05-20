@@ -1,4 +1,4 @@
-export const animaisReais = [
+const animaisReais = [
   {
     id: 1,
     imagem: [
@@ -19,19 +19,19 @@ export const animaisReais = [
   {
     id: 2,
     imagem: [
-      "/images/dalila1.jpeg",
-      "/images/dalila2.jpeg",
-      "/images/dalila3.jpeg",
-      "/images/dalila4.jpeg",
+      "/images/amorah1.jpeg",
+      "/images/amorah2.jpeg",
+      "/images/amorah3.jpeg",
+      "/images/amorah4.jpeg",
     ],
-    nome: "Dalila",
-    tempo: "1 anos",
-    local: "Belo Horizonte/MG",
+    nome: "Amora",
+    tempo: "1 ano",
+    local: "Marliéria/MG",
     tamanho: "P",
     sexo: "Femêa",
     descricao:
-      "Gosta de estar no ambiente e se contenta com qualquer companhia. Comida preferida: Tangerina, frutas e legumes cru. Sociabilidade:apenas com a família, apegada a poucos membros e brinca raramente.",
-    Raca: "Pequinês",
+      "Quando nasceu, era a mais fraquinha dos cordeiros da ninhada e foi rejeitada pela sua mãe biológica, por isso, foi criada na mamadeira e dentro de casa com pais e irmãozinhos humanos! é muito dócil com as pessoas e se dá bem com todos animais da casa. Gosta de correr atrás das galinhas, de pular pela grama do quintal, de pastar e de dormir em cantinhos apertados.",
+    Raca: "Sem raça",
   },
   {
     id: 3,
@@ -514,7 +514,7 @@ export const animaisReais = [
       "/images/ninna3.jpeg",
       "/images/ninna4.jpeg",
     ],
-    nome: "Ninna",
+    nome: "Nina",
     tempo: "5 anos",
     local: "Belo Horizonte/MG",
     tamanho: "P",
@@ -673,6 +673,23 @@ export const animaisReais = [
     sexo: "Fêmea",
     descricao: "É triloca, não adote, se não vai ter problema com o dono.",
     Raca: "Lhasa apso",
+  },
+  {
+    id: 41,
+    imagem: [
+      "/images/ninah1.png",
+      "/images/ninah2.png",
+      "/images/ninah3.png",
+      "/images/ninah4.png",
+    ],
+    nome: "Nina",
+    tempo: "2 anos",
+    local: "Contagem/MG",
+    tamanho: "P",
+    sexo: "Fêmea",
+    descricao:
+      "Ela gosta de comer papel higienico sujo e de lamber a orelha das pessoa.",
+    Raca: "Vira lata",
   },
 ];
 
