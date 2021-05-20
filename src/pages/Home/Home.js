@@ -47,6 +47,74 @@ const responsive = {
   },
 };
 
+const Colaboradoress = [
+  // {
+  //   id: 1,
+  //   nome: "Arthur Lima",
+  //   imagem: "./images/Colaboradores/ArthurLima.jpg",
+  // },
+
+  {
+    id: 2,
+    nome: "Bruno Campos",
+    imagem: "./images/Colaboradores/BrunoCampos.jpg",
+  },
+
+  // {
+  //   id: 3,
+  //   nome: "Gabriel Dias",
+  //   imagem: "./images/Colaboradores/GabrielDias.jpg",
+  // },
+
+  {
+    id: 4,
+    nome: "Giovanni Pantuzzo",
+    imagem: "./images/Colaboradores/GiovanniPantuzzo.jpg",
+  },
+
+  // {
+  //   id: 5,
+  //   nome: "Igor Amoras",
+  //   imagem: "./images/Colaboradores/IgorAmoras.jpg",
+  // },
+
+  // {
+  //   id: 6,
+  //   nome: "Marcone Faria",
+  //   imagem: "./images/Colaboradores/MarconeFaria.jpg",
+  // },
+
+  {
+    id: 7,
+    nome: "Matheus Franklin",
+    imagem: "./images/Colaboradores/MatheusFranklin.jpg",
+  },
+
+  {
+    id: 8,
+    nome: "Tainan Albuquerque",
+    imagem: "./images/Colaboradores/TainanAlbuquerque.jpg",
+  },
+
+  // {
+  //   id: 9,
+  //   nome: "Fernanda Mattos",
+  //   imagem: "./images/Colaboradores/FernandaMattos.jpg",
+  // },
+
+  // {
+  //   id: 10,
+  //   nome: "Gabriel Mauad",
+  //   imagem: "./images/Colaboradores/GabrielMauad.jpg",
+  // },
+
+  // {
+  //   id: 10,
+  //   nome: "Paulo Santos",
+  //   imagem: "./images/Colaboradores/PauloSantos.jpg",
+  // },
+];
+
 function Home() {
   const history = useHistory();
   function adotarEsse(animal) {
@@ -163,13 +231,27 @@ function Home() {
         <div className="Colaboradores">
           <p className="ColaboradoresTitulo_Home">Colaboradores</p>
           <p className="ColaboradoresDescricao_Home">
-            Arthur Lima
+            <div>
+              <img
+                className="Giovanni"
+                src="./images/Colaboradores/GiovanniPantuzzo.jpg"
+                alt="arroba"
+                height="100"
+              />
+              Arthur Lima
+              <br />
+            </div>
             <br />
-            Bruno Campos <br /> Gabriel Dias <br />
+            Bruno Campos <br />
+            Gabriel Dias <br />
             Giovanni Pantuzzo <br />
-            Marcone Faria <br /> Matheus Franklin <br />
-            Tainan Albuquerque <br /> Fernanda Mattos <br /> Gabriel Mauad{" "}
-            <br /> Paulo Santos <br />
+            Igor Amoras <br />
+            Marcone Faria <br />
+            Matheus Franklin <br />
+            Tainan Albuquerque <br />
+            Fernanda Mattos <br />
+            Gabriel Mauad <br />
+            Paulo Santos <br />
           </p>
         </div>
       </div>
