@@ -109,28 +109,28 @@ const colaboradores = [
   // },
 
   // {
-  //   id: 10,
+  //   id: 11,
   //   nome: "Paulo Santos",
   //   imagem: "./images/Colaboradores/PauloSantos.jpg",
   // },
 ];
-
-function ComponenteColaboradores({ colaborador }) {
-  <div>
-    <img
-      className="imgColaborador"
-      src={colaborador.imagem}
-      alt="colaborador"
-    />
-    <h1> colaborador.nome </h1>
-  </div>;
-}
 
 function Home() {
   const history = useHistory();
   function adotarEsse(animal) {
     history.push({ pathname: "/animal", state: { animal } });
   }
+
+  // function ComponenteColaboradores({ colaborador }) {
+  //   <div>
+  //     <img
+  //       className="imgColaborador"
+  //       src={colaborador.imagem}
+  //       alt="colaborador.nome"
+  //     />
+  //     <h1> {colaborador.nome} </h1>
+  //   </div>;
+  // }
 
   return (
     <div>
@@ -242,12 +242,20 @@ function Home() {
         <div className="Colaboradores">
           <p className="ColaboradoresTitulo_Home">Colaboradores</p>
           <div className="ColaboradoresDescricao_Home">
-            {/* {colaboradores.map((colaborador) => (
-              <ComponenteColaboradores
-                key={colaborador.id}
-                colaborador={colaborador}
-              />
-            ))} */}
+            {colaboradores.map((colaborador) => {
+              return (
+                <div className="colaborador">
+                  <img
+                    className="imgColaborador"
+                    src={colaborador.imagem}
+                    alt="colaborador"
+                    height="100"
+                  />
+
+                  <div className="nomeColaborador"> {colaborador.nome} </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

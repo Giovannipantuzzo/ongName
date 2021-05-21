@@ -93,7 +93,7 @@
 }
 
 .ColaboradoresDescricao_Home {
-  display: flex;
+  display: block;
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
@@ -174,10 +174,21 @@
   cursor: pointer;
 }
 
+.colaborador {
+  display: flex;
+  font-size: 30px;
+}
+
+.nomeColaborador {
+  display: flex;
+  align-items: center;
+}
+
 .imgColaborador {
   min-height: "10";
   min-width: "10";
-  border-radius: 100px;
+  border-radius: 150px;
+  margin: 15px;
 }
 
 @media screen and (max-width: 700px) {
