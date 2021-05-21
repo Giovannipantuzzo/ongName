@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import api from "../../Services/api";
 import "./Perfil.css";
+import { getToken } from "../../Services/auth";
 
 function Perfil() {
   const [username, setUsername] = useState();
@@ -18,6 +20,21 @@ function Perfil() {
     alert("Dados salvos com sucesso!");
     history.push("home");
   }
+
+  async function getUser() {
+    try {
+      const token = getToken();
+      const response = await api.get(`/user`);
+      console.log(response.data);
+    } catch (error) {
+      console.warn(error);
+      alert("Algo deu errado");
+    }
+  }
+
+  useEffect(() => {
+    getUser();
+  }, []);
 
   return (
     <div className="basePerfil">
