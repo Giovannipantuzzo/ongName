@@ -174,14 +174,10 @@
   cursor: pointer;
 }
 
-.Giovanni {
+.imgColaborador {
   min-height: "10";
   min-width: "10";
   border-radius: 100px;
-}
-
-.testee {
-  height: 100;
 }
 
 @media screen and (max-width: 700px) {

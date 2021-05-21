@@ -47,7 +47,7 @@ const responsive = {
   },
 };
 
-const Colaboradoress = [
+const colaboradores = [
   // {
   //   id: 1,
   //   nome: "Arthur Lima",
@@ -60,11 +60,11 @@ const Colaboradoress = [
     imagem: "./images/Colaboradores/BrunoCampos.jpg",
   },
 
-  // {
-  //   id: 3,
-  //   nome: "Gabriel Dias",
-  //   imagem: "./images/Colaboradores/GabrielDias.jpg",
-  // },
+  {
+    id: 3,
+    nome: "Gabriel Dias",
+    imagem: "./images/Colaboradores/GabrielDias.jpg",
+  },
 
   {
     id: 4,
@@ -114,6 +114,17 @@ const Colaboradoress = [
   //   imagem: "./images/Colaboradores/PauloSantos.jpg",
   // },
 ];
+
+function ComponenteColaboradores({ colaborador }) {
+  <div>
+    <img
+      className="imgColaborador"
+      src={colaborador.imagem}
+      alt="colaborador"
+    />
+    <h1> colaborador.nome </h1>
+  </div>;
+}
 
 function Home() {
   const history = useHistory();
@@ -230,29 +241,14 @@ function Home() {
         </div>
         <div className="Colaboradores">
           <p className="ColaboradoresTitulo_Home">Colaboradores</p>
-          <p className="ColaboradoresDescricao_Home">
-            <div>
-              <img
-                className="Giovanni"
-                src="./images/Colaboradores/GiovanniPantuzzo.jpg"
-                alt="arroba"
-                height="100"
+          <div className="ColaboradoresDescricao_Home">
+            {/* {colaboradores.map((colaborador) => (
+              <ComponenteColaboradores
+                key={colaborador.id}
+                colaborador={colaborador}
               />
-              Arthur Lima
-              <br />
-            </div>
-            <br />
-            Bruno Campos <br />
-            Gabriel Dias <br />
-            Giovanni Pantuzzo <br />
-            Igor Amoras <br />
-            Marcone Faria <br />
-            Matheus Franklin <br />
-            Tainan Albuquerque <br />
-            Fernanda Mattos <br />
-            Gabriel Mauad <br />
-            Paulo Santos <br />
-          </p>
+            ))} */}
+          </div>
         </div>
       </div>
     </div>
