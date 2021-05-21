@@ -262,6 +262,10 @@
   .ColaboradoresDescricao_Home {
     width: 100%;
   }
+
+  .colaborador {
+    display: flex;
+  }
 }
 
 .boxmsg1 {
