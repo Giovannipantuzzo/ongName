@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import "./Cadastro.css";
+import api from "../../Services/api";
 
 function Cadastro() {
   const [name, setName] = useState();
@@ -12,14 +13,32 @@ function Cadastro() {
   const history = useHistory();
 
   function cadastrar() {
-    console.log(name);
     if (!name || !email || !password || !confirmPassword || !number) {
       alert("Preencha todos os campos para efetuar o cadastro!");
     } else if (password !== confirmPassword) {
       alert("Senhas diferentes, por favor, coloque senhas iguais!");
-    } else if (password == confirmPassword) {
-      alert("Conta criada com sucesso!\n" + email);
-      history.push("login");
+    } else if (password === confirmPassword) {
+      let data = {};
+      function addToData(key, value) {
+        if (value !== undefined && value !== "") {
+          data = { ...data, [key]: value };
+        }
+      }
+      addToData("username", name);
+      addToData("email", email);
+      addToData("password", password);
+      addToData("number", number);
+
+      api
+        .post("/user", data)
+        .then(() => {
+          alert("Conta criada com sucesso!\n" + name);
+          history.push("/login");
+        })
+        .catch((error) => {
+          console.warn(error);
+          alert("Não foi possível concluir o cadastro, tente novamente.");
+        });
     }
   }
 

@@ -22,11 +22,11 @@ const responsive = {
     breakpoint: { max: 2000, min: 1024 },
     items: 4,
   },
-  tablet: {
+  tablet1: {
     breakpoint: { max: 1024, min: 750 },
     items: 2.7,
   },
-  tablet: {
+  tablet2: {
     breakpoint: { max: 750, min: 520 },
     items: 3.4,
   },
@@ -69,6 +69,7 @@ function Animal({ location, ...props }) {
                   className="animalItem"
                   key={Imagem}
                   src={Imagem}
+                  alt={Imagem}
                   onClick={() => {
                     mudaImagem(Imagem);
                   }}
@@ -78,7 +79,12 @@ function Animal({ location, ...props }) {
             ))}
           </div>
           <div className="divImageCentral">
-            <Image className="imageCentral" src={imagemEndereco} rounded />
+            <Image
+              className="imageCentral"
+              src={imagemEndereco}
+              alt={imagemEndereco}
+              rounded
+            />
           </div>
         </div>
         <div className="containerLateral">
@@ -116,14 +122,18 @@ function Animal({ location, ...props }) {
 
           <Carousel responsive={responsive}>
             {AnimaisAdoteJa.map((animalAdoteJa) =>
-              animalAdoteJa.id != animal.id ? (
+              animalAdoteJa.id !== animal.id ? (
                 <div
                   className="itemAnimalCarrossel"
                   onClick={() => {
                     adotarEsse(animalAdoteJa);
                   }}
                 >
-                  <img src={animalAdoteJa.imagem[0]} className="imageAnimal" />
+                  <img
+                    src={animalAdoteJa.imagem[0]}
+                    alt={animalAdoteJa.imagem[0]}
+                    className="imageAnimal"
+                  />
                   <div class="middleAnimal">
                     <div class="textAnimal">
                       {animalAdoteJa.nome} <br />
@@ -144,7 +154,11 @@ function Animal({ location, ...props }) {
           <div className="tituloComentario">Comentários</div>
           <div className="comentarioFuncionario">
             <div className="perfilComentario">
-              <img src="./images/tonyStark.png" className="imagePerfil" />
+              <img
+                src="./images/tonyStark.png"
+                alt="Tony Stark"
+                className="imagePerfil"
+              />
             </div>
             <div className="textoComentario">
               <p>
@@ -157,7 +171,11 @@ function Animal({ location, ...props }) {
           </div>
           <div className="comentarioFuncionario">
             <div className="perfilComentario">
-              <img src="./images/juliette.png" className="imagePerfil" />
+              <img
+                src="./images/juliette.png"
+                alt="Juliette"
+                className="imagePerfil"
+              />
             </div>
             <div className="textoComentario">
               <p>
@@ -170,7 +188,11 @@ function Animal({ location, ...props }) {
           </div>
           <div className="comentarioFuncionario">
             <div className="perfilComentario">
-              <img src="./images/gilberto.png" className="imagePerfil" />
+              <img
+                src="./images/gilberto.png"
+                alt="Gilberto"
+                className="imagePerfil"
+              />
             </div>
             <div className="textoComentario">
               <p>
