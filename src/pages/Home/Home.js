@@ -13,35 +13,35 @@ const responsive = {
     breakpoint: { max: 4000, min: 3000 },
     items: 8.5,
   },
-  desktop: {
+  desktop1: {
     breakpoint: { max: 3000, min: 1700 },
     items: 6.5,
   },
-  desktop: {
+  desktop2: {
     breakpoint: { max: 1700, min: 1024 },
     items: 5.2,
   },
-  tablet: {
+  tablet1: {
     breakpoint: { max: 1024, min: 750 },
     items: 3.7,
   },
-  tablet: {
+  tablet2: {
     breakpoint: { max: 750, min: 620 },
     items: 3.3,
   },
-  tablet: {
+  tablet3: {
     breakpoint: { max: 620, min: 575 },
     items: 2.9,
   },
-  tablet: {
+  tablet4: {
     breakpoint: { max: 575, min: 464 },
     items: 2.3,
   },
-  mobile: {
+  mobile1: {
     breakpoint: { max: 464, min: 360 },
     items: 2.1,
   },
-  mobile: {
+  mobile2: {
     breakpoint: { max: 360, min: 0 },
     items: 1.52,
   },
@@ -121,17 +121,6 @@ function Home() {
     history.push({ pathname: "/animal", state: { animal } });
   }
 
-  // function ComponenteColaboradores({ colaborador }) {
-  //   <div>
-  //     <img
-  //       className="imgColaborador"
-  //       src={colaborador.imagem}
-  //       alt="colaborador.nome"
-  //     />
-  //     <h1> {colaborador.nome} </h1>
-  //   </div>;
-  // }
-
   return (
     <div>
       <CarouselBootstrap fade>
@@ -201,6 +190,7 @@ function Home() {
               <img
                 className="imageAnimalCarrossel2"
                 src={animalAdoteJa.imagem[0]}
+                alt={animalAdoteJa.imagem[0]}
               />
               <div class="middleAnimalCarrossel2">
                 <div class="textAnimalCarrossel2">

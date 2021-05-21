@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import { login } from "../../Services/auth";
 
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const history = useHistory();
 
   async function handleLogin(e) {
     e.preventDefault();
