@@ -8,6 +8,8 @@ import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
+import api from "../../Services/api";
+import { getToken } from "../../Services/auth";
 
 const responsive = {
   superLargeDesktop: {
@@ -44,11 +46,34 @@ function Animal({ location, ...props }) {
   const history = useHistory();
   const { animal } = location.state;
   const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
+  const token = getToken();
+
   function adotado() {
-    alert(
-      "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
-    );
-    history.push("home");
+    if (token === null) {
+      alert("Você deve fazer login para adotar um animal.");
+      history.push("login");
+    } else if (token != null) {
+    //   const response = api.get(`/user/${id}`);
+      console.log(response.data.user.username);
+      // if (
+      //   response.data.user.username &&
+      //   response.data.user.number &&
+      //   response.data.user.cpf &&
+      //   response.data.user.cep &&
+      //   response.data.user.complement &&
+      //   response.data.user.birthDate
+      // ) {
+      alert(
+        "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+      );
+      history.push("home");
+      // } else {
+      // alert(
+      //   "Complete todas as informações do perfil para habilitar essa opção."
+      // );
+      // history.push("perfil");
+      // }
+    }
   }
   function mudaImagem(endereco) {
     setimagemEndereco(endereco);

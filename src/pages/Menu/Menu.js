@@ -91,7 +91,6 @@ function Menu({ children }) {
   function handleDrawer(isOpen) {
     setOpen(isOpen);
   }
-  console.warn(token);
 
   if (token == null) {
     return (
