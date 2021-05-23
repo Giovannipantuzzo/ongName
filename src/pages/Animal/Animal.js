@@ -53,8 +53,8 @@ function Animal({ location, ...props }) {
       alert("Você deve fazer login para adotar um animal.");
       history.push("login");
     } else if (token != null) {
-    //   const response = api.get(`/user/${id}`);
-      console.log(response.data.user.username);
+      //   const response = api.get(`/user/${id}`);
+      // console.log(response.data.user.username);
       // if (
       //   response.data.user.username &&
       //   response.data.user.number &&

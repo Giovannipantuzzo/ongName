@@ -17,8 +17,10 @@ import { BsFillPersonFill } from "react-icons/bs";
 import "./Menu.css";
 import { IconContext } from "react-icons/lib";
 import { getToken, logout } from "../../Services/auth";
+import { useName } from "../../Componentes/Context/MenuName";
 
 function Menu({ children }) {
+  const { name } = useName();
   const history = useHistory();
   const [open, setOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("/home");
@@ -283,7 +285,8 @@ function Menu({ children }) {
                 <IconContext.Provider value={{ size: "2.3rem" }}>
                   <BsFillPersonFill />
                 </IconContext.Provider>
-                <p className="usernameDrawer"> Giovanni Silva Pantuzzo</p>
+                {/* <p className="usernameDrawer">{name}</p> */}
+                <p className="usernameDrawer">Giovanni Silva Pantuzzo</p>
               </div>
               {listButtons2.map((listItem) => {
                 return (

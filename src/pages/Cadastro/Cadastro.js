@@ -3,9 +3,10 @@ import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import "./Cadastro.css";
 import api from "../../Services/api";
+import { useName } from "../../Componentes/Context/MenuName";
 
 function Cadastro() {
-  const [name, setName] = useState();
+  const { name, setName } = useName();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
