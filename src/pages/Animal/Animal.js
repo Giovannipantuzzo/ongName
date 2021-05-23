@@ -8,6 +8,7 @@ import Image from "react-bootstrap/Image";
 import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
+import { getToken } from "../../Services/auth";
 
 const responsive = {
   superLargeDesktop: {
@@ -44,11 +45,32 @@ function Animal({ location, ...props }) {
   const history = useHistory();
   const { animal } = location.state;
   const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
+  const token = getToken();
+
   function adotado() {
-    alert(
-      "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
-    );
-    history.push("home");
+    if (token === null) {
+      alert("Você deve fazer login para adotar um animal.");
+      history.push("login");
+    } else if (token != null) {
+      if (
+        !{ nameUser } ||
+        !{ numberUser } ||
+        !{ cpfUser } ||
+        !{ cepUser } ||
+        !{ complementUser } ||
+        !{ birthDateUser }
+      ) {
+        alert(
+          "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+        );
+        history.push("home");
+      } else {
+        alert(
+          "Complete todas as informações do perfil para habilitar essa opção."
+        );
+        history.push("perfil");
+      }
+    }
   }
   function mudaImagem(endereco) {
     setimagemEndereco(endereco);
@@ -57,6 +79,13 @@ function Animal({ location, ...props }) {
     history.push({ pathname: "/animal", state: { animal } });
     setimagemEndereco(animal.imagem[0]);
   }
+
+  const nameUser = sessionStorage.getItem("nameUser");
+  const numberUser = sessionStorage.getItem("numberUser");
+  const cpfUser = sessionStorage.getItem("cpfUser");
+  const cepUser = sessionStorage.getItem("cepUser");
+  const complementUser = sessionStorage.getItem("complementUser");
+  const birthDateUser = sessionStorage.getItem("birthDateUser");
 
   return (
     <div>
