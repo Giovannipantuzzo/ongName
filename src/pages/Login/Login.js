@@ -14,7 +14,8 @@ function Login() {
     e.preventDefault();
     try {
       const response = await api.post("/login", { email, password });
-      alert("Bem vindo", response.data.user.username);
+      sessionStorage.setItem("nameUser", response.data.user.username);
+      alert("Bem vindo");
       login(response.data.accessToken);
       window.location.href = "/home";
     } catch (error) {

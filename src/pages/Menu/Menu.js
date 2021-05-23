@@ -17,10 +17,8 @@ import { BsFillPersonFill } from "react-icons/bs";
 import "./Menu.css";
 import { IconContext } from "react-icons/lib";
 import { getToken, logout } from "../../Services/auth";
-import { useName } from "../../Componentes/Context/MenuName";
 
 function Menu({ children }) {
-  const { name } = useName();
   const history = useHistory();
   const [open, setOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("/home");
@@ -93,6 +91,8 @@ function Menu({ children }) {
   function handleDrawer(isOpen) {
     setOpen(isOpen);
   }
+
+  const nameUser = sessionStorage.getItem("nameUser");
 
   if (token == null) {
     return (
@@ -251,7 +251,7 @@ function Menu({ children }) {
                       }}
                       style={{ cursor: "pointer" }}
                     >
-                      Giovanni Silva Pantuzzo
+                      {nameUser}
                     </p>
                   </div>
                   <div className="buttonsSpace3">
@@ -286,7 +286,7 @@ function Menu({ children }) {
                   <BsFillPersonFill />
                 </IconContext.Provider>
                 {/* <p className="usernameDrawer">{name}</p> */}
-                <p className="usernameDrawer">Giovanni Silva Pantuzzo</p>
+                <p className="usernameDrawer">{nameUser}</p>
               </div>
               {listButtons2.map((listItem) => {
                 return (
