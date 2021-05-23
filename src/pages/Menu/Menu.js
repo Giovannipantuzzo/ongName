@@ -285,7 +285,6 @@ function Menu({ children }) {
                 <IconContext.Provider value={{ size: "2.3rem" }}>
                   <BsFillPersonFill />
                 </IconContext.Provider>
-                {/* <p className="usernameDrawer">{name}</p> */}
                 <p className="usernameDrawer">{nameUser}</p>
               </div>
               {listButtons2.map((listItem) => {
