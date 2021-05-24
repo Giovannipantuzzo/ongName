@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import api from "../../Services/api";
 import "./Perfil.css";
+import { getToken } from "../../Services/auth";
+import { responsiveFontSizes } from "@material-ui/core";
 
 function Perfil() {
   const [username, setUsername] = useState();
@@ -10,14 +13,41 @@ function Perfil() {
   const [cep, setCep] = useState();
   const [password, setPassword] = useState();
   const [complement, setComplement] = useState();
-  const [cellphone, setCellphone] = useState();
+  const [number, setNumber] = useState();
   const [birthdate, setBirthdate] = useState();
   const history = useHistory();
 
   function saveperfil() {
+    updateUser({ username, cpf, cep, complement, number, birthdate });
     alert("Dados salvos com sucesso!");
     history.push("home");
   }
+
+  async function getUser(field) {
+    try {
+      const token = getToken();
+      const response = await api.get(`/user`);
+      console.log(response.data.username);
+      return response.data.username;
+    } catch (error) {
+      console.warn(error);
+      alert("Algo deu errado");
+    }
+  }
+
+  async function updateUser(fieldUpdate) {
+    try {
+      const token = getToken();
+      const response = await api.put(`/user`, fieldUpdate);
+    } catch (error) {
+      console.warn(error);
+      alert("Algo deu errado");
+    }
+  }
+
+  useEffect(() => {
+    getUser();
+  }, []);
 
   return (
     <div className="basePerfil">
@@ -93,7 +123,7 @@ function Perfil() {
             <Form.Control
               type="cellphonePerfil"
               placeholder=""
-              onChange={(e) => setCellphone(e.target.value)}
+              onChange={(e) => setNumber(e.target.value)}
             />
           </Form.Group>
           <Form.Group controlId="birthdatePerfil">
