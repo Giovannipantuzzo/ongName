@@ -52,66 +52,77 @@ const colaboradores = [
   //   id: 1,
   //   nome: "Arthur Lima",
   //   imagem: "./images/Colaboradores/ArthurLima.jpg",
+  //    insta: "",
   // },
 
   {
     id: 2,
     nome: "Bruno Campos",
     imagem: "./images/Colaboradores/BrunoCampos.jpg",
+    insta: "",
   },
 
   {
     id: 3,
     nome: "Gabriel Dias",
     imagem: "./images/Colaboradores/GabrielDias.jpg",
+    insta: "https://www.instagram.com/gabriel_h_dias2002/",
   },
 
   {
     id: 4,
     nome: "Giovanni Pantuzzo",
     imagem: "./images/Colaboradores/GiovanniPantuzzo.jpg",
+    insta: "https://www.instagram.com/giovannipantuzzo/",
   },
 
   // {
   //   id: 5,
   //   nome: "Igor Amoras",
   //   imagem: "./images/Colaboradores/IgorAmoras.jpg",
+  //insta: "",
   // },
 
   // {
   //   id: 6,
   //   nome: "Marcone Faria",
   //   imagem: "./images/Colaboradores/MarconeFaria.jpg",
+  //insta: "",
   // },
 
   {
     id: 7,
     nome: "Matheus Franklin",
     imagem: "./images/Colaboradores/MatheusFranklin.jpg",
+    insta: "https://www.instagram.com/matheus_franklin10/",
   },
 
   {
     id: 8,
     nome: "Tainan Albuquerque",
     imagem: "./images/Colaboradores/TainanAlbuquerque.jpg",
+    insta: "https://www.instagram.com/thalbu/",
   },
 
   // {
   //   id: 9,
   //   nome: "Fernanda Mattos",
   //   imagem: "./images/Colaboradores/FernandaMattos.jpg",
+  //insta: "",
   // },
 
   // {
   //   id: 10,
   //   nome: "Gabriel Mauad",
   //   imagem: "./images/Colaboradores/GabrielMauad.jpg",
+  //insta: "",
   // },
 
   // {
   //   id: 11,
   //   nome: "Paulo Santos",
   //   imagem: "./images/Colaboradores/PauloSantos.jpg",
+  //insta: "",
   // },
 ];
 
@@ -255,15 +266,27 @@ function Home() {
           <div className="ColaboradoresDescricao_Home">
             {colaboradores.map((colaborador) => {
               return (
-                <div className="colaborador">
-                  <img
-                    className="imgColaborador"
-                    src={colaborador.imagem}
-                    alt="colaborador"
-                    height="100"
-                  />
+                <div>
+                  <a
+                    class="insta"
+                    href={colaborador.insta}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <div className="colaborador">
+                      <img
+                        className="imgColaborador"
+                        src={colaborador.imagem}
+                        alt="colaborador"
+                        height="100"
+                      />
 
-                  <div className="nomeColaborador"> {colaborador.nome} </div>
+                      <div className="nomeColaborador">
+                        {" "}
+                        {colaborador.nome}{" "}
+                      </div>
+                    </div>
+                  </a>
                 </div>
               );
             })}
