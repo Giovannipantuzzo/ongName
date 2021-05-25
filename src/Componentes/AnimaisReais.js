@@ -1229,10 +1229,10 @@ const animaisReais = [
   {
     id: 42,
     imagem: [
-      "/images/malhada1.png",
-      "/images/malhada2.png",
-      "/images/malhada3.png",
-      "/images/malhada4.png",
+      "/images/malhada1.jpeg",
+      "/images/malhada2.jpeg",
+      "/images/malhada3.jpeg",
+      "/images/malhada4.jpeg",
     ],
     nome: "Malhada",
     tempo: "7 anos",
