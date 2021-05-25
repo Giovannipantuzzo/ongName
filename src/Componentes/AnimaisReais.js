@@ -106,9 +106,9 @@ const animaisReais = [
       "Adora passear todos os dias, ama andar de carro e tirar um cochilo depois do almoço. De manhã e de noite, é um anjo, mas de dia é uma fera. Come muito e morre de medo de tomar banho..",
     Raca: "Shih Tzu",
     comentarios: {
-      nome: ["Tainan Albuquerque", "Gabriel Mauad", "Gabriel Dias"],
+      nome: ["Ian Xavier", "Gabriel Mauad", "Gabriel Dias"],
       foto: [
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
         "/images/Colaboradores/GabrielMauad.jpg",
         "/images/Colaboradores/GabrielDias.jpg",
       ],
@@ -136,9 +136,9 @@ const animaisReais = [
       "Ele era de um parente da minha família, porém essa pessoa estava passando por problemas difíceis uma época e chegou até a tomar remédios controlados, e nesse momento o Benji acabou sendo maltratado. Quando pegamos ele, estava um pouco traumatizado, mas com o tempo aqui em casa, dando carinho para ele, melhorou bastante.",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Giovanni Pantuzzo", "Gabriel Dias", "Arthur Lima"],
+      nome: ["Giovanna Souza", "Gabriel Dias", "Arthur Lima"],
       foto: [
-        "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/GabrielDias.jpg",
         "/images/Colaboradores/ArthurLima.jpg",
       ],
@@ -196,11 +196,11 @@ const animaisReais = [
       "Suzi é a cadelinha mais brincalhona que eu já tive, ela adora fazer bagunça e brincar, seja com adultos ou crianças. Uma cadela amável que adora brincar com a bolinha dela e de morder (suavemente) as pessoas pedindo atenção. Nas horas vagas ela dorme, na verdade ela hiberna em sua caminha.Entretanto quando ela está elétrica não pode ver um portão que já quer ir pra rua correr.",
     Raca: "Shih-tzu",
     comentarios: {
-      nome: ["Ana Gonçalves", "Gabriel Mauad", "Tainan Albuquerque"],
+      nome: ["Ana Gonçalves", "Gabriel Mauad", "Ian Xavier"],
       foto: [
         "/images/Colaboradores/AnaGoncalves.png",
         "/images/Colaboradores/GabrielMauad.jpg",
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
       ],
       texto: [
         "Nossa essa adora uma bagunça, se sente em casa quando brincam com ela",
@@ -286,10 +286,10 @@ const animaisReais = [
       "Hobbys: entrar dentro de espaços apertados, dormir muito e brincar de pega pega.",
     Raca: "Vira lata",
     comentarios: {
-      nome: ["Matheus Franklin", "Tainan Albuquerque", "Marcone Faria"],
+      nome: ["Matheus Franklin", "Ian Xavier", "Marcone Faria"],
       foto: [
         "/images/Colaboradores/MatheusFranklin.jpg",
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
         "/images/Colaboradores/MarconeFaria.png",
       ],
       texto: [
@@ -406,10 +406,10 @@ const animaisReais = [
       "Muito cazeira, mas adora bagunçar, revira tudo da casa e não fica nada no mesmo lugar. Ama dar e receber carinho",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Ana Gonçalves", "Giovanni Pantuzzo", "Helio Neto"],
+      nome: ["Ana Gonçalves", "Giovanna Souza", "Helio Neto"],
       foto: [
         "/images/Colaboradores/AnaGoncalves.png",
-        "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/HelioNeto.jpg",
       ],
       texto: [
@@ -526,10 +526,10 @@ const animaisReais = [
       "Brinca muito, fica correndo em volta da arvore no quintal e gosta muito de morder a orelha dos outros cachorros aqui de casa. Ela é bem ciumenta e gosta muito de colo também.",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Gabriel Mauad", "Giovanni Pantuzzo", "Bruno Campos"],
+      nome: ["Gabriel Mauad", "Giovanna Souza", "Bruno Campos"],
       foto: [
         "/images/Colaboradores/GabrielMauad.jpg",
-        "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/BrunoCampos.jpg",
       ],
       texto: [
@@ -556,9 +556,9 @@ const animaisReais = [
       "O Zuko é um cachorro que adora atenção e ficar perto das pessoas, ele é bem calmo até você deixar ele empolgado, a partir disso nem ele consegue se controlar mais. No geral ele é bem inteligente e obediente (um pouco medroso também) ou seja, a companhia perfeita.",
     Raca: "Pastor alemão",
     comentarios: {
-      nome: ["Tainan Albuquerque", "Matheus Franklin", "Igor Amoras"],
+      nome: ["Ian Xavier", "Matheus Franklin", "Igor Amoras"],
       foto: [
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
         "/images/Colaboradores/MatheusFranklin.jpg",
         "/images/Colaboradores/IgorAmoras.jpg",
       ],
@@ -675,10 +675,10 @@ const animaisReais = [
       "Sauron é o cachorro mais amoroso do mundo! Além de ser um gordinho super fofo, nasceu com um rabinho curtinho, diferente do seu irmão. É muito faminto e tem espírito de velho, mas ao mesmo tempo ama brincar com seu irmão gêmeo. Ama carinho e, principalmente, AMA dar lambeijos.",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Gabriel Mauad", "Tainan Albuquerque", "PedroBarros.png"],
+      nome: ["Gabriel Mauad", "Giovanna Souza", "PedroBarros.png"],
       foto: [
         "/images/Colaboradores/GabrielMauad.jpg",
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/PedroBarros.png",
       ],
       texto: [
@@ -735,11 +735,11 @@ const animaisReais = [
       "Ama sachê, odeia visitas, gosta de dormir sozinho em guarda roupas, é bem interesseiro e dramático e ruim (coitado dos passarinhos que caem no quintal).",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Arthur Lima", "Helio Neto", "Gabriel Dias"],
+      nome: ["Arthur Lima", "Helio Neto", "Giovanna Souza"],
       foto: [
         "/images/Colaboradores/ArthurLima.jpg",
         "/images/Colaboradores/HelioNeto.jpg",
-        "/images/Colaboradores/GabrielDias.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
       ],
       texto: [
         "Não gosta que ninguem chegue na casa, nem os donos kkkkk",
@@ -849,7 +849,7 @@ const animaisReais = [
     nome: "Kappa",
     tempo: "6 meses",
     local: "Belo Horizonte/MG",
-    tamanho: "5 cm",
+    tamanho: "P",
     sexo: "Macho",
     descricao:
       "É muito bravo, ele adora comer ração e odei divirto o espaço dele com qualquer outro animal. Já matou dois peixinhos durante a fase de adaptação deles",
@@ -915,11 +915,11 @@ const animaisReais = [
       "Ela adora comer e receber carinho, inclusive ela fica arranhando as pessoas até que elas façam carinho nela.",
     Raca: "Shitszu",
     comentarios: {
-      nome: ["Matheus Franklin", "Helio Neto", "Tainan Albuquerque"],
+      nome: ["Matheus Franklin", "Helio Neto", "Ian Xavier"],
       foto: [
         "/images/Colaboradores/MatheusFranklin.jpg",
         "/images/Colaboradores/HelioNeto.jpg",
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/Ian Xavier",
       ],
       texto: [
         "Gosta de mais de atenção, se voce levar a mão nela já vira a barriguinha para cima",
@@ -1004,9 +1004,9 @@ const animaisReais = [
     descricao: "Um cachorro dócil e amigáve",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Giovanni Pantuzzo", "Marcone Faria", "Arthur Lima"],
+      nome: ["Giovanna Souza", "Marcone Faria", "Arthur Lima"],
       foto: [
-        "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/MarconeFaria.png",
         "/images/Colaboradores/ArthurLima.jpg",
       ],
@@ -1034,9 +1034,9 @@ const animaisReais = [
       "Ela adora brincar e passear, é muito carente e gosta muito de receber atenção.",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Gabriel Dias", "Ana Gonçalves", "Bruno Campos"],
+      nome: ["Giovanna Souza", "Ana Gonçalves", "Bruno Campos"],
       foto: [
-        "/images/Colaboradores/GabrielDias.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/AnaGoncalves.png",
         "/images/Colaboradores/BrunoCampos.jpg",
       ],
@@ -1124,9 +1124,9 @@ const animaisReais = [
       "É muito agitado, muito apegado. Ele tem um pouquinho de espirito de gato, gosta de subir nas coisas e aconchegar no colo",
     Raca: "Vira-lata",
     comentarios: {
-      nome: ["Tainan Albuquerque", "Pedro Barros", "Matheus Franklin"],
+      nome: ["Ian Xavier", "Pedro Barros", "Matheus Franklin"],
       foto: [
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
         "/images/Colaboradores/PedroBarros.png",
         "/images/Colaboradores/MatheusFranklin.jpg",
       ],
@@ -1183,10 +1183,10 @@ const animaisReais = [
     descricao: "É triloca, não adote, se não vai ter problema com o dono.",
     Raca: "Lhasa apso",
     comentarios: {
-      nome: ["Pedro Barros", "Tainan Albuquerque", "Helio Neto"],
+      nome: ["Pedro Barros", "Ian Xavier", "Helio Neto"],
       foto: [
         "/images/Colaboradores/PedroBarros.png",
-        "/images/Colaboradores/TainanAlbuquerque.jpg",
+        "/images/Colaboradores/IanXavier.png",
         "/images/Colaboradores/HelioNeto.jpg",
       ],
       texto: [
@@ -1243,9 +1243,9 @@ const animaisReais = [
       "Gosta de comer e passear, pra essas duas coisas não tem horário ruim, se pegar a coleira 3 da manhã e colocar na frente, ela sai, e comida a mesma coisa.",
     Raca: "Bulgodue francês",
     comentarios: {
-      nome: ["Giovanni Pantuzzo", "Gabriel Dias", "Tainan Albuquerque"],
+      nome: ["Giovanna Souza", "Gabriel Dias", "Tainan Albuquerque"],
       foto: [
-        "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        "/images/Colaboradores/GiovannaSouza.png",
         "/images/Colaboradores/GabrielDias.jpg",
         "/images/Colaboradores/TainanAlbuquerque.jpg",
       ],
