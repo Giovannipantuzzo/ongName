@@ -182,26 +182,26 @@ function Animal({ location, ...props }) {
         <div className="comentariosAnimal">
           <div className="tituloComentario">Comentários</div>
           <div>
-            {animal.comentarios.map((comentario) => (
-              <div className="comentarioFuncionario">
-                <div className="perfilComentario">
-                  <img
-                    src={comentario.foto}
-                    alt="Tony Stark"
-                    className="imagePerfil"
-                  />
-                </div>
-                <div className="textoComentario">
-                  <p>
-                    <u>
-                      <b>Tony Stark:</b>
-                    </u>{" "}
-                    Pet lindo dócil e brincalhão, necessita de cuidadose
-                    especiais.
-                  </p>
-                </div>
+            {/* {animal.comentarios.map((comentario) => ( */}
+            <div className="comentarioFuncionario">
+              <div className="perfilComentario">
+                <img
+                  src={comentario.foto}
+                  alt="Tony Stark"
+                  className="imagePerfil"
+                />
               </div>
-            ))}
+              <div className="textoComentario">
+                <p>
+                  <u>
+                    <b>Tony Stark:</b>
+                  </u>{" "}
+                  Pet lindo dócil e brincalhão, necessita de cuidadose
+                  especiais.
+                </p>
+              </div>
+            </div>
+            {/* ))} */}
           </div>
           <div className="comentarioFuncionario">
             <div className="perfilComentario">
