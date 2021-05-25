@@ -4,7 +4,8 @@ import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import "./Perfil.css";
 import { getToken } from "../../Services/auth";
-import { responsiveFontSizes } from "@material-ui/core";
+
+const firebase = require("firebase");
 
 function Perfil() {
   const [user, setUser] = useState();
@@ -33,6 +34,8 @@ function Perfil() {
       alert("Algo deu errado");
     }
   }
+
+  const forgotPassword = (Email) => {};
 
   function handleUpdate(value, key) {
     user[key] = value;
@@ -144,7 +147,9 @@ function Perfil() {
             <Form.Label>
               <b>Senha</b>
             </Form.Label>
-            <Form.Control type="passwordPerfil" placeholder="" />
+            <Button className="buttonsave" variant="dark" onClick={() => {}}>
+              Alterar senha
+            </Button>
           </Form.Group>
         </Form>
         <div className="buttonsave2">
