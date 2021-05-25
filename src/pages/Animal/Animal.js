@@ -186,7 +186,7 @@ function Animal({ location, ...props }) {
             <div className="comentarioFuncionario">
               <div className="perfilComentario">
                 <img
-                  src={comentario.foto}
+                  src="./images/tonyStark.png"
                   alt="Tony Stark"
                   className="imagePerfil"
                 />
