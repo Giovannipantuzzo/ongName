@@ -63,7 +63,7 @@ function Perfil() {
         <Form className="inputsPerfil">
           <Form.Group controlId="usernamePerfil">
             <Form.Label>
-              <b>Username</b>
+              <b>Nome</b>
             </Form.Label>
 
             <Form.Control
@@ -107,13 +107,13 @@ function Perfil() {
           </Form.Group>
           <Form.Group controlId="passwordPerfil">
             <Form.Label>
-              <b>Password</b>
+              <b>Senha</b>
             </Form.Label>
             <Form.Control type="passwordPerfil" placeholder="" />
           </Form.Group>
           <Form.Group controlId="complementPerfil">
             <Form.Label>
-              <b>Complement (house number,etc)</b>
+              <b>Complemento (Número da residência,etc)</b>
             </Form.Label>
             <Form.Control
               type="complementPerfil"
@@ -135,7 +135,7 @@ function Perfil() {
           </Form.Group>
           <Form.Group controlId="birthdatePerfil">
             <Form.Label>
-              <b>Birth Date</b>
+              <b>Data de nascimento</b>
             </Form.Label>
             <Form.Control
               type="birthdatePerfil"
