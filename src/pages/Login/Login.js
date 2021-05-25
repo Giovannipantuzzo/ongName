@@ -2,20 +2,25 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import { login } from "../../Services/auth";
 
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const history = useHistory();
 
   async function handleLogin(e) {
     e.preventDefault();
     try {
       const response = await api.post("/login", { email, password });
-      alert("Bem vindo", response.data.user.username);
+      sessionStorage.setItem("nameUser", response.data.user.username);
+      sessionStorage.setItem("numberUser", response.data.user.number);
+      sessionStorage.setItem("cpfUser", response.data.user.cpf);
+      sessionStorage.setItem("cepUser", response.data.user.cep);
+      sessionStorage.setItem("complementUser", response.data.user.complement);
+      sessionStorage.setItem("birthDateUser", response.data.user.birthDate);
+      alert("Bem vindo");
       login(response.data.accessToken);
       window.location.href = "/home";
     } catch (error) {

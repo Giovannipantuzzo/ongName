@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Adocao_animais.css";
 import ComponenteAdocao from "../../Componentes/ComponenteAdocao";
-import animais from "../../Componentes/AnimaisReais"
+import animais from "../../Componentes/AnimaisReais";
 
 function Adocao_animais() {
   return (

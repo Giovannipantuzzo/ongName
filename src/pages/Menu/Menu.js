@@ -91,7 +91,8 @@ function Menu({ children }) {
   function handleDrawer(isOpen) {
     setOpen(isOpen);
   }
-  console.warn(token);
+
+  const nameUser = sessionStorage.getItem("nameUser");
 
   if (token == null) {
     return (
@@ -250,7 +251,7 @@ function Menu({ children }) {
                       }}
                       style={{ cursor: "pointer" }}
                     >
-                      Giovanni Silva Pantuzzo
+                      {nameUser}
                     </p>
                   </div>
                   <div className="buttonsSpace3">
@@ -284,7 +285,7 @@ function Menu({ children }) {
                 <IconContext.Provider value={{ size: "2.3rem" }}>
                   <BsFillPersonFill />
                 </IconContext.Provider>
-                <p className="usernameDrawer"> Giovanni Silva Pantuzzo</p>
+                <p className="usernameDrawer">{nameUser}</p>
               </div>
               {listButtons2.map((listItem) => {
                 return (
