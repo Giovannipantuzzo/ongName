@@ -59,7 +59,7 @@ const colaboradores = [
     id: 2,
     nome: "Bruno Campos",
     imagem: "./images/Colaboradores/BrunoCampos.jpg",
-    insta: "",
+    insta: "https://www.instagram.com/_brunohcampos",
   },
 
   {

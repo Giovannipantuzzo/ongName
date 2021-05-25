@@ -24,7 +24,7 @@ function Footer() {
               <div className="iconsFooter1">
                 <a
                   className="insta"
-                  href="https://www.instagram.com/giovannipantuzzo/"
+                  href="https://www.instagram.com/cpe.jr"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
