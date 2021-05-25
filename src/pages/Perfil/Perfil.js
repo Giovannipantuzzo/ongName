@@ -7,46 +7,51 @@ import { getToken } from "../../Services/auth";
 import { responsiveFontSizes } from "@material-ui/core";
 
 function Perfil() {
-  const [username, setUsername] = useState();
-  const [cpf, setCpf] = useState();
-  const [email, setEmail] = useState();
-  const [cep, setCep] = useState();
-  const [password, setPassword] = useState();
-  const [complement, setComplement] = useState();
-  const [number, setNumber] = useState();
-  const [birthdate, setBirthdate] = useState();
+  const [user, setUser] = useState();
+
   const history = useHistory();
 
-  function saveperfil() {
-    updateUser({ username, cpf, cep, complement, number, birthdate });
-    alert("Dados salvos com sucesso!");
-    history.push("home");
-  }
-
-  async function getUser(field) {
+  async function updateUser() {
     try {
-      const token = getToken();
-      const response = await api.get(`/user`);
-      console.log(response.data.username);
-      return response.data.username;
+      let updatedUser = {};
+      Object.keys(user).forEach((key) => {
+        if (
+          user[key] &&
+          key !== "user_id" &&
+          key !== "email" &&
+          key !== "firebase_id"
+        ) {
+          updatedUser[key] = user[key];
+          console.log(key);
+        }
+      });
+      await api.put(`/user`, updatedUser);
+      alert("Dados salvos com sucesso!");
+      history.push("home");
     } catch (error) {
       console.warn(error);
       alert("Algo deu errado");
     }
   }
 
-  async function updateUser(fieldUpdate) {
-    try {
-      const token = getToken();
-      const response = await api.put(`/user`, fieldUpdate);
-    } catch (error) {
-      console.warn(error);
-      alert("Algo deu errado");
-    }
+  function handleUpdate(value, key) {
+    user[key] = value;
+    setUser({ ...user });
   }
 
   useEffect(() => {
+    async function getUser() {
+      try {
+        const token = getToken();
+        const response = await api.get(`/user`);
+        setUser({ ...response.data });
+      } catch (error) {
+        console.warn(error);
+        alert("Algo deu errado");
+      }
+    }
     getUser();
+    console.log(user);
   }, []);
 
   return (
@@ -60,10 +65,12 @@ function Perfil() {
             <Form.Label>
               <b>Username</b>
             </Form.Label>
+
             <Form.Control
-              type="usernamePerfil"
+              type="text"
               placeholder=""
-              onChange={(e) => setUsername(e.target.value)}
+              value={user && user.username}
+              onChange={(e) => handleUpdate(e.target.value, "username")}
             />
           </Form.Group>
           <Form.Group controlId="cpfPerfil">
@@ -73,7 +80,8 @@ function Perfil() {
             <Form.Control
               type="cpfPerfil"
               placeholder=""
-              onChange={(e) => setCpf(e.target.value)}
+              value={user && user.cpf}
+              onChange={(e) => handleUpdate(e.target.value, "cpf")}
             />
           </Form.Group>
           <Form.Group controlId="emailPerfil">
@@ -83,7 +91,7 @@ function Perfil() {
             <Form.Control
               type="emailPerfil"
               placeholder=""
-              onChange={(e) => setEmail(e.target.value)}
+              value={user?.email}
             />
           </Form.Group>
           <Form.Group controlId="cepPerfil">
@@ -93,18 +101,15 @@ function Perfil() {
             <Form.Control
               type="cepPerfil"
               placeholder=""
-              onChange={(e) => setCep(e.target.value)}
+              value={user && user.cep}
+              onChange={(e) => handleUpdate(e.target.value, "cep")}
             />
           </Form.Group>
           <Form.Group controlId="passwordPerfil">
             <Form.Label>
               <b>Password</b>
             </Form.Label>
-            <Form.Control
-              type="passwordPerfil"
-              placeholder=""
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <Form.Control type="passwordPerfil" placeholder="" />
           </Form.Group>
           <Form.Group controlId="complementPerfil">
             <Form.Label>
@@ -113,7 +118,8 @@ function Perfil() {
             <Form.Control
               type="complementPerfil"
               placeholder=""
-              onChange={(e) => setComplement(e.target.value)}
+              value={user && user.complement}
+              onChange={(e) => handleUpdate(e.target.value, "complement")}
             />
           </Form.Group>
           <Form.Group controlId="cellphonePerfil">
@@ -123,7 +129,8 @@ function Perfil() {
             <Form.Control
               type="cellphonePerfil"
               placeholder=""
-              onChange={(e) => setNumber(e.target.value)}
+              value={user && user.number}
+              onChange={(e) => handleUpdate(e.target.value, "number")}
             />
           </Form.Group>
           <Form.Group controlId="birthdatePerfil">
@@ -133,12 +140,13 @@ function Perfil() {
             <Form.Control
               type="birthdatePerfil"
               placeholder=""
-              onChange={(e) => setBirthdate(e.target.value)}
+              value={user && user.birthDate}
+              onChange={(e) => handleUpdate(e.target.value, "birthdate")}
             />
           </Form.Group>
         </Form>
         <div className="buttonsave2">
-          <Button className="buttonsave" variant="dark" onClick={saveperfil}>
+          <Button className="buttonsave" variant="dark" onClick={updateUser}>
             Save
           </Button>
         </div>
