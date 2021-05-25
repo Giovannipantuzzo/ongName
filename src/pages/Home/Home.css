@@ -2,12 +2,20 @@
   background-color: #fffcc1;
 }
 
+.divPata {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.imagemPata {
+  width: 70px;
+  opacity: 0.8;
+}
+
 .SobreNos {
   display: flex;
   padding: 30px;
-  align-items: "center";
-  width: "100%";
-  height: "40vh";
 }
 
 .SobreNosTitulo_Home {
@@ -38,9 +46,6 @@
   display: flex;
   padding: 30px;
   margin-top: 50px;
-  align-items: "center";
-  width: "100%";
-  height: "40vh";
 }
 
 .ComoDoarTitulo_Home1 {
@@ -72,19 +77,16 @@
 }
 
 .Colaboradores {
-  display: flex;
+  display: block;
   padding: 30px;
   margin-top: 50px;
-  align-items: "center";
-  width: "100%";
-  height: "40vh";
 }
 
 .ColaboradoresTitulo_Home {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   font-family: "Quicksand", sans-serif;
   font-size: 50px;
   color: black;
@@ -93,22 +95,24 @@
 }
 
 .ColaboradoresDescricao_Home {
-  display: block;
-  justify-content: center;
+  display: grid;
+  justify-items: flex-start;
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   color: black;
   text-align: center;
   padding: 10px;
-  width: 50%;
 }
 
 .tittleAdoteHome {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  padding-top: 40px;
+  height: 150px;
+  /* padding-top: 40px; */
   font-size: 4.5em;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
