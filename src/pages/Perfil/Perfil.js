@@ -141,7 +141,7 @@ function Perfil() {
               type="birthdatePerfil"
               placeholder=""
               value={user && user.birthDate}
-              onChange={(e) => handleUpdate(e.target.value, "birthdate")}
+              onChange={(e) => handleUpdate(e.target.value, "birthDate")}
             />
           </Form.Group>
         </Form>
