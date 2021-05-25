@@ -84,16 +84,7 @@ function Perfil() {
               onChange={(e) => handleUpdate(e.target.value, "cpf")}
             />
           </Form.Group>
-          <Form.Group controlId="emailPerfil">
-            <Form.Label>
-              <b>Email</b>
-            </Form.Label>
-            <Form.Control
-              type="emailPerfil"
-              placeholder=""
-              value={user?.email}
-            />
-          </Form.Group>
+
           <Form.Group controlId="cepPerfil">
             <Form.Label>
               <b>CEP</b>
@@ -105,12 +96,7 @@ function Perfil() {
               onChange={(e) => handleUpdate(e.target.value, "cep")}
             />
           </Form.Group>
-          <Form.Group controlId="passwordPerfil">
-            <Form.Label>
-              <b>Senha</b>
-            </Form.Label>
-            <Form.Control type="passwordPerfil" placeholder="" />
-          </Form.Group>
+
           <Form.Group controlId="complementPerfil">
             <Form.Label>
               <b>Complemento (Número da residência,etc)</b>
@@ -124,7 +110,7 @@ function Perfil() {
           </Form.Group>
           <Form.Group controlId="cellphonePerfil">
             <Form.Label>
-              <b>Cell Phone Number</b>
+              <b>Telefone</b>
             </Form.Label>
             <Form.Control
               type="cellphonePerfil"
@@ -143,6 +129,22 @@ function Perfil() {
               value={user && user.birthDate}
               onChange={(e) => handleUpdate(e.target.value, "birthDate")}
             />
+          </Form.Group>
+          <Form.Group controlId="emailPerfil">
+            <Form.Label>
+              <b>Email</b>
+            </Form.Label>
+            <Form.Control
+              type="emailPerfil"
+              placeholder=""
+              value={user?.email}
+            />
+          </Form.Group>
+          <Form.Group controlId="passwordPerfil">
+            <Form.Label>
+              <b>Senha</b>
+            </Form.Label>
+            <Form.Control type="passwordPerfil" placeholder="" />
           </Form.Group>
         </Form>
         <div className="buttonsave2">
