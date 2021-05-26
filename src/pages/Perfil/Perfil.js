@@ -3,8 +3,6 @@ import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import "./Perfil.css";
-import { getToken } from "../../Services/auth";
-import { responsiveFontSizes } from "@material-ui/core";
 
 function Perfil() {
   const [user, setUser] = useState();
@@ -42,7 +40,6 @@ function Perfil() {
   useEffect(() => {
     async function getUser() {
       try {
-        const token = getToken();
         const response = await api.get(`/user`);
         setUser({ ...response.data });
       } catch (error) {
