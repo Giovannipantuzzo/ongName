@@ -41,6 +41,8 @@ function Perfil() {
     async function getUser() {
       try {
         const response = await api.get(`/user`);
+        console.log(response.data.username);
+        sessionStorage.setItem("nameUser", response.data.username);
         setUser({ ...response.data });
       } catch (error) {
         console.warn(error);
