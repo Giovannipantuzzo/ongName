@@ -52,6 +52,7 @@ function Animal({ location, ...props }) {
       alert("Você deve fazer login para adotar um animal.");
       history.push("login");
     } else if (token != null) {
+      // update({ nameUser });
       if (
         !{ nameUser } ||
         !{ numberUser } ||
