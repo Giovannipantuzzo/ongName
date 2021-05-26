@@ -53,22 +53,28 @@ function Animal({ location, ...props }) {
       history.push("login");
     } else if (token != null) {
       if (
-        !{ nameUser } ||
-        !{ numberUser } ||
-        !{ cpfUser } ||
-        !{ cepUser } ||
-        !{ complementUser } ||
-        !{ birthDateUser }
+        nameUser === "null" ||
+        nameUser === " " ||
+        numberUser === "null" ||
+        numberUser === " " ||
+        cpfUser === "null" ||
+        cpfUser === " " ||
+        cepUser === "null" ||
+        cepUser === " " ||
+        complementUser === "null" ||
+        complementUser === " " ||
+        birthDateUser === "null" ||
+        birthDateUser === " "
       ) {
-        alert(
-          "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
-        );
-        history.push("home");
-      } else {
         alert(
           "Complete todas as informações do perfil para habilitar essa opção."
         );
         history.push("perfil");
+      } else {
+        alert(
+          "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+        );
+        history.push("home");
       }
     }
   }
