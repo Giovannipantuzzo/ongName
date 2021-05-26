@@ -25,7 +25,7 @@ function Perfil() {
       });
       await api.put(`/user`, updatedUser);
       alert("Dados salvos com sucesso!");
-      history.push("home");
+      window.location.href = "/home";
     } catch (error) {
       console.warn(error);
       alert("Algo deu errado");
