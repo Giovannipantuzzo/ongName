@@ -1,4 +1,4 @@
-const animaisReais = [
+export const animaisReais = [
   {
     id: 1,
     imagem: [
@@ -28,6 +28,23 @@ const animaisReais = [
         "Ele é peludinho, mas não se enganem com a fofura dele, nervosinho demais",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 2,
@@ -58,6 +75,23 @@ const animaisReais = [
         "Ahhhhh essa cabritinha é perfeitaaa.",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 3,
@@ -88,6 +122,23 @@ const animaisReais = [
         "Anda miando para as portas, além de arranhar tudo que pode",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 4,
@@ -118,6 +169,23 @@ const animaisReais = [
         "Odeia a ideia de se molhar, corre de tudo que envolve água",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 5,
@@ -148,6 +216,23 @@ const animaisReais = [
         "Espero que encontre alguem que dê o carrinho que ele merece <3",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 6,
@@ -178,6 +263,23 @@ const animaisReais = [
         "Nossa ela adora pessoas, sorri muito quando brincam com ela",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 7,
@@ -208,6 +310,23 @@ const animaisReais = [
         "Ama demais brincar de morder, então sempre tenha uma bolinha para ela",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 8,
@@ -238,6 +357,23 @@ const animaisReais = [
         "Carambaaaa.... deu uma pela encorpada hahaha",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 9,
@@ -268,6 +404,23 @@ const animaisReais = [
         "Uma fofuraaaa, precisam ver só como ele é um amorzinho",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 10,
@@ -298,6 +451,23 @@ const animaisReais = [
         "Nossa... ele ve um lugar que não cabe e pula la dentro",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 11,
@@ -328,6 +498,23 @@ const animaisReais = [
         "Os carteiros passam aperado, mas adoram ela",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 12,
@@ -358,6 +545,23 @@ const animaisReais = [
         "Ele é super animado e adora brincar sempre que pode",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 13,
@@ -388,6 +592,23 @@ const animaisReais = [
         "Super carinhosaaaaa, Fofa demais e muito meiga",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 14,
@@ -418,6 +639,23 @@ const animaisReais = [
         "Muito carinhosa, espero que encontre um lar bom",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 15,
@@ -448,6 +686,23 @@ const animaisReais = [
         "Sai da frente que ela vem quente... não para",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 16,
@@ -478,6 +733,23 @@ const animaisReais = [
         "Nunca vi tanta preguiça junto",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 17,
@@ -508,6 +780,23 @@ const animaisReais = [
         "Tem umas mãoszinha minusculas, é uma graçaaaaaaaa",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 18,
@@ -538,6 +827,23 @@ const animaisReais = [
         "Adoraaaaa correr no quintal, espaço aberto e em qualquer lugar",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 19,
@@ -568,6 +874,23 @@ const animaisReais = [
         "Bem espertinho e ligeiro, atenção é tudo para ele",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 20,
@@ -598,6 +921,23 @@ const animaisReais = [
         "Aii um amor de pet, merece muito carinho",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 21,
@@ -627,6 +967,23 @@ const animaisReais = [
         "Elas são muito unidas e amigas, fazem tudo juntas sempre",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 22,
@@ -657,6 +1014,23 @@ const animaisReais = [
         "Mastiga o que ver pela frete e não gosta muito de esperar, pavio curto",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 23,
@@ -687,6 +1061,23 @@ const animaisReais = [
         "Aiii vontade de pegar para mim e viver apraçadinho",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 24,
@@ -717,6 +1108,23 @@ const animaisReais = [
         "Ele corre fas pessoas, mas quando gosta de alguem é super carinhoso",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 25,
@@ -747,6 +1155,23 @@ const animaisReais = [
         "Ele gosta de ficar em paz e adora uns presentinhos",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 26,
@@ -777,6 +1202,23 @@ const animaisReais = [
         "Se ver você abrindo o portão correndo pra rua, nunca vi igual",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 27,
@@ -807,6 +1249,23 @@ const animaisReais = [
         "Nossa adora brincar, ama dormir no quintal e depois fica toda suja",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 28,
@@ -837,6 +1296,23 @@ const animaisReais = [
         "Adora acordar mais tarde, dar uma espriguiçada gostosa e volta a cochilar depois",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 29,
@@ -897,6 +1373,23 @@ const animaisReais = [
         "Ele é muito lindo quero para mim",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 31,
@@ -927,6 +1420,23 @@ const animaisReais = [
         "Bem espertinha ela, sempre quer ta no centro das atenções",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 32,
@@ -957,6 +1467,23 @@ const animaisReais = [
         "Bem quieto e não curte sair, gosta de dar e receber carinho",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 33,
@@ -987,6 +1514,23 @@ const animaisReais = [
         "Ela ama se esconder em locais altos e de dificil acesso",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 34,
@@ -1001,7 +1545,7 @@ const animaisReais = [
     local: "Betim/MG",
     tamanho: "M",
     sexo: "Macho",
-    descricao: "Um cachorro dócil e amigáve",
+    descricao: "Um cachorro dócil e amigável",
     Raca: "Vira-lata",
     comentarios: {
       nome: ["Giovanna Souza", "Marcone Faria", "Arthur Lima"],
@@ -1016,6 +1560,23 @@ const animaisReais = [
         "Ahhh ele é demais, corre e brinca com todos, adora companhia",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 35,
@@ -1046,6 +1607,23 @@ const animaisReais = [
         "Bem animada ela, gosta muito de bricar, sempre correndo quando pode",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 36,
@@ -1076,6 +1654,23 @@ const animaisReais = [
         "Incrivelmente eletrico, não para um minuto sequer",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 37,
@@ -1106,6 +1701,23 @@ const animaisReais = [
         "Levanta só pro necessário e se estressa se não deixam ela dormir",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 38,
@@ -1136,6 +1748,23 @@ const animaisReais = [
         "Ama um colinho, fica igual um nenem, todo dengoso",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 39,
@@ -1166,6 +1795,23 @@ const animaisReais = [
         "Não gosta de nada, criancas, outro animais, só gosta de carinho e mais nada",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 40,
@@ -1195,6 +1841,23 @@ const animaisReais = [
         "Gente procura outro pet pra adotar, esse ai vai dar BO kkk",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 41,
@@ -1225,6 +1888,23 @@ const animaisReais = [
         "Muito agitada e não para quieta, tentada demais",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
   {
     id: 42,
@@ -1255,6 +1935,23 @@ const animaisReais = [
         "Ela é super agitada, não para quieta, mas dorme bem tá",
       ],
     },
+    comentarios: [
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+      {
+        nome: "",
+        foto: "",
+        texto: "",
+      },
+    ],
   },
 ];
 
