@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import "./Perfil.css";
+import MaskedFormControl from "react-bootstrap-maskedinput";
 
 function Perfil() {
   const [user, setUser] = useState();
@@ -76,7 +77,8 @@ function Perfil() {
             <Form.Label>
               <b>CPF</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="111.111.111-11"
               type="cpfPerfil"
               placeholder=""
               value={user && user.cpf}
@@ -88,7 +90,8 @@ function Perfil() {
             <Form.Label>
               <b>CEP</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="11111-111"
               type="cepPerfil"
               placeholder=""
               value={user && user.cep}
@@ -111,7 +114,8 @@ function Perfil() {
             <Form.Label>
               <b>Telefone</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="(31)11111-1111"
               type="cellphonePerfil"
               placeholder=""
               value={user && user.number}
@@ -122,7 +126,8 @@ function Perfil() {
             <Form.Label>
               <b>Data de nascimento</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="11/11/1111"
               type="birthdatePerfil"
               placeholder=""
               value={user && user.birthDate}

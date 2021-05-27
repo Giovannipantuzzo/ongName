@@ -102,9 +102,6 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Link className="linkConfig" onClick={() => esqueciSenha()}>
-            Esqueci a Senha
-          </Link>{" "}
           <div className="entrarConfig2">
             <Button
               className="entrarConfig"
@@ -114,6 +111,9 @@ function Login() {
               Entrar
             </Button>{" "}
           </div>
+          <Link className="linkConfig3" onClick={() => esqueciSenha()}>
+            Esqueci minha senha
+          </Link>{" "}
           <div className="linkConfig2">
             <Link className="linkConfig" to="cadastro">
               Cadastre-se já

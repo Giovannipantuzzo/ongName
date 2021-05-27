@@ -9,6 +9,7 @@ import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
 import { getToken } from "../../Services/auth";
+import { Alert } from "antd";
 
 const responsive = {
   superLargeDesktop: {
