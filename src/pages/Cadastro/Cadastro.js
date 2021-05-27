@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import "./Cadastro.css";
 import api from "../../Services/api";
 import "bootstrap/dist/css/bootstrap.min.css";
+import MaskedFormControl from "react-bootstrap-maskedinput";
 
 function Cadastro() {
   const Swal = require("sweetalert2");
@@ -21,6 +22,29 @@ function Cadastro() {
         title: "Preencha todos os campos para efetuar o cadastro!",
         html: "Auto close in <b></b> milliseconds.",
         timer: 2400,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading();
+          timerInterval = setInterval(() => {
+            const content = Swal.getHtmlContainer();
+            if (content) {
+              const b = content.querySelector("b");
+              if (b) {
+                b.textContent = Swal.getTimerLeft();
+              }
+            }
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        },
+      });
+    } else if (password.length < 6) {
+      let timerInterval;
+      Swal.fire({
+        title: "A senha deve conter no mínimo 6 dígitos!",
+        html: "Auto close in <b></b> milliseconds.",
+        timer: 1700,
         timerProgressBar: true,
         didOpen: () => {
           Swal.showLoading();
@@ -128,7 +152,8 @@ function Cadastro() {
             />
           </Form.Group>
           <Form.Group controlId="number">
-            <Form.Control
+            <MaskedFormControl
+              mask="(11)11111-1111"
               type="text"
               placeholder="cell phone number"
               onChange={(e) => setNumber(e.target.value)}
