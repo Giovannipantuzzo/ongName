@@ -192,10 +192,11 @@ function Animal({ location, ...props }) {
           {animal.comentarios.map((comentario) => (
             <div className="comentarioFuncionario">
               <div className="perfilComentario">
-                <img
+                <Image
                   src={comentario.foto}
                   alt={comentario.nome}
                   className="imagePerfil"
+                  roundedCircle
                 />
               </div>
               <div className="textoComentario">
@@ -208,41 +209,6 @@ function Animal({ location, ...props }) {
               </div>
             </div>
           ))}
-
-          <div className="comentarioFuncionario">
-            <div className="perfilComentario">
-              <img
-                src="./images/juliette.png"
-                alt="Juliette"
-                className="imagePerfil"
-              />
-            </div>
-            <div className="textoComentario">
-              <p>
-                <u>
-                  <b>Juliette:</b>
-                </u>{" "}
-                Esse pet é maravilhoso, porém meio arrisco, sempre desconfiado.
-              </p>
-            </div>
-          </div>
-          <div className="comentarioFuncionario">
-            <div className="perfilComentario">
-              <img
-                src="./images/gilberto.png"
-                alt="Gilberto"
-                className="imagePerfil"
-              />
-            </div>
-            <div className="textoComentario">
-              <p>
-                <u>
-                  <b>Gilberto:</b>
-                </u>{" "}
-                Esse pet é especial, com muito amor para dar.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
