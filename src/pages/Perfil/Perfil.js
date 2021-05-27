@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import "./Perfil.css";
+import MaskedFormControl from "react-bootstrap-maskedinput";
 
 function Perfil() {
   const [user, setUser] = useState();
@@ -25,7 +26,7 @@ function Perfil() {
       });
       await api.put(`/user`, updatedUser);
       alert("Dados salvos com sucesso!");
-      history.push("home");
+      window.location.href = "/home";
     } catch (error) {
       console.warn(error);
       alert("Algo deu errado");
@@ -41,6 +42,8 @@ function Perfil() {
     async function getUser() {
       try {
         const response = await api.get(`/user`);
+        console.log(response.data.username);
+        sessionStorage.setItem("nameUser", response.data.username);
         setUser({ ...response.data });
       } catch (error) {
         console.warn(error);
@@ -74,7 +77,8 @@ function Perfil() {
             <Form.Label>
               <b>CPF</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="111.111.111-11"
               type="cpfPerfil"
               placeholder=""
               value={user && user.cpf}
@@ -86,7 +90,8 @@ function Perfil() {
             <Form.Label>
               <b>CEP</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="11111-111"
               type="cepPerfil"
               placeholder=""
               value={user && user.cep}
@@ -109,7 +114,8 @@ function Perfil() {
             <Form.Label>
               <b>Telefone</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="(31)11111-1111"
               type="cellphonePerfil"
               placeholder=""
               value={user && user.number}
@@ -120,7 +126,8 @@ function Perfil() {
             <Form.Label>
               <b>Data de nascimento</b>
             </Form.Label>
-            <Form.Control
+            <MaskedFormControl
+              mask="11/11/1111"
               type="birthdatePerfil"
               placeholder=""
               value={user && user.birthDate}
@@ -137,18 +144,12 @@ function Perfil() {
               value={user?.email}
             />
           </Form.Group>
-          <Form.Group controlId="passwordPerfil">
-            <Form.Label>
-              <b>Senha</b>
-            </Form.Label>
-            <Form.Control type="passwordPerfil" placeholder="" />
+          <Form.Group>
+            <Button className="buttonsave" variant="dark" onClick={updateUser}>
+              Salvar
+            </Button>
           </Form.Group>
         </Form>
-        <div className="buttonsave2">
-          <Button className="buttonsave" variant="dark" onClick={updateUser}>
-            Save
-          </Button>
-        </div>
       </div>
     </div>
   );

@@ -237,13 +237,18 @@ function Home() {
 
         <div className="ComoDoar">
           <p className="ComoDoarTitulo_Home1">Como Doar</p>
-          <p className="ComoDoarDescricao_Home">
-            Nossa instituição precisa muito de doações para poder manter o pleno
-            funcionamento da ONG, por isso, pedimos contribuições em forma de
-            depósito bancário ou pix. O valor das doações será convertido em
-            alimentação e tratamento médico dos nossos animaizinhos. Conta:
-            25478-1 Pix: petfamily@gmail.com
-          </p>
+          <div className="correcao">
+            <p className="ComoDoarDescricao_Home">
+              Nossa instituição precisa muito de doações para poder manter o
+              pleno funcionamento da ONG, por isso, pedimos contribuições em
+              forma de depósito bancário ou pix. O valor das doações será
+              convertido em alimentação e tratamento médico dos nossos
+              animaizinhos. Conta: 25478-1 Pix: petfamily@gmail.com
+            </p>
+            <div className="correcao2">
+              <img className="qrcode" src="./images/qrcode.jpeg" alt="qrcode" />
+            </div>
+          </div>
           <p className="ComoDoarTitulo_Home2">Como Doar</p>
         </div>
 
