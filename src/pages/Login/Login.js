@@ -2,14 +2,35 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import { login } from "../../Services/auth";
+const Swal = require("sweetalert2");
 
 function Login() {
   const Swal = require("sweetalert2");
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+
+  async function esqueciSenha() {
+    try {
+      const { value: emailChange } = await Swal.fire({
+        title: "Digite seu email",
+        customClass: "swal-wide",
+        input: "email",
+        inputPlaceholder: "Digite seu email aqui ",
+        confirmButtonColor: "black",
+        showCancelButton: true,
+      });
+
+      if (emailChange) {
+        Swal.fire(`Email enviado com sucesso`);
+        await api.post(`/forgotPassword`, { email: emailChange });
+      }
+    } catch (error) {
+      console.warn(error);
+      alert("Algo deu errado");
+    }
+  }
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -77,10 +98,13 @@ function Login() {
           <Form.Group controlId="password">
             <Form.Control
               type="password"
-              placeholder="Password"
+              placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
+          <Link className="linkConfig" onClick={() => esqueciSenha()}>
+            Esqueci a Senha
+          </Link>{" "}
           <div className="entrarConfig2">
             <Button
               className="entrarConfig"

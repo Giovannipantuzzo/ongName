@@ -80,3 +80,10 @@ input[type="password"] {
   -moz-border-radius: 1rem;
   border-radius: 1rem;
 }
+
+.swal-wide {
+  justify-content: center !important;
+  width: 25rem !important;
+  height: 16rem !important;
+  align-items: center !important;
+}
