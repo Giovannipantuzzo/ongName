@@ -144,18 +144,28 @@ function Perfil() {
               value={user?.email}
             />
           </Form.Group>
-          <Form.Group controlId="passwordPerfil">
-            <Form.Label>
-              <b>Senha</b>
-            </Form.Label>
-            <Form.Control type="passwordPerfil" placeholder="" />
+          <Form.Group>
+            <Button className="buttonsave" variant="dark" onClick={updateUser}>
+              Salvar
+            </Button>
           </Form.Group>
         </Form>
-        <div className="buttonsave2">
-          <Button className="buttonsave" variant="dark" onClick={updateUser}>
-            Save
-          </Button>
-        </div>
+        {/* <div className="EmailPerfil2">
+          <Form className="emailPagPerfil">
+            <Form.Group controlId="usernamePerfil">
+              <Form.Label className="emailLabelPerfil">
+                <b>Email</b>
+              </Form.Label>
+
+              <Form.Control
+                className="imputEmailPerfil"
+                type="emailPerfil"
+                placeholder=""
+                value={user?.email}
+              />
+            </Form.Group>
+          </Form>
+        </div> */}
       </div>
     </div>
   );
