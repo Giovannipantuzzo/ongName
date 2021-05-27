@@ -150,22 +150,6 @@ function Perfil() {
             </Button>
           </Form.Group>
         </Form>
-        {/* <div className="EmailPerfil2">
-          <Form className="emailPagPerfil">
-            <Form.Group controlId="usernamePerfil">
-              <Form.Label className="emailLabelPerfil">
-                <b>Email</b>
-              </Form.Label>
-
-              <Form.Control
-                className="imputEmailPerfil"
-                type="emailPerfil"
-                placeholder=""
-                value={user?.email}
-              />
-            </Form.Group>
-          </Form>
-        </div> */}
       </div>
     </div>
   );
