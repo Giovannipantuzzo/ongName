@@ -203,7 +203,8 @@ function Animal({ location, ...props }) {
                 <p>
                   <u>
                     <b>{comentario.nome}</b>
-                  </u>{" "}
+                  </u>
+                  {": "}
                   {comentario.texto}
                 </p>
               </div>

@@ -17,8 +17,8 @@ export const animaisReais = [
     Raca: "Spainel Tibetano",
     comentarios: [
       {
-        nome: "Tainan Albuquerque",
-        foto: "/images/Colaboradores/TainanAlbuquerque.jpg",
+        nome: "Bryan Azevedo",
+        foto: "/images/Colaboradores/BryanAzevedo.png",
         texto: "Sansão é uma graça, sempre latindo para pessoas",
       },
       {
@@ -86,8 +86,8 @@ export const animaisReais = [
     Raca: "Não Definida",
     comentarios: [
       {
-        nome: "Ana Gonçalves",
-        foto: "/images/Colaboradores/AnaGoncalves.png",
+        nome: "Bryan Azevedo",
+        foto: "/images/Colaboradores/BryanAzevedo.png",
         texto: "Gatinho vive deitado pra todos os lados",
       },
       {
@@ -264,8 +264,8 @@ export const animaisReais = [
         texto: "Passou por uns mals bocados",
       },
       {
-        nome: "Ana Gonçalves",
-        foto: "/images/Colaboradores/AnaGoncalves.png",
+        nome: "Bryan Azevedo",
+        foto: "/images/Colaboradores/BryanAzevedo.png",
         texto: "Consumiu o dinheiro da breja kkkkkk",
       },
       {
@@ -819,8 +819,8 @@ export const animaisReais = [
           "Ele não deixa voce nem chegar perto, se ele não gostar de você nem olhe",
       },
       {
-        nome: "Ana Gonçalves",
-        foto: "/images/Colaboradores/AnaGoncalves.png",
+        nome: "Bryan Azevedo",
+        foto: "/images/Colaboradores/AnaGoncalves.pngBryanAzevedo.png",
         texto:
           "Ele corre fas pessoas, mas quando gosta de alguem é super carinhoso",
       },
@@ -1180,8 +1180,8 @@ export const animaisReais = [
           "Jade ama ta ali no meio das pessoas, sempre tem alguem fazendo carinho nela",
       },
       {
-        nome: "Ana Gonçalves",
-        foto: "/images/Colaboradores/AnaGoncalves.png",
+        nome: "Bryan Azevedo",
+        foto: "/images/Colaboradores/BryanAzevedo.png",
         texto:
           "Jade gosta muoto de esta passeando na rua, se sente a celebridade",
       },
