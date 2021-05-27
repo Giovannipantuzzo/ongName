@@ -7,6 +7,7 @@ import api from "../../Services/api";
 import { login } from "../../Services/auth";
 
 function Login() {
+  const Swal = require("sweetalert2");
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
@@ -20,12 +21,39 @@ function Login() {
       sessionStorage.setItem("cepUser", response.data.user.cep);
       sessionStorage.setItem("complementUser", response.data.user.complement);
       sessionStorage.setItem("birthDateUser", response.data.user.birthDate);
-      alert("Bem vindo");
-      login(response.data.accessToken);
-      window.location.href = "/home";
+      let timerInterval;
+      Swal.fire({
+        title: "Bem vindo! " + response.data.user.username,
+        html: "Auto close in <b></b> milliseconds.",
+        timer: 1100,
+        icon: "success",
+        didOpen: () => {
+          Swal.showLoading();
+          timerInterval = setInterval(() => {
+            const content = Swal.getHtmlContainer();
+            if (content) {
+              const b = content.querySelector("b");
+              if (b) {
+                b.textContent = Swal.getTimerLeft();
+              }
+            }
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+          login(response.data.accessToken);
+          window.location.href = "/home";
+        },
+      });
     } catch (error) {
       if (error.response.status === 403) {
-        alert("Credenciais Invalidas!");
+        Swal.fire({
+          icon: "error",
+          title: "Credenciais Inválidas!",
+          text: "Verifique os dados inseridos",
+          confirmButtonColor: "black",
+        });
+        // alert("Credenciais Invalidas!");
       } else if (error.response.data) {
         alert(error.response.data.notification);
       } else console.warn(error);
