@@ -42,8 +42,14 @@ function Perfil() {
     async function getUser() {
       try {
         const response = await api.get(`/user`);
-        console.log(response.data.username);
         sessionStorage.setItem("nameUser", response.data.username);
+        sessionStorage.setItem("numberUser", response.data.number);
+        sessionStorage.setItem("cpfUser", response.data.cpf);
+        sessionStorage.setItem("cepUser", response.data.cep);
+        sessionStorage.setItem("complementUser", response.data.complement);
+        sessionStorage.setItem("birthDateUser", response.data.birthDate);
+        console.log(response.data);
+
         setUser({ ...response.data });
       } catch (error) {
         console.warn(error);
