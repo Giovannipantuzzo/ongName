@@ -45,6 +45,7 @@ const responsive = {
 function Animal({ location, ...props }) {
   const history = useHistory();
   const { animal } = location.state;
+  console.log(animal);
   const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
   const token = getToken();
 
@@ -188,62 +189,28 @@ function Animal({ location, ...props }) {
         </div>
         <div className="comentariosAnimal">
           <div className="tituloComentario">Comentários</div>
-          <div>
-            {/* {animal.comentarios.map((comentario) => ( */}
+
+          {animal.comentarios.map((comentario) => (
             <div className="comentarioFuncionario">
               <div className="perfilComentario">
-                <img
-                  src="./images/tonyStark.png"
-                  alt="Tony Stark"
+                <Image
+                  src={comentario.foto}
+                  alt={comentario.nome}
                   className="imagePerfil"
+                  roundedCircle
                 />
               </div>
               <div className="textoComentario">
                 <p>
                   <u>
-                    <b>Tony Stark:</b>
-                  </u>{" "}
-                  Pet lindo dócil e brincalhão, necessita de cuidadose
-                  especiais.
+                    <b>{comentario.nome}</b>
+                  </u>
+                  {": "}
+                  {comentario.texto}
                 </p>
               </div>
             </div>
-            {/* ))} */}
-          </div>
-          <div className="comentarioFuncionario">
-            <div className="perfilComentario">
-              <img
-                src="./images/juliette.png"
-                alt="Juliette"
-                className="imagePerfil"
-              />
-            </div>
-            <div className="textoComentario">
-              <p>
-                <u>
-                  <b>Juliette:</b>
-                </u>{" "}
-                Esse pet é maravilhoso, porém meio arrisco, sempre desconfiado.
-              </p>
-            </div>
-          </div>
-          <div className="comentarioFuncionario">
-            <div className="perfilComentario">
-              <img
-                src="./images/gilberto.png"
-                alt="Gilberto"
-                className="imagePerfil"
-              />
-            </div>
-            <div className="textoComentario">
-              <p>
-                <u>
-                  <b>Gilberto:</b>
-                </u>{" "}
-                Esse pet é especial, com muito amor para dar.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
