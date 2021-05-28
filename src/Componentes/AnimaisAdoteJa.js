@@ -17,9 +17,10 @@ export const AnimaisAdoteJa = [
     Raca: "Shih Tzu",
     comentarios: [
       {
-        nome: "Ian Xavier",
-        foto: "/images/Colaboradores/GabrielMauad.jpg",
-        texto: "Quando não tá comentendo, tá dormindo",
+        nome: "Paulo Santos",
+        foto: "/images/Colaboradores/PauloSantos.jpg",
+        texto:
+          "Quando não está comendo tudo que vê pela frete, está dormindo. Adora correr e dormir.",
       },
       {
         nome: "Gabriel Mauad",
@@ -125,8 +126,8 @@ export const AnimaisAdoteJa = [
 
     comentarios: [
       {
-        nome: "Matheus Franklin",
-        foto: "/images/Colaboradores/MatheusFranklin.jpg",
+        nome: "Paulo Santos",
+        foto: "/images/Colaboradores/PauloSantos.jpg",
         texto: "Odeia que acordem antes do horário, as vezes fica sem humor",
       },
       {
@@ -654,7 +655,8 @@ export const AnimaisAdoteJa = [
     local: "Betim/MG",
     tamanho: "M",
     sexo: "Macho",
-    descricao: "Um cachorro dócil e amigável",
+    descricao:
+      "Um cachorro dócil e amigável. Vive correndo pela casa e fazendo muita bagunça por onde passa. Adora brincar com tudo.",
     Raca: "Vira-lata",
 
     comentarios: [
@@ -672,7 +674,7 @@ export const AnimaisAdoteJa = [
       },
       {
         nome: "Ian Xavier",
-        foto: "/images/Colaboradores/Ian Xavier",
+        foto: "/images/Colaboradores/IanXavier.png",
         texto: "Bem espertinha ela, sempre quer ta no centro das atenções",
       },
     ],
