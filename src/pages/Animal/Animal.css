@@ -202,6 +202,20 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.tittleAdoteAnimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mensagemAdotado {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1000px) and (min-width: 800px) {
   .divAnimalDescricao {
     flex-direction: column;
@@ -307,14 +321,7 @@
   .subTitlePet {
     font-size: 1rem;
   }
-}
-
-.tittleAdoteAnimal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  text-decoration: underline;
+  .mensagemAdotado {
+    font-size: 1rem;
+  }
 }
