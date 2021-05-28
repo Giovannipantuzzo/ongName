@@ -84,26 +84,15 @@ function Animal({ location, ...props }) {
         Swal.fire({
           title:
             '<strong class="mensagemAdotado">Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.</strong>',
-          // icon: "info",
           imageUrl: animal.imagem[0],
           imageWidth: "50%",
-          // html:
-          // "You can use <b>bold text</b>, " +
-          // '<a href="//sweetalert2.github.io">links</a> ' +
-          // "and other HTML tags",
           showCloseButton: true,
-          // showCancelButton: true,
           focusConfirm: false,
-          confirmButtonText: '<i class="fa fa-thumbs-up"></i> Compreendi!',
-          confirmButtonAriaLabel: "Compreendi!",
+          confirmButtonText:
+            '<a style="color: white; text-decoration: none;" href="https://api.whatsapp.com/send?phone=5531988265561&text=Olá,%20tudo%20bem?%20Gostaria%20de%20combinar%20o%20encontro%20com%20meu%20pet%20que%20acabei%20de%20adotar" target="_blank" rel="noreferrer noopener">Combinar agora</a>',
+          confirmButtonAriaLabel: "Combinar agora",
           confirmButtonColor: "black",
-          // cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
-          // cancelButtonAriaLabel: "Thumbs down",
         }).then((result) => history.push("home"));
-        // alert(
-        //   "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
-        // );
-        // history.push("home");
       }
     }
   }
