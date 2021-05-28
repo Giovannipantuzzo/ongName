@@ -1433,8 +1433,9 @@ export const animaisReais = [
       },
       {
         nome: "Tainan Albuquerque",
-        foto: "/images/Colaboradores/GabrielDias.jpg",
-        texto: "/images/Colaboradores/TainanAlbuquerque.jpg",
+        foto: "/images/Colaboradores/TainanAlbuquerque.jpg",
+        texto:
+          "Muitoooo comelonaa e não gosta de ficar em casa, ela ama passear, falta pouco te pegar e arrastar para a rua kkk",
       },
     ],
   },
