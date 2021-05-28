@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import api from "../../Services/api";
 import "./Perfil.css";
 import MaskedFormControl from "react-bootstrap-maskedinput";
+const Swal = require("sweetalert2");
 
 function Perfil() {
   const [user, setUser] = useState();
@@ -25,8 +26,14 @@ function Perfil() {
         }
       });
       await api.put(`/user`, updatedUser);
-      alert("Dados salvos com sucesso!");
-      window.location.href = "/home";
+
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Dados salvos com sucesso!",
+        showConfirmButton: false,
+        timer: 720,
+      }).then((result) => (window.location.href = "/home"));
     } catch (error) {
       console.warn(error);
       alert("Algo deu errado");
