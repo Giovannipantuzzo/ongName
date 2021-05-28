@@ -1394,7 +1394,7 @@ export const animaisReais = [
       {
         nome: "Marcone Faria",
         foto: "/images/Colaboradores/MarconeFaria.png",
-        texto: "",
+        texto: "Ela não para de comer coisas estranhas kkkkkk",
       },
       {
         nome: "Ana Gonçalves",
