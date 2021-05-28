@@ -9,7 +9,6 @@ import { useHistory } from "react-router-dom";
 import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
 import { getToken } from "../../Services/auth";
-import { Alert } from "antd";
 const Swal = require("sweetalert2");
 
 const responsive = {
@@ -52,8 +51,13 @@ function Animal({ location, ...props }) {
 
   function adotado(animal) {
     if (token === null) {
-      alert("Você deve fazer login para adotar um animal.");
-      history.push("login");
+      Swal.fire({
+        title: "Alerta!",
+        text: "Você deve fazer login para adotar um animal.",
+        icon: "warning",
+        confirmButtonText: "Entendi!",
+        confirmButtonColor: "black",
+      }).then((result) => history.push("login"));
     } else if (token != null) {
       if (
         nameUser === "null" ||
@@ -69,10 +73,13 @@ function Animal({ location, ...props }) {
         birthDateUser === "null" ||
         birthDateUser === " "
       ) {
-        alert(
-          "Complete todas as informações do perfil para habilitar essa opção."
-        );
-        history.push("perfil");
+        Swal.fire({
+          title: "Alerta!",
+          text: "Complete todas as informações do perfil para habilitar essa opção.",
+          icon: "warning",
+          confirmButtonText: "Entendi!",
+          confirmButtonColor: "black",
+        }).then((result) => history.push("perfil"));
       } else {
         Swal.fire({
           title:
@@ -89,6 +96,7 @@ function Animal({ location, ...props }) {
           focusConfirm: false,
           confirmButtonText: '<i class="fa fa-thumbs-up"></i> Compreendi!',
           confirmButtonAriaLabel: "Compreendi!",
+          confirmButtonColor: "black",
           // cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
           // cancelButtonAriaLabel: "Thumbs down",
         }).then((result) => history.push("home"));
@@ -168,7 +176,6 @@ function Animal({ location, ...props }) {
               onClick={() => {
                 adotado(animal);
               }}
-              // onClick={adotado}
             >
               <p> Adote agora </p>
             </Button>

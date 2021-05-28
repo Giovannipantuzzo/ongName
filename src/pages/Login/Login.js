@@ -46,7 +46,7 @@ function Login() {
       Swal.fire({
         title: "Bem vindo! " + response.data.user.username,
         html: "Auto close in <b></b> milliseconds.",
-        timer: 1100,
+        timer: 1000,
         icon: "success",
         didOpen: () => {
           Swal.showLoading();
