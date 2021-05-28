@@ -10,6 +10,7 @@ import AnimaisAdoteJa from "../../Componentes/AnimaisAdoteJa";
 import { BiMaleSign, BiFemaleSign } from "react-icons/bi";
 import { getToken } from "../../Services/auth";
 import { Alert } from "antd";
+const Swal = require("sweetalert2");
 
 const responsive = {
   superLargeDesktop: {
@@ -49,7 +50,7 @@ function Animal({ location, ...props }) {
   const [imagemEndereco, setimagemEndereco] = useState(animal.imagem[0]);
   const token = getToken();
 
-  function adotado() {
+  function adotado(animal) {
     if (token === null) {
       alert("Você deve fazer login para adotar um animal.");
       history.push("login");
@@ -73,10 +74,28 @@ function Animal({ location, ...props }) {
         );
         history.push("perfil");
       } else {
-        alert(
-          "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
-        );
-        history.push("home");
+        Swal.fire({
+          title:
+            '<strong class="mensagemAdotado">Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro.</strong>',
+          // icon: "info",
+          imageUrl: animal.imagem[0],
+          imageWidth: "50%",
+          // html:
+          // "You can use <b>bold text</b>, " +
+          // '<a href="//sweetalert2.github.io">links</a> ' +
+          // "and other HTML tags",
+          showCloseButton: true,
+          // showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: '<i class="fa fa-thumbs-up"></i> Compreendi!',
+          confirmButtonAriaLabel: "Compreendi!",
+          // cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+          // cancelButtonAriaLabel: "Thumbs down",
+        }).then((result) => history.push("home"));
+        // alert(
+        //   "Animal adotado com sucesso. Entre em contato com a ONG para combinar o encontro."
+        // );
+        // history.push("home");
       }
     }
   }
@@ -146,7 +165,10 @@ function Animal({ location, ...props }) {
                 width: "15rem",
                 height: "3rem",
               }}
-              onClick={adotado}
+              onClick={() => {
+                adotado(animal);
+              }}
+              // onClick={adotado}
             >
               <p> Adote agora </p>
             </Button>

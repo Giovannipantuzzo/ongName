@@ -52,18 +52,18 @@ export const animaisReais = [
     Raca: "Sem raça",
     comentarios: [
       {
-        nome: "Gabriel Mauad",
-        foto: "/images/Colaboradores/GabrielMauad.jpg",
+        nome: "Giovanna Souza",
+        foto: "/images/Colaboradores/GiovannaSouza.png",
         texto: "Ama dormir nos locais mais inusidados possíveis.",
       },
       {
-        nome: "Giovanni Pantuzzo",
-        foto: "/images/Colaboradores/GiovanniPantuzzo.jpg",
+        nome: "Marcone Faria",
+        foto: "/images/Colaboradores/MarconeFaria.png",
         texto: "Nunca vi um animal que pula tanto igual essa Amora.",
       },
       {
-        nome: "Matheus Franklin",
-        foto: "/images/Colaboradores/MatheusFranklin.jpg",
+        nome: "Pedro Barros",
+        foto: "/images/Colaboradores/PedroBarros.png",
         texto: "Ahhhhh essa cabritinha é perfeitaaa.",
       },
     ],
